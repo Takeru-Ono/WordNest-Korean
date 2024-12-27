@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lwh-my-xUE">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oo2-FD-wk3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3730.5343511450378" y="-713.38028169014092"/>
+        </scene>
+        <!--Correct Answer View Controller-->
+        <scene sceneID="Iaw-F6-RHC">
+            <objects>
+                <viewController storyboardIdentifier="CorrectAnswerViewController" id="gIT-b2-0Av" customClass="CorrectAnswerViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JT7-GN-r9B">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="45p-g4-b7S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wah-JY-pkP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4625.1908396946565" y="-712.67605633802816"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="CVn-NA-2pK">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="VHA-W0-flA" customClass="FirstViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GdH-lB-cbR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n1V-gJ-pXT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MAY-n5-43p"/>
+                    <connections>
+                        <segue destination="n79-ez-Gnp" kind="show" id="azf-vH-QZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWe-dd-TL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788.5496183206105" y="-713.38028169014092"/>
+        </scene>
+        <!--Select Category View Controller-->
+        <scene sceneID="UNr-pq-mt3">
+            <objects>
+                <viewController storyboardIdentifier="SelectCategoryViewController" id="n79-ez-Gnp" customClass="SelectCategoryViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lOq-3J-Oya">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RCe-Rn-9mi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yyo-Yb-Dcs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOm-qb-USk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703.0534351145038" y="-713.38028169014092"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l8O-yb-lHM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lwh-my-xUE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jye-nU-iZP">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VHA-W0-flA" kind="relationship" relationship="rootViewController" id="P22-hU-b35"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E78-gy-cZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="-713"/>
+        </scene>
+        <!--End View Controller Rapid-->
+        <scene sceneID="VlN-5M-teT">
+            <objects>
+                <viewController storyboardIdentifier="EndViewController_Rapid" id="eVL-Vu-ZD5" customClass="EndViewController_Rapid" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTf-BL-G3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zqE-AI-3us"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vq8-dR-Cg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623.6641221374048" y="-1435.2112676056338"/>
+        </scene>
+        <!--End View ControllerJP Rapid-->
+        <scene sceneID="VFD-vC-wpo">
+            <objects>
+                <viewController storyboardIdentifier="EndViewController_JP_Rapid" id="aNZ-sX-5Xq" customClass="EndViewController_JP_Rapid" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EEK-pw-Ol1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8jq-xm-VSI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giq-fe-7yc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5450" y="-1435"/>
+        </scene>
+        <!--Select Category Rapid Mode View Controller-->
+        <scene sceneID="eb3-GU-4aA">
+            <objects>
+                <viewController storyboardIdentifier="SelectCategory_RapidMode_ViewController" id="it8-p2-sC4" customClass="SelectCategory_RapidMode_ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eJT-hV-Rkq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vb5-Ij-yUm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zO0-Ky-hZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ej1-2o-apY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="-1435"/>
+        </scene>
+        <!--Rapid ModeJP View Controller-->
+        <scene sceneID="n9J-af-D7B">
+            <objects>
+                <viewController storyboardIdentifier="RapidMode_JP_ViewController" id="qxz-Im-9Hl" customClass="RapidMode_JP_ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9o-m7-YvM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eb7-10-4UA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gUS-cJ-Gpp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3731" y="-2890"/>
+        </scene>
+        <!--View ControllerJP-->
+        <scene sceneID="ZSD-Oc-weX">
+            <objects>
+                <viewController storyboardIdentifier="ViewController_JP" id="P14-bu-v5g" customClass="ViewController_JP" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wpn-fw-bMk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="X1O-Rl-kXd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNM-vs-rTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3731" y="-2168"/>
+        </scene>
+        <!--Correct Answer View ControllerJP-->
+        <scene sceneID="Nml-9S-20M">
+            <objects>
+                <viewController storyboardIdentifier="CorrectAnswerViewController_JP" id="j6G-LS-UYq" customClass="CorrectAnswerViewController_JP" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WUC-t2-ham">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="l5V-Cr-173"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GcM-Dk-0vP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4624" y="-2168"/>
+        </scene>
+        <!--End View ControllerJP Normal-->
+        <scene sceneID="jYI-sz-Md9">
+            <objects>
+                <viewController storyboardIdentifier="EndViewController_JP_Normal" id="Ipc-o0-rTU" customClass="EndViewController_JP_Normal" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2u-Fc-Uk1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="60R-CO-riY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Du2-bF-yah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4625" y="-3587"/>
+        </scene>
+        <!--End View Controller Normal-->
+        <scene sceneID="NWb-zl-Qbl">
+            <objects>
+                <viewController storyboardIdentifier="EndViewController_Normal" id="pmn-hu-k8O" customClass="EndViewController_Normal" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uQ3-kt-jzm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="I2F-hi-nm4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEc-R1-p4n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4625" y="-2890"/>
+        </scene>
+        <!--Rapid Mode View Controller-->
+        <scene sceneID="O1w-wG-ME7">
+            <objects>
+                <viewController storyboardIdentifier="RapidMode_ViewController" id="Wmd-hF-vRG" customClass="RapidMode_ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQq-ew-X9i">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P04-fs-XM2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ap-2g-sch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3731" y="-1435"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="W61-FZ-IHa">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="VNw-sc-bQH" customClass="SettingsViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBB-7X-1kS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cie-ci-uBX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VRc-pe-HcP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8aJ-dy-2wu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788.5496183206105" y="53.521126760563384"/>
+        </scene>
+        <!--Select Number Category View Controller-->
+        <scene sceneID="LCU-ef-L6K">
+            <objects>
+                <viewController storyboardIdentifier="SelectNumberCategoryViewController" id="fh7-tw-0t6" customClass="SelectNumberCategoryViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XvS-bI-Bdm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8ef-Dl-n7F"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3J4-Zt-UxK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703.0534351145038" y="808.45070422535218"/>
+        </scene>
+        <!--Number Quiz View Controller-->
+        <scene sceneID="208-x7-CZZ">
+            <objects>
+                <viewController storyboardIdentifier="NumberQuizViewController" id="mtP-U0-m2Q" customClass="NumberQuizViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fDI-YT-nqK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ncc-5s-7mp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VT-Pf-y7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3730.5343511450378" y="808.45070422535218"/>
+        </scene>
+        <!--Number End View Controller-->
+        <scene sceneID="yTt-QT-XD4">
+            <objects>
+                <viewController storyboardIdentifier="NumberEndViewController" id="Z0C-9M-UVD" customClass="NumberEndViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oca-Fx-2Pj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="N6Z-ug-cuz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chb-tu-b8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623.6641221374048" y="807.74647887323943"/>
+        </scene>
+        <!--Confirmation View Controller-->
+        <scene sceneID="zCH-eN-MfF">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmationViewController" id="oii-pO-uwe" customClass="ConfirmationViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r2b-hM-tQi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-zl-hcP">
+                                <rect key="frame" x="81" y="186" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oiV-2m-BR2">
+                                <rect key="frame" x="172" y="428" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jic-cN-eAT">
+                                <rect key="frame" x="158" y="585" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="startQuizButtonTapped:" destination="oii-pO-uwe" eventType="touchUpInside" id="bIt-uK-L0Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw0-Yu-aa2">
+                                <rect key="frame" x="83" y="140" width="247" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MKd-pJ-del"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="Sw0-Yu-aa2" id="GBV-RI-N43"/>
+                        <outlet property="countdownSlider" destination="zMa-zl-hcP" id="dU9-gT-wIo"/>
+                        <outlet property="questionRangeLabel" destination="Sw0-Yu-aa2" id="WCY-jW-Q5H"/>
+                        <outlet property="questionRangeSlider" destination="zMa-zl-hcP" id="tHS-1Q-ufb"/>
+                        <outlet property="skipConfirmationSwitch" destination="oiV-2m-BR2" id="yL4-JV-gN0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WER-QO-tXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3730.5343511450378" y="53.521126760563384"/>
+        </scene>
+        <!--Favorite View ControllerJP-->
+        <scene sceneID="z9o-ys-PJX">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteViewControllerJP" id="qxZ-xv-VAW" customClass="FavoriteViewControllerJP" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XNd-WV-NGK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BdG-An-rKv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuo-MP-s2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4647" y="54"/>
+        </scene>
+        <!--Favorite View ControllerKR-->
+        <scene sceneID="mHf-Ca-WQP">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteViewControllerKR" id="fmF-Rg-dJa" customClass="FavoriteViewControllerKR" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z9Q-Pt-VbK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="T5g-bl-IsJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJA-dg-jXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5518" y="54"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="caZ-lH-2bh">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="W03-IM-yBj" customClass="AboutViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ucT-qy-kJL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HBP-ot-jkv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ssd-ih-oS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6473" y="54"/>
+        </scene>
+        <!--Dictionary View Controller-->
+        <scene sceneID="tZn-IL-pEm">
+            <objects>
+                <viewController storyboardIdentifier="DictionaryViewController" id="ssv-Pd-iyE" customClass="DictionaryViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fcr-Il-xeL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ScK-hY-Dw4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ndB-4a-XsM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2703" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

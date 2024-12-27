@@ -1,0 +1,9 @@
+# Xcode specific files
+*.xcuserdata
+*.xcworkspace
+DerivedData/
+build/
+
+# macOS specific files
+.DS_Store
+
