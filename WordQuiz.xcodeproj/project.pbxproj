@@ -1,0 +1,1471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB7FE7C92D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7CA2D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7CB2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7CC2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D72D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7CD2D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D82D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7CE2D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D92D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7CF2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6DA2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7D02D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6DB2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7D12D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6DC2D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7D22D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6DD2D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7D32D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6DE2D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7D42D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6DF2D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7D52D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E02D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7D62D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E12D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7D72D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E22D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7D82D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E32D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7D92D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E42D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7DA2D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E52D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7DB2D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E62D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7DC2D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E72D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7DD2D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E82D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7DE2D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6E92D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7DF2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6EA2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7E02D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6EB2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7E12D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6EC2D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7E22D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6ED2D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7E32D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6EE2D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7E42D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6EF2D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7E52D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F02D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7E62D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F12D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7E72D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F22D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7E82D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F32D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7E92D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F42D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7EA2D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F52D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7EB2D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F62D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7EC2D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F72D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7ED2D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F82D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7EE2D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6F92D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7EF2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6FA2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7F02D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6FB2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7F12D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6FC2D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7F22D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6FD2D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7F32D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6FE2D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7F42D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6FF2D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7F52D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7002D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7F62D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7012D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7F72D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7022D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7F82D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7032D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7F92D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7042D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7FA2D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7052D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7FB2D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7062D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7FC2D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7072D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7FD2D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7082D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE7FE2D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7092D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE7FF2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE70A2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8002D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE70B2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8012D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE70C2D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8022D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE70D2D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8032D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE70E2D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8042D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE70F2D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8052D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7102D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8062D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7112D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8072D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7122D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8082D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7132D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8092D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7142D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE80A2D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7152D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE80B2D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7162D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE80C2D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7172D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE80D2D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7182D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE80E2D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7192D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE80F2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE71A2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8102D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE71B2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8112D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE71C2D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8122D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE71D2D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8132D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE71E2D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8142D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE71F2D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8152D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7202D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8162D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7212D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8172D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7222D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8182D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7232D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8192D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7242D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE81A2D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7252D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE81B2D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7262D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE81C2D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7272D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE81D2D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7282D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE81E2D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7292D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE81F2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE72A2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8202D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE72B2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_verb_Basic.csv */; };
+		EB7FE8212D1EE0A0004CAD58 /* question_45_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE72C2D1EE0A0004CAD58 /* question_45_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8222D1EE0A0004CAD58 /* question_46_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE72D2D1EE0A0004CAD58 /* question_46_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8232D1EE0A0004CAD58 /* question_47_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE72E2D1EE0A0004CAD58 /* question_47_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8242D1EE0A0004CAD58 /* question_48_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE72F2D1EE0A0004CAD58 /* question_48_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8252D1EE0A0004CAD58 /* question_49_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7302D1EE0A0004CAD58 /* question_49_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8262D1EE0A0004CAD58 /* question_50_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7312D1EE0A0004CAD58 /* question_50_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8272D1EE0A0004CAD58 /* question_51_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7322D1EE0A0004CAD58 /* question_51_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8282D1EE0A0004CAD58 /* question_52_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7332D1EE0A0004CAD58 /* question_52_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8292D1EE0A0004CAD58 /* question_53_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7342D1EE0A0004CAD58 /* question_53_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE82A2D1EE0A0004CAD58 /* question_54_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7352D1EE0A0004CAD58 /* question_54_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE82B2D1EE0A0004CAD58 /* question_55_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7362D1EE0A0004CAD58 /* question_55_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE82C2D1EE0A0004CAD58 /* question_56_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7372D1EE0A0004CAD58 /* question_56_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE82D2D1EE0A0004CAD58 /* question_57_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7382D1EE0A0004CAD58 /* question_57_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE82E2D1EE0A0004CAD58 /* question_58_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7392D1EE0A0004CAD58 /* question_58_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE82F2D1EE0A0004CAD58 /* question_59_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE73A2D1EE0A0004CAD58 /* question_59_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8302D1EE0A0004CAD58 /* question_60_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE73B2D1EE0A0004CAD58 /* question_60_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8312D1EE0A0004CAD58 /* question_61_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE73C2D1EE0A0004CAD58 /* question_61_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8322D1EE0A0004CAD58 /* question_62_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE73D2D1EE0A0004CAD58 /* question_62_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8332D1EE0A0004CAD58 /* question_63_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE73E2D1EE0A0004CAD58 /* question_63_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8342D1EE0A0004CAD58 /* question_64_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE73F2D1EE0A0004CAD58 /* question_64_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8352D1EE0A0004CAD58 /* question_65_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7402D1EE0A0004CAD58 /* question_65_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8362D1EE0A0004CAD58 /* question_66_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7412D1EE0A0004CAD58 /* question_66_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8372D1EE0A0004CAD58 /* question_67_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7422D1EE0A0004CAD58 /* question_67_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8382D1EE0A0004CAD58 /* question_68_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7432D1EE0A0004CAD58 /* question_68_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8392D1EE0A0004CAD58 /* question_69_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7442D1EE0A0004CAD58 /* question_69_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE83A2D1EE0A0004CAD58 /* question_70_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7452D1EE0A0004CAD58 /* question_70_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE83B2D1EE0A0004CAD58 /* question_71_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7462D1EE0A0004CAD58 /* question_71_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE83C2D1EE0A0004CAD58 /* question_72_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7472D1EE0A0004CAD58 /* question_72_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE83D2D1EE0A0004CAD58 /* question_73_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7482D1EE0A0004CAD58 /* question_73_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE83E2D1EE0A0004CAD58 /* question_74_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7492D1EE0A0004CAD58 /* question_74_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE83F2D1EE0A0004CAD58 /* question_75_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE74A2D1EE0A0004CAD58 /* question_75_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8402D1EE0A0004CAD58 /* question_76_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE74B2D1EE0A0004CAD58 /* question_76_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8412D1EE0A0004CAD58 /* question_77_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE74C2D1EE0A0004CAD58 /* question_77_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8422D1EE0A0004CAD58 /* question_78_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE74D2D1EE0A0004CAD58 /* question_78_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8432D1EE0A0004CAD58 /* question_79_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE74E2D1EE0A0004CAD58 /* question_79_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8442D1EE0A0004CAD58 /* question_80_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE74F2D1EE0A0004CAD58 /* question_80_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8452D1EE0A0004CAD58 /* question_81_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7502D1EE0A0004CAD58 /* question_81_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8462D1EE0A0004CAD58 /* question_82_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7512D1EE0A0004CAD58 /* question_82_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8472D1EE0A0004CAD58 /* question_83_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7522D1EE0A0004CAD58 /* question_83_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8482D1EE0A0004CAD58 /* question_84_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7532D1EE0A0004CAD58 /* question_84_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8492D1EE0A0004CAD58 /* question_85_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7542D1EE0A0004CAD58 /* question_85_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE84A2D1EE0A0004CAD58 /* question_86_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7552D1EE0A0004CAD58 /* question_86_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE84B2D1EE0A0004CAD58 /* question_87_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7562D1EE0A0004CAD58 /* question_87_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE84C2D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7572D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE84D2D1EE0A0004CAD58 /* question_89_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7582D1EE0A0004CAD58 /* question_89_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE84E2D1EE0A0004CAD58 /* question_90_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7592D1EE0A0004CAD58 /* question_90_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE84F2D1EE0A0004CAD58 /* question_91_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE75A2D1EE0A0004CAD58 /* question_91_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8502D1EE0A0004CAD58 /* question_92_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE75B2D1EE0A0004CAD58 /* question_92_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8512D1EE0A0004CAD58 /* question_93_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE75C2D1EE0A0004CAD58 /* question_93_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8522D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE75D2D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8532D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE75E2D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8542D1EE0A0004CAD58 /* question_96_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE75F2D1EE0A0004CAD58 /* question_96_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8552D1EE0A0004CAD58 /* question_97_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7602D1EE0A0004CAD58 /* question_97_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8562D1EE0A0004CAD58 /* question_98_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7612D1EE0A0004CAD58 /* question_98_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8572D1EE0A0004CAD58 /* question_99_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7622D1EE0A0004CAD58 /* question_99_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8582D1EE0A0004CAD58 /* question_100_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7632D1EE0A0004CAD58 /* question_100_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8592D1EE0A0004CAD58 /* question_101_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7642D1EE0A0004CAD58 /* question_101_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE85A2D1EE0A0004CAD58 /* question_102_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7652D1EE0A0004CAD58 /* question_102_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE85B2D1EE0A0004CAD58 /* question_103_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7662D1EE0A0004CAD58 /* question_103_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE85C2D1EE0A0004CAD58 /* question_104_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7672D1EE0A0004CAD58 /* question_104_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE85D2D1EE0A0004CAD58 /* question_105_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7682D1EE0A0004CAD58 /* question_105_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE85E2D1EE0A0004CAD58 /* question_106_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7692D1EE0A0004CAD58 /* question_106_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE85F2D1EE0A0004CAD58 /* question_107_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE76A2D1EE0A0004CAD58 /* question_107_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8602D1EE0A0004CAD58 /* question_108_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE76B2D1EE0A0004CAD58 /* question_108_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8612D1EE0A0004CAD58 /* question_109_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE76C2D1EE0A0004CAD58 /* question_109_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8622D1EE0A0004CAD58 /* question_110_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE76D2D1EE0A0004CAD58 /* question_110_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8632D1EE0A0004CAD58 /* question_111_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE76E2D1EE0A0004CAD58 /* question_111_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8642D1EE0A0004CAD58 /* question_112_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE76F2D1EE0A0004CAD58 /* question_112_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8652D1EE0A0004CAD58 /* question_113_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7702D1EE0A0004CAD58 /* question_113_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8662D1EE0A0004CAD58 /* question_114_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7712D1EE0A0004CAD58 /* question_114_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8672D1EE0A0004CAD58 /* question_115_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7722D1EE0A0004CAD58 /* question_115_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8682D1EE0A0004CAD58 /* question_116_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7732D1EE0A0004CAD58 /* question_116_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8692D1EE0A0004CAD58 /* question_117_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7742D1EE0A0004CAD58 /* question_117_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE86A2D1EE0A0004CAD58 /* question_118_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7752D1EE0A0004CAD58 /* question_118_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE86B2D1EE0A0004CAD58 /* question_119_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7762D1EE0A0004CAD58 /* question_119_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE86C2D1EE0A0004CAD58 /* question_120_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7772D1EE0A0004CAD58 /* question_120_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE86D2D1EE0A0004CAD58 /* question_121_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7782D1EE0A0004CAD58 /* question_121_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE86E2D1EE0A0004CAD58 /* question_122_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7792D1EE0A0004CAD58 /* question_122_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE86F2D1EE0A0004CAD58 /* question_123_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE77A2D1EE0A0004CAD58 /* question_123_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8702D1EE0A0004CAD58 /* question_124_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE77B2D1EE0A0004CAD58 /* question_124_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8712D1EE0A0004CAD58 /* question_125_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE77C2D1EE0A0004CAD58 /* question_125_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8722D1EE0A0004CAD58 /* question_126_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE77D2D1EE0A0004CAD58 /* question_126_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8732D1EE0A0004CAD58 /* question_127_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE77E2D1EE0A0004CAD58 /* question_127_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8742D1EE0A0004CAD58 /* question_128_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE77F2D1EE0A0004CAD58 /* question_128_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8752D1EE0A0004CAD58 /* question_129_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7802D1EE0A0004CAD58 /* question_129_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8762D1EE0A0004CAD58 /* question_130_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7812D1EE0A0004CAD58 /* question_130_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8772D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7822D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8782D1EE0A0004CAD58 /* question_132_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7832D1EE0A0004CAD58 /* question_132_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8792D1EE0A0004CAD58 /* question_133_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7842D1EE0A0004CAD58 /* question_133_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE87A2D1EE0A0004CAD58 /* question_134_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7852D1EE0A0004CAD58 /* question_134_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE87B2D1EE0A0004CAD58 /* question_135_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7862D1EE0A0004CAD58 /* question_135_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE87C2D1EE0A0004CAD58 /* question_136_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7872D1EE0A0004CAD58 /* question_136_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE87D2D1EE0A0004CAD58 /* question_137_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7882D1EE0A0004CAD58 /* question_137_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE87E2D1EE0A0004CAD58 /* question_138_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7892D1EE0A0004CAD58 /* question_138_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE87F2D1EE0A0004CAD58 /* question_139_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE78A2D1EE0A0004CAD58 /* question_139_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8802D1EE0A0004CAD58 /* question_140_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE78B2D1EE0A0004CAD58 /* question_140_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8812D1EE0A0004CAD58 /* question_141_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE78C2D1EE0A0004CAD58 /* question_141_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8822D1EE0A0004CAD58 /* question_142_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE78D2D1EE0A0004CAD58 /* question_142_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8832D1EE0A0004CAD58 /* question_143_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE78E2D1EE0A0004CAD58 /* question_143_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8842D1EE0A0004CAD58 /* question_144_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE78F2D1EE0A0004CAD58 /* question_144_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8852D1EE0A0004CAD58 /* question_145_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7902D1EE0A0004CAD58 /* question_145_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8862D1EE0A0004CAD58 /* question_146_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7912D1EE0A0004CAD58 /* question_146_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8872D1EE0A0004CAD58 /* question_147_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7922D1EE0A0004CAD58 /* question_147_KoreanWordDictionary_noun_Basic.csv */; };
+		EB7FE8882D1EE0A0004CAD58 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7942D1EE0A0004CAD58 /* AboutViewController.swift */; };
+		EB7FE8892D1EE0A0004CAD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7952D1EE0A0004CAD58 /* AppDelegate.swift */; };
+		EB7FE88A2D1EE0A0004CAD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7962D1EE0A0004CAD58 /* Assets.xcassets */; };
+		EB7FE88B2D1EE0A0004CAD58 /* ButtonDesignUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7972D1EE0A0004CAD58 /* ButtonDesignUtility.swift */; };
+		EB7FE88C2D1EE0A0004CAD58 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7982D1EE0A0004CAD58 /* ConfirmationViewController.swift */; };
+		EB7FE88D2D1EE0A0004CAD58 /* CorrectAnswerViewController_JP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7992D1EE0A0004CAD58 /* CorrectAnswerViewController_JP.swift */; };
+		EB7FE88E2D1EE0A0004CAD58 /* CorrectAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE79A2D1EE0A0004CAD58 /* CorrectAnswerViewController.swift */; };
+		EB7FE88F2D1EE0A0004CAD58 /* CSVFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE79B2D1EE0A0004CAD58 /* CSVFileManager.swift */; };
+		EB7FE8902D1EE0A0004CAD58 /* CSVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE79C2D1EE0A0004CAD58 /* CSVLoader.swift */; };
+		EB7FE8912D1EE0A0004CAD58 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE79D2D1EE0A0004CAD58 /* DictionaryViewController.swift */; };
+		EB7FE8922D1EE0A0004CAD58 /* EndViewController_JP_Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE79E2D1EE0A0004CAD58 /* EndViewController_JP_Normal.swift */; };
+		EB7FE8932D1EE0A0004CAD58 /* EndViewController_JP_Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE79F2D1EE0A0004CAD58 /* EndViewController_JP_Rapid.swift */; };
+		EB7FE8942D1EE0A0004CAD58 /* EndViewController_Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7A02D1EE0A0004CAD58 /* EndViewController_Normal.swift */; };
+		EB7FE8952D1EE0A0004CAD58 /* EndViewController_Rapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7A12D1EE0A0004CAD58 /* EndViewController_Rapid.swift */; };
+		EB7FE8962D1EE0A0004CAD58 /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7A22D1EE0A0004CAD58 /* firstViewController.swift */; };
+		EB7FE8982D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7A42D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift */; };
+		EB7FE8992D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7A52D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift */; };
+		EB7FE89A2D1EE0A0004CAD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7A72D1EE0A0004CAD58 /* LaunchScreen.storyboard */; };
+		EB7FE89B2D1EE0A0004CAD58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE7A92D1EE0A0004CAD58 /* Main.storyboard */; };
+		EB7FE89C2D1EE0A0004CAD58 /* NumberEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7AA2D1EE0A0004CAD58 /* NumberEndViewController.swift */; };
+		EB7FE89D2D1EE0A0004CAD58 /* NumberQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7AB2D1EE0A0004CAD58 /* NumberQuizViewController.swift */; };
+		EB7FE89E2D1EE0A0004CAD58 /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7AC2D1EE0A0004CAD58 /* QuizResult.swift */; };
+		EB7FE89F2D1EE0A0004CAD58 /* RapidMode_JP_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7AD2D1EE0A0004CAD58 /* RapidMode_JP_ViewController.swift */; };
+		EB7FE8A02D1EE0A0004CAD58 /* RapidMode_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7AE2D1EE0A0004CAD58 /* RapidMode_ViewController.swift */; };
+		EB7FE8A12D1EE0A0004CAD58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7AF2D1EE0A0004CAD58 /* SceneDelegate.swift */; };
+		EB7FE8A22D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B02D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift */; };
+		EB7FE8A32D1EE0A0004CAD58 /* SelectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B12D1EE0A0004CAD58 /* SelectCategoryViewController.swift */; };
+		EB7FE8A42D1EE0A0004CAD58 /* SelectNumberCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B22D1EE0A0004CAD58 /* SelectNumberCategoryViewController.swift */; };
+		EB7FE8A52D1EE0A0004CAD58 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B32D1EE0A0004CAD58 /* SettingsViewController.swift */; };
+		EB7FE8A62D1EE0A0004CAD58 /* VerbDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B42D1EE0A0004CAD58 /* VerbDictionaryViewController.swift */; };
+		EB7FE8A72D1EE0A0004CAD58 /* ViewController_JP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B52D1EE0A0004CAD58 /* ViewController_JP.swift */; };
+		EB7FE8A82D1EE0A0004CAD58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B62D1EE0A0004CAD58 /* ViewController.swift */; };
+		EB7FE8A92D1EE0A0004CAD58 /* WordDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B72D1EE0A0004CAD58 /* WordDictionaryViewController.swift */; };
+		EBDA95AD2D1EEE6300F10754 /* FavoriteViewControllerJP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */; };
+		EBDA95AE2D1EEE6300F10754 /* FavoriteViewControllerKR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBCA203D2C150E84006FB59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBCA201E2C150E82006FB59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBCA20252C150E82006FB59A;
+			remoteInfo = "Word\U0011Quiz";
+		};
+		EBCA20472C150E84006FB59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBCA201E2C150E82006FB59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBCA20252C150E82006FB59A;
+			remoteInfo = "Word\U0011Quiz";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_1_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_1_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_2_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6D72D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_2_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6D82D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_3_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6D92D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_3_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6DA2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_4_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6DB2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_4_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6DC2D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_5_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6DD2D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_5_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6DE2D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_6_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6DF2D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_6_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E02D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_7_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E12D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_7_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E22D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_8_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E32D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_8_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E42D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_9_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E52D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_9_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E62D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_10_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E72D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_10_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E82D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_11_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6E92D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_11_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6EA2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_12_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6EB2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_12_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6EC2D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_13_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6ED2D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_13_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6EE2D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_14_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6EF2D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_14_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F02D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_15_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F12D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_15_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F22D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_16_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F32D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_16_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F42D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_17_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F52D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_17_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F62D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_18_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F72D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_18_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F82D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_19_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6F92D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_19_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6FA2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_20_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6FB2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_20_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6FC2D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_21_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6FD2D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_21_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6FE2D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_22_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE6FF2D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_22_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7002D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_23_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7012D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_23_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7022D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_24_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7032D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_24_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7042D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_25_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7052D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_25_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7062D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_26_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7072D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_26_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7082D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_27_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7092D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_27_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE70A2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_28_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE70B2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_28_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE70C2D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_29_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE70D2D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_29_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE70E2D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_30_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE70F2D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_30_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7102D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_31_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7112D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_31_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7122D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_32_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7132D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_32_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7142D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_33_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7152D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_33_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7162D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_34_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7172D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_34_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7182D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_35_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7192D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_35_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE71A2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_36_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE71B2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_36_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE71C2D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_37_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE71D2D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_37_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE71E2D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_38_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE71F2D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_38_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7202D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_39_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7212D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_39_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7222D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_40_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7232D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_40_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7242D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_41_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7252D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_41_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7262D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_42_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7272D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_42_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7282D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_43_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7292D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_43_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE72A2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_44_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE72B2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_44_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
+		EB7FE72C2D1EE0A0004CAD58 /* question_45_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_45_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE72D2D1EE0A0004CAD58 /* question_46_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_46_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE72E2D1EE0A0004CAD58 /* question_47_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_47_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE72F2D1EE0A0004CAD58 /* question_48_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_48_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7302D1EE0A0004CAD58 /* question_49_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_49_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7312D1EE0A0004CAD58 /* question_50_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_50_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7322D1EE0A0004CAD58 /* question_51_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_51_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7332D1EE0A0004CAD58 /* question_52_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_52_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7342D1EE0A0004CAD58 /* question_53_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_53_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7352D1EE0A0004CAD58 /* question_54_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_54_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7362D1EE0A0004CAD58 /* question_55_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_55_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7372D1EE0A0004CAD58 /* question_56_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_56_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7382D1EE0A0004CAD58 /* question_57_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_57_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7392D1EE0A0004CAD58 /* question_58_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_58_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE73A2D1EE0A0004CAD58 /* question_59_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_59_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE73B2D1EE0A0004CAD58 /* question_60_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_60_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE73C2D1EE0A0004CAD58 /* question_61_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_61_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE73D2D1EE0A0004CAD58 /* question_62_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_62_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE73E2D1EE0A0004CAD58 /* question_63_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_63_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE73F2D1EE0A0004CAD58 /* question_64_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_64_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7402D1EE0A0004CAD58 /* question_65_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_65_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7412D1EE0A0004CAD58 /* question_66_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_66_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7422D1EE0A0004CAD58 /* question_67_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_67_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7432D1EE0A0004CAD58 /* question_68_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_68_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7442D1EE0A0004CAD58 /* question_69_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_69_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7452D1EE0A0004CAD58 /* question_70_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_70_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7462D1EE0A0004CAD58 /* question_71_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_71_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7472D1EE0A0004CAD58 /* question_72_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_72_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7482D1EE0A0004CAD58 /* question_73_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_73_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7492D1EE0A0004CAD58 /* question_74_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_74_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE74A2D1EE0A0004CAD58 /* question_75_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_75_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE74B2D1EE0A0004CAD58 /* question_76_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_76_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE74C2D1EE0A0004CAD58 /* question_77_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_77_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE74D2D1EE0A0004CAD58 /* question_78_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_78_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE74E2D1EE0A0004CAD58 /* question_79_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_79_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE74F2D1EE0A0004CAD58 /* question_80_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_80_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7502D1EE0A0004CAD58 /* question_81_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_81_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7512D1EE0A0004CAD58 /* question_82_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_82_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7522D1EE0A0004CAD58 /* question_83_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_83_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7532D1EE0A0004CAD58 /* question_84_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_84_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7542D1EE0A0004CAD58 /* question_85_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_85_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7552D1EE0A0004CAD58 /* question_86_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_86_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7562D1EE0A0004CAD58 /* question_87_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_87_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7572D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_88_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7582D1EE0A0004CAD58 /* question_89_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_89_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7592D1EE0A0004CAD58 /* question_90_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_90_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE75A2D1EE0A0004CAD58 /* question_91_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_91_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE75B2D1EE0A0004CAD58 /* question_92_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_92_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE75C2D1EE0A0004CAD58 /* question_93_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_93_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE75D2D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_94_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE75E2D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_95_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE75F2D1EE0A0004CAD58 /* question_96_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_96_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7602D1EE0A0004CAD58 /* question_97_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_97_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7612D1EE0A0004CAD58 /* question_98_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_98_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7622D1EE0A0004CAD58 /* question_99_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_99_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7632D1EE0A0004CAD58 /* question_100_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_100_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7642D1EE0A0004CAD58 /* question_101_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_101_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7652D1EE0A0004CAD58 /* question_102_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_102_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7662D1EE0A0004CAD58 /* question_103_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_103_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7672D1EE0A0004CAD58 /* question_104_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_104_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7682D1EE0A0004CAD58 /* question_105_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_105_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7692D1EE0A0004CAD58 /* question_106_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_106_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE76A2D1EE0A0004CAD58 /* question_107_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_107_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE76B2D1EE0A0004CAD58 /* question_108_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_108_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE76C2D1EE0A0004CAD58 /* question_109_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_109_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE76D2D1EE0A0004CAD58 /* question_110_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_110_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE76E2D1EE0A0004CAD58 /* question_111_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_111_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE76F2D1EE0A0004CAD58 /* question_112_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_112_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7702D1EE0A0004CAD58 /* question_113_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_113_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7712D1EE0A0004CAD58 /* question_114_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_114_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7722D1EE0A0004CAD58 /* question_115_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_115_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7732D1EE0A0004CAD58 /* question_116_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_116_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7742D1EE0A0004CAD58 /* question_117_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_117_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7752D1EE0A0004CAD58 /* question_118_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_118_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7762D1EE0A0004CAD58 /* question_119_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_119_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7772D1EE0A0004CAD58 /* question_120_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_120_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7782D1EE0A0004CAD58 /* question_121_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_121_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7792D1EE0A0004CAD58 /* question_122_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_122_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE77A2D1EE0A0004CAD58 /* question_123_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_123_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE77B2D1EE0A0004CAD58 /* question_124_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_124_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE77C2D1EE0A0004CAD58 /* question_125_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_125_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE77D2D1EE0A0004CAD58 /* question_126_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_126_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE77E2D1EE0A0004CAD58 /* question_127_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_127_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE77F2D1EE0A0004CAD58 /* question_128_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_128_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7802D1EE0A0004CAD58 /* question_129_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_129_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7812D1EE0A0004CAD58 /* question_130_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_130_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7822D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_131_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7832D1EE0A0004CAD58 /* question_132_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_132_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7842D1EE0A0004CAD58 /* question_133_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_133_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7852D1EE0A0004CAD58 /* question_134_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_134_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7862D1EE0A0004CAD58 /* question_135_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_135_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7872D1EE0A0004CAD58 /* question_136_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_136_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7882D1EE0A0004CAD58 /* question_137_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_137_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7892D1EE0A0004CAD58 /* question_138_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_138_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE78A2D1EE0A0004CAD58 /* question_139_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_139_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE78B2D1EE0A0004CAD58 /* question_140_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_140_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE78C2D1EE0A0004CAD58 /* question_141_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_141_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE78D2D1EE0A0004CAD58 /* question_142_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_142_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE78E2D1EE0A0004CAD58 /* question_143_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_143_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE78F2D1EE0A0004CAD58 /* question_144_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_144_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7902D1EE0A0004CAD58 /* question_145_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_145_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7912D1EE0A0004CAD58 /* question_146_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_146_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7922D1EE0A0004CAD58 /* question_147_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_147_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
+		EB7FE7942D1EE0A0004CAD58 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		EB7FE7952D1EE0A0004CAD58 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB7FE7962D1EE0A0004CAD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB7FE7972D1EE0A0004CAD58 /* ButtonDesignUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonDesignUtility.swift; sourceTree = "<group>"; };
+		EB7FE7982D1EE0A0004CAD58 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		EB7FE7992D1EE0A0004CAD58 /* CorrectAnswerViewController_JP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectAnswerViewController_JP.swift; sourceTree = "<group>"; };
+		EB7FE79A2D1EE0A0004CAD58 /* CorrectAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectAnswerViewController.swift; sourceTree = "<group>"; };
+		EB7FE79B2D1EE0A0004CAD58 /* CSVFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVFileManager.swift; sourceTree = "<group>"; };
+		EB7FE79C2D1EE0A0004CAD58 /* CSVLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSVLoader.swift; sourceTree = "<group>"; };
+		EB7FE79D2D1EE0A0004CAD58 /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		EB7FE79E2D1EE0A0004CAD58 /* EndViewController_JP_Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController_JP_Normal.swift; sourceTree = "<group>"; };
+		EB7FE79F2D1EE0A0004CAD58 /* EndViewController_JP_Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController_JP_Rapid.swift; sourceTree = "<group>"; };
+		EB7FE7A02D1EE0A0004CAD58 /* EndViewController_Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController_Normal.swift; sourceTree = "<group>"; };
+		EB7FE7A12D1EE0A0004CAD58 /* EndViewController_Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController_Rapid.swift; sourceTree = "<group>"; };
+		EB7FE7A22D1EE0A0004CAD58 /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
+		EB7FE7A32D1EE0A0004CAD58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7FE7A42D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseVerbDictionaryViewController.swift; sourceTree = "<group>"; };
+		EB7FE7A52D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseWordDictionaryViewController.swift; sourceTree = "<group>"; };
+		EB7FE7A62D1EE0A0004CAD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB7FE7A82D1EE0A0004CAD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB7FE7AA2D1EE0A0004CAD58 /* NumberEndViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberEndViewController.swift; sourceTree = "<group>"; };
+		EB7FE7AB2D1EE0A0004CAD58 /* NumberQuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberQuizViewController.swift; sourceTree = "<group>"; };
+		EB7FE7AC2D1EE0A0004CAD58 /* QuizResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizResult.swift; sourceTree = "<group>"; };
+		EB7FE7AD2D1EE0A0004CAD58 /* RapidMode_JP_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RapidMode_JP_ViewController.swift; sourceTree = "<group>"; };
+		EB7FE7AE2D1EE0A0004CAD58 /* RapidMode_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RapidMode_ViewController.swift; sourceTree = "<group>"; };
+		EB7FE7AF2D1EE0A0004CAD58 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB7FE7B02D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategory_RapidMode_VeiwController.swift; sourceTree = "<group>"; };
+		EB7FE7B12D1EE0A0004CAD58 /* SelectCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryViewController.swift; sourceTree = "<group>"; };
+		EB7FE7B22D1EE0A0004CAD58 /* SelectNumberCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectNumberCategoryViewController.swift; sourceTree = "<group>"; };
+		EB7FE7B32D1EE0A0004CAD58 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EB7FE7B42D1EE0A0004CAD58 /* VerbDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerbDictionaryViewController.swift; sourceTree = "<group>"; };
+		EB7FE7B52D1EE0A0004CAD58 /* ViewController_JP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_JP.swift; sourceTree = "<group>"; };
+		EB7FE7B62D1EE0A0004CAD58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB7FE7B72D1EE0A0004CAD58 /* WordDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDictionaryViewController.swift; sourceTree = "<group>"; };
+		EBCA20262C150E82006FB59A /* WordQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word\U0011Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word\U0011QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word\U0011QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerJP.swift; sourceTree = "<group>"; };
+		EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerKR.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBCA20232C150E82006FB59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCA20392C150E84006FB59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCA20432C150E84006FB59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB7FE7932D1EE0A0004CAD58 /* WordQuiz_Questions */ = {
+			isa = PBXGroup;
+			children = (
+				EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6D72D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6D82D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6D92D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6DA2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6DB2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6DC2D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6DD2D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6DE2D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6DF2D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6E02D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6E12D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6E22D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6E32D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6E42D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6E52D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6E62D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6E72D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6E82D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6E92D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6EA2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6EB2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6EC2D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6ED2D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6EE2D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6EF2D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6F02D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6F12D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6F22D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6F32D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6F42D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6F52D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6F62D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6F72D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6F82D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6F92D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6FA2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6FB2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6FC2D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6FD2D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE6FE2D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE6FF2D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7002D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7012D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7022D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7032D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7042D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7052D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7062D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7072D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7082D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7092D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE70A2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE70B2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE70C2D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE70D2D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE70E2D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE70F2D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7102D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7112D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7122D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7132D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7142D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7152D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7162D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7172D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7182D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7192D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE71A2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE71B2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE71C2D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE71D2D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE71E2D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE71F2D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7202D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7212D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7222D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7232D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7242D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7252D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7262D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7272D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE7282D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7292D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE72A2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE72B2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_verb_Basic.csv */,
+				EB7FE72C2D1EE0A0004CAD58 /* question_45_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE72D2D1EE0A0004CAD58 /* question_46_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE72E2D1EE0A0004CAD58 /* question_47_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE72F2D1EE0A0004CAD58 /* question_48_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7302D1EE0A0004CAD58 /* question_49_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7312D1EE0A0004CAD58 /* question_50_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7322D1EE0A0004CAD58 /* question_51_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7332D1EE0A0004CAD58 /* question_52_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7342D1EE0A0004CAD58 /* question_53_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7352D1EE0A0004CAD58 /* question_54_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7362D1EE0A0004CAD58 /* question_55_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7372D1EE0A0004CAD58 /* question_56_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7382D1EE0A0004CAD58 /* question_57_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7392D1EE0A0004CAD58 /* question_58_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE73A2D1EE0A0004CAD58 /* question_59_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE73B2D1EE0A0004CAD58 /* question_60_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE73C2D1EE0A0004CAD58 /* question_61_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE73D2D1EE0A0004CAD58 /* question_62_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE73E2D1EE0A0004CAD58 /* question_63_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE73F2D1EE0A0004CAD58 /* question_64_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7402D1EE0A0004CAD58 /* question_65_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7412D1EE0A0004CAD58 /* question_66_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7422D1EE0A0004CAD58 /* question_67_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7432D1EE0A0004CAD58 /* question_68_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7442D1EE0A0004CAD58 /* question_69_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7452D1EE0A0004CAD58 /* question_70_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7462D1EE0A0004CAD58 /* question_71_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7472D1EE0A0004CAD58 /* question_72_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7482D1EE0A0004CAD58 /* question_73_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7492D1EE0A0004CAD58 /* question_74_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE74A2D1EE0A0004CAD58 /* question_75_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE74B2D1EE0A0004CAD58 /* question_76_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE74C2D1EE0A0004CAD58 /* question_77_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE74D2D1EE0A0004CAD58 /* question_78_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE74E2D1EE0A0004CAD58 /* question_79_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE74F2D1EE0A0004CAD58 /* question_80_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7502D1EE0A0004CAD58 /* question_81_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7512D1EE0A0004CAD58 /* question_82_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7522D1EE0A0004CAD58 /* question_83_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7532D1EE0A0004CAD58 /* question_84_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7542D1EE0A0004CAD58 /* question_85_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7552D1EE0A0004CAD58 /* question_86_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7562D1EE0A0004CAD58 /* question_87_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7572D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7582D1EE0A0004CAD58 /* question_89_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7592D1EE0A0004CAD58 /* question_90_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE75A2D1EE0A0004CAD58 /* question_91_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE75B2D1EE0A0004CAD58 /* question_92_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE75C2D1EE0A0004CAD58 /* question_93_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE75D2D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE75E2D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE75F2D1EE0A0004CAD58 /* question_96_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7602D1EE0A0004CAD58 /* question_97_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7612D1EE0A0004CAD58 /* question_98_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7622D1EE0A0004CAD58 /* question_99_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7632D1EE0A0004CAD58 /* question_100_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7642D1EE0A0004CAD58 /* question_101_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7652D1EE0A0004CAD58 /* question_102_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7662D1EE0A0004CAD58 /* question_103_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7672D1EE0A0004CAD58 /* question_104_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7682D1EE0A0004CAD58 /* question_105_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7692D1EE0A0004CAD58 /* question_106_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE76A2D1EE0A0004CAD58 /* question_107_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE76B2D1EE0A0004CAD58 /* question_108_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE76C2D1EE0A0004CAD58 /* question_109_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE76D2D1EE0A0004CAD58 /* question_110_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE76E2D1EE0A0004CAD58 /* question_111_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE76F2D1EE0A0004CAD58 /* question_112_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7702D1EE0A0004CAD58 /* question_113_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7712D1EE0A0004CAD58 /* question_114_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7722D1EE0A0004CAD58 /* question_115_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7732D1EE0A0004CAD58 /* question_116_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7742D1EE0A0004CAD58 /* question_117_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7752D1EE0A0004CAD58 /* question_118_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7762D1EE0A0004CAD58 /* question_119_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7772D1EE0A0004CAD58 /* question_120_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7782D1EE0A0004CAD58 /* question_121_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7792D1EE0A0004CAD58 /* question_122_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE77A2D1EE0A0004CAD58 /* question_123_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE77B2D1EE0A0004CAD58 /* question_124_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE77C2D1EE0A0004CAD58 /* question_125_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE77D2D1EE0A0004CAD58 /* question_126_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE77E2D1EE0A0004CAD58 /* question_127_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE77F2D1EE0A0004CAD58 /* question_128_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7802D1EE0A0004CAD58 /* question_129_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7812D1EE0A0004CAD58 /* question_130_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7822D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7832D1EE0A0004CAD58 /* question_132_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7842D1EE0A0004CAD58 /* question_133_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7852D1EE0A0004CAD58 /* question_134_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7862D1EE0A0004CAD58 /* question_135_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7872D1EE0A0004CAD58 /* question_136_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7882D1EE0A0004CAD58 /* question_137_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7892D1EE0A0004CAD58 /* question_138_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE78A2D1EE0A0004CAD58 /* question_139_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE78B2D1EE0A0004CAD58 /* question_140_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE78C2D1EE0A0004CAD58 /* question_141_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE78D2D1EE0A0004CAD58 /* question_142_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE78E2D1EE0A0004CAD58 /* question_143_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE78F2D1EE0A0004CAD58 /* question_144_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7902D1EE0A0004CAD58 /* question_145_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7912D1EE0A0004CAD58 /* question_146_KoreanWordDictionary_noun_Basic.csv */,
+				EB7FE7922D1EE0A0004CAD58 /* question_147_KoreanWordDictionary_noun_Basic.csv */,
+			);
+			path = WordQuiz_Questions;
+			sourceTree = "<group>";
+		};
+		EB7FE7B82D1EE0A0004CAD58 /* WordQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				EB7FE7932D1EE0A0004CAD58 /* WordQuiz_Questions */,
+				EB7FE7942D1EE0A0004CAD58 /* AboutViewController.swift */,
+				EB7FE7952D1EE0A0004CAD58 /* AppDelegate.swift */,
+				EB7FE7962D1EE0A0004CAD58 /* Assets.xcassets */,
+				EB7FE7972D1EE0A0004CAD58 /* ButtonDesignUtility.swift */,
+				EB7FE7982D1EE0A0004CAD58 /* ConfirmationViewController.swift */,
+				EB7FE7992D1EE0A0004CAD58 /* CorrectAnswerViewController_JP.swift */,
+				EB7FE79A2D1EE0A0004CAD58 /* CorrectAnswerViewController.swift */,
+				EB7FE79B2D1EE0A0004CAD58 /* CSVFileManager.swift */,
+				EB7FE79C2D1EE0A0004CAD58 /* CSVLoader.swift */,
+				EB7FE79D2D1EE0A0004CAD58 /* DictionaryViewController.swift */,
+				EB7FE79E2D1EE0A0004CAD58 /* EndViewController_JP_Normal.swift */,
+				EB7FE79F2D1EE0A0004CAD58 /* EndViewController_JP_Rapid.swift */,
+				EB7FE7A02D1EE0A0004CAD58 /* EndViewController_Normal.swift */,
+				EB7FE7A12D1EE0A0004CAD58 /* EndViewController_Rapid.swift */,
+				EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */,
+				EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */,
+				EB7FE7A22D1EE0A0004CAD58 /* firstViewController.swift */,
+				EB7FE7A32D1EE0A0004CAD58 /* Info.plist */,
+				EB7FE7A42D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift */,
+				EB7FE7A52D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift */,
+				EB7FE7A72D1EE0A0004CAD58 /* LaunchScreen.storyboard */,
+				EB7FE7A92D1EE0A0004CAD58 /* Main.storyboard */,
+				EB7FE7AA2D1EE0A0004CAD58 /* NumberEndViewController.swift */,
+				EB7FE7AB2D1EE0A0004CAD58 /* NumberQuizViewController.swift */,
+				EB7FE7AC2D1EE0A0004CAD58 /* QuizResult.swift */,
+				EB7FE7AD2D1EE0A0004CAD58 /* RapidMode_JP_ViewController.swift */,
+				EB7FE7AE2D1EE0A0004CAD58 /* RapidMode_ViewController.swift */,
+				EB7FE7AF2D1EE0A0004CAD58 /* SceneDelegate.swift */,
+				EB7FE7B02D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift */,
+				EB7FE7B12D1EE0A0004CAD58 /* SelectCategoryViewController.swift */,
+				EB7FE7B22D1EE0A0004CAD58 /* SelectNumberCategoryViewController.swift */,
+				EB7FE7B32D1EE0A0004CAD58 /* SettingsViewController.swift */,
+				EB7FE7B42D1EE0A0004CAD58 /* VerbDictionaryViewController.swift */,
+				EB7FE7B52D1EE0A0004CAD58 /* ViewController_JP.swift */,
+				EB7FE7B62D1EE0A0004CAD58 /* ViewController.swift */,
+				EB7FE7B72D1EE0A0004CAD58 /* WordDictionaryViewController.swift */,
+			);
+			path = WordQuiz;
+			sourceTree = "<group>";
+		};
+		EBCA201D2C150E82006FB59A = {
+			isa = PBXGroup;
+			children = (
+				EB7FE7B82D1EE0A0004CAD58 /* WordQuiz */,
+				EBCA20272C150E82006FB59A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBCA20272C150E82006FB59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBCA20262C150E82006FB59A /* WordQuiz.app */,
+				EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */,
+				EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBCA20252C150E82006FB59A /* WordQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */;
+			buildPhases = (
+				EBCA20222C150E82006FB59A /* Sources */,
+				EBCA20232C150E82006FB59A /* Frameworks */,
+				EBCA20242C150E82006FB59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Word\U0011Quiz";
+			productName = "Word\U0011Quiz";
+			productReference = EBCA20262C150E82006FB59A /* WordQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBCA203B2C150E84006FB59A /* WordQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */;
+			buildPhases = (
+				EBCA20382C150E84006FB59A /* Sources */,
+				EBCA20392C150E84006FB59A /* Frameworks */,
+				EBCA203A2C150E84006FB59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBCA203E2C150E84006FB59A /* PBXTargetDependency */,
+			);
+			name = "Word\U0011QuizTests";
+			productName = "Word\U0011QuizTests";
+			productReference = EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBCA20452C150E84006FB59A /* WordQuizUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */;
+			buildPhases = (
+				EBCA20422C150E84006FB59A /* Sources */,
+				EBCA20432C150E84006FB59A /* Frameworks */,
+				EBCA20442C150E84006FB59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBCA20482C150E84006FB59A /* PBXTargetDependency */,
+			);
+			name = "Word\U0011QuizUITests";
+			productName = "Word\U0011QuizUITests";
+			productReference = EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBCA201E2C150E82006FB59A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					0,
+					1,
+					2,
+				);
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					EBCA20252C150E82006FB59A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					EBCA203B2C150E84006FB59A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EBCA20252C150E82006FB59A;
+					};
+					EBCA20452C150E84006FB59A = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = EBCA20252C150E82006FB59A;
+					};
+				};
+			};
+			buildConfigurationList = EBCA20212C150E82006FB59A /* Build configuration list for PBXProject "WordQuiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBCA201D2C150E82006FB59A;
+			productRefGroup = EBCA20272C150E82006FB59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBCA20252C150E82006FB59A /* WordQuiz */,
+				EBCA203B2C150E84006FB59A /* WordQuizTests */,
+				EBCA20452C150E84006FB59A /* WordQuizUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBCA20242C150E82006FB59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7FE7D62D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7FA2D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE81C2D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7CD2D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7D12D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE86F2D1EE0A0004CAD58 /* question_123_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE86A2D1EE0A0004CAD58 /* question_118_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8082D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE89B2D1EE0A0004CAD58 /* Main.storyboard in Resources */,
+				EB7FE8372D1EE0A0004CAD58 /* question_67_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8492D1EE0A0004CAD58 /* question_85_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8312D1EE0A0004CAD58 /* question_61_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE85C2D1EE0A0004CAD58 /* question_104_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE87E2D1EE0A0004CAD58 /* question_138_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7D02D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8232D1EE0A0004CAD58 /* question_47_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE87C2D1EE0A0004CAD58 /* question_136_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE86D2D1EE0A0004CAD58 /* question_121_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE84A2D1EE0A0004CAD58 /* question_86_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F92D1EE0A0004CAD58 /* question_25_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8482D1EE0A0004CAD58 /* question_84_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8642D1EE0A0004CAD58 /* question_112_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE82B2D1EE0A0004CAD58 /* question_55_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8322D1EE0A0004CAD58 /* question_62_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F42D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7DF2D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8012D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE83E2D1EE0A0004CAD58 /* question_74_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7DB2D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E02D1EE0A0004CAD58 /* question_12_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7E22D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7EC2D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE83F2D1EE0A0004CAD58 /* question_75_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE80C2D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7FE2D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7E42D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE82D2D1EE0A0004CAD58 /* question_57_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F72D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8782D1EE0A0004CAD58 /* question_132_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E62D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7FC2D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE85A2D1EE0A0004CAD58 /* question_102_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7EF2D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE83B2D1EE0A0004CAD58 /* question_71_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8792D1EE0A0004CAD58 /* question_133_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8832D1EE0A0004CAD58 /* question_143_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE82E2D1EE0A0004CAD58 /* question_58_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE81E2D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8652D1EE0A0004CAD58 /* question_113_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7D92D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E92D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7CC2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8802D1EE0A0004CAD58 /* question_140_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8502D1EE0A0004CAD58 /* question_92_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7D32D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8432D1EE0A0004CAD58 /* question_79_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE81F2D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE82F2D1EE0A0004CAD58 /* question_59_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8132D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8302D1EE0A0004CAD58 /* question_60_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8672D1EE0A0004CAD58 /* question_115_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7DA2D1EE0A0004CAD58 /* question_9_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7EB2D1EE0A0004CAD58 /* question_18_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8742D1EE0A0004CAD58 /* question_128_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8452D1EE0A0004CAD58 /* question_81_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE85B2D1EE0A0004CAD58 /* question_103_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE81A2D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE80E2D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8102D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7EA2D1EE0A0004CAD58 /* question_17_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE83C2D1EE0A0004CAD58 /* question_72_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8462D1EE0A0004CAD58 /* question_82_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8872D1EE0A0004CAD58 /* question_147_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8182D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7D22D1EE0A0004CAD58 /* question_5_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8032D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE85F2D1EE0A0004CAD58 /* question_107_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE85D2D1EE0A0004CAD58 /* question_105_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F02D1EE0A0004CAD58 /* question_20_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8072D1EE0A0004CAD58 /* question_32_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8562D1EE0A0004CAD58 /* question_98_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8582D1EE0A0004CAD58 /* question_100_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E12D1EE0A0004CAD58 /* question_13_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8152D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7EE2D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE85E2D1EE0A0004CAD58 /* question_106_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8142D1EE0A0004CAD58 /* question_38_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE82C2D1EE0A0004CAD58 /* question_56_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8172D1EE0A0004CAD58 /* question_40_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE87B2D1EE0A0004CAD58 /* question_135_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE82A2D1EE0A0004CAD58 /* question_54_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8552D1EE0A0004CAD58 /* question_97_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8262D1EE0A0004CAD58 /* question_50_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8382D1EE0A0004CAD58 /* question_68_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8472D1EE0A0004CAD58 /* question_83_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8052D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7FB2D1EE0A0004CAD58 /* question_26_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7CA2D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE80D2D1EE0A0004CAD58 /* question_35_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E82D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7D42D1EE0A0004CAD58 /* question_6_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7F32D1EE0A0004CAD58 /* question_22_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8852D1EE0A0004CAD58 /* question_145_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7D72D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F62D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE88A2D1EE0A0004CAD58 /* Assets.xcassets in Resources */,
+				EB7FE8622D1EE0A0004CAD58 /* question_110_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE84D2D1EE0A0004CAD58 /* question_89_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F82D1EE0A0004CAD58 /* question_24_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8192D1EE0A0004CAD58 /* question_41_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8242D1EE0A0004CAD58 /* question_48_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8842D1EE0A0004CAD58 /* question_144_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8762D1EE0A0004CAD58 /* question_130_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8822D1EE0A0004CAD58 /* question_142_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8612D1EE0A0004CAD58 /* question_109_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE89A2D1EE0A0004CAD58 /* LaunchScreen.storyboard in Resources */,
+				EB7FE86E2D1EE0A0004CAD58 /* question_122_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8572D1EE0A0004CAD58 /* question_99_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE84E2D1EE0A0004CAD58 /* question_90_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8392D1EE0A0004CAD58 /* question_69_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8122D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8212D1EE0A0004CAD58 /* question_45_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E32D1EE0A0004CAD58 /* question_14_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE83D2D1EE0A0004CAD58 /* question_73_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE87A2D1EE0A0004CAD58 /* question_134_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8282D1EE0A0004CAD58 /* question_52_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E52D1EE0A0004CAD58 /* question_15_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE83A2D1EE0A0004CAD58 /* question_70_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8442D1EE0A0004CAD58 /* question_80_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8752D1EE0A0004CAD58 /* question_129_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE84B2D1EE0A0004CAD58 /* question_87_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8292D1EE0A0004CAD58 /* question_53_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8632D1EE0A0004CAD58 /* question_111_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8812D1EE0A0004CAD58 /* question_141_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8662D1EE0A0004CAD58 /* question_114_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8332D1EE0A0004CAD58 /* question_63_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8402D1EE0A0004CAD58 /* question_76_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8042D1EE0A0004CAD58 /* question_30_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8542D1EE0A0004CAD58 /* question_96_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7C92D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8342D1EE0A0004CAD58 /* question_64_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8112D1EE0A0004CAD58 /* question_37_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8272D1EE0A0004CAD58 /* question_51_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE86B2D1EE0A0004CAD58 /* question_119_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE84C2D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7DD2D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8522D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8532D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8772D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE80B2D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F22D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8362D1EE0A0004CAD58 /* question_66_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8512D1EE0A0004CAD58 /* question_93_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE87D2D1EE0A0004CAD58 /* question_137_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8162D1EE0A0004CAD58 /* question_39_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8862D1EE0A0004CAD58 /* question_146_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE84F2D1EE0A0004CAD58 /* question_91_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8702D1EE0A0004CAD58 /* question_124_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8732D1EE0A0004CAD58 /* question_127_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE80F2D1EE0A0004CAD58 /* question_36_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F52D1EE0A0004CAD58 /* question_23_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7CF2D1EE0A0004CAD58 /* question_4_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7D82D1EE0A0004CAD58 /* question_8_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8422D1EE0A0004CAD58 /* question_78_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8722D1EE0A0004CAD58 /* question_126_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8222D1EE0A0004CAD58 /* question_46_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7CE2D1EE0A0004CAD58 /* question_3_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE81B2D1EE0A0004CAD58 /* question_42_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8002D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8592D1EE0A0004CAD58 /* question_101_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8092D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8692D1EE0A0004CAD58 /* question_117_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8062D1EE0A0004CAD58 /* question_31_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8202D1EE0A0004CAD58 /* question_44_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8412D1EE0A0004CAD58 /* question_77_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8022D1EE0A0004CAD58 /* question_29_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE86C2D1EE0A0004CAD58 /* question_120_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7FF2D1EE0A0004CAD58 /* question_28_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE80A2D1EE0A0004CAD58 /* question_33_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE7D52D1EE0A0004CAD58 /* question_7_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE81D2D1EE0A0004CAD58 /* question_43_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8602D1EE0A0004CAD58 /* question_108_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8712D1EE0A0004CAD58 /* question_125_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7F12D1EE0A0004CAD58 /* question_21_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7FD2D1EE0A0004CAD58 /* question_27_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7ED2D1EE0A0004CAD58 /* question_19_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7CB2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE8252D1EE0A0004CAD58 /* question_49_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7DC2D1EE0A0004CAD58 /* question_10_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8682D1EE0A0004CAD58 /* question_116_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE87F2D1EE0A0004CAD58 /* question_139_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7E72D1EE0A0004CAD58 /* question_16_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB7FE7DE2D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_verb_Basic.csv in Resources */,
+				EB7FE8352D1EE0A0004CAD58 /* question_65_KoreanWordDictionary_noun_Basic.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCA203A2C150E84006FB59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCA20442C150E84006FB59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBCA20222C150E82006FB59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7FE8912D1EE0A0004CAD58 /* DictionaryViewController.swift in Sources */,
+				EB7FE8892D1EE0A0004CAD58 /* AppDelegate.swift in Sources */,
+				EB7FE89C2D1EE0A0004CAD58 /* NumberEndViewController.swift in Sources */,
+				EB7FE89E2D1EE0A0004CAD58 /* QuizResult.swift in Sources */,
+				EB7FE88B2D1EE0A0004CAD58 /* ButtonDesignUtility.swift in Sources */,
+				EB7FE88C2D1EE0A0004CAD58 /* ConfirmationViewController.swift in Sources */,
+				EB7FE8932D1EE0A0004CAD58 /* EndViewController_JP_Rapid.swift in Sources */,
+				EB7FE8A12D1EE0A0004CAD58 /* SceneDelegate.swift in Sources */,
+				EBDA95AD2D1EEE6300F10754 /* FavoriteViewControllerJP.swift in Sources */,
+				EB7FE8A92D1EE0A0004CAD58 /* WordDictionaryViewController.swift in Sources */,
+				EB7FE8882D1EE0A0004CAD58 /* AboutViewController.swift in Sources */,
+				EB7FE89F2D1EE0A0004CAD58 /* RapidMode_JP_ViewController.swift in Sources */,
+				EB7FE88D2D1EE0A0004CAD58 /* CorrectAnswerViewController_JP.swift in Sources */,
+				EB7FE8A02D1EE0A0004CAD58 /* RapidMode_ViewController.swift in Sources */,
+				EB7FE8982D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift in Sources */,
+				EB7FE8A42D1EE0A0004CAD58 /* SelectNumberCategoryViewController.swift in Sources */,
+				EB7FE8A72D1EE0A0004CAD58 /* ViewController_JP.swift in Sources */,
+				EB7FE8942D1EE0A0004CAD58 /* EndViewController_Normal.swift in Sources */,
+				EBDA95AE2D1EEE6300F10754 /* FavoriteViewControllerKR.swift in Sources */,
+				EB7FE8A22D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift in Sources */,
+				EB7FE8902D1EE0A0004CAD58 /* CSVLoader.swift in Sources */,
+				EB7FE8A62D1EE0A0004CAD58 /* VerbDictionaryViewController.swift in Sources */,
+				EB7FE8952D1EE0A0004CAD58 /* EndViewController_Rapid.swift in Sources */,
+				EB7FE8A82D1EE0A0004CAD58 /* ViewController.swift in Sources */,
+				EB7FE89D2D1EE0A0004CAD58 /* NumberQuizViewController.swift in Sources */,
+				EB7FE8A32D1EE0A0004CAD58 /* SelectCategoryViewController.swift in Sources */,
+				EB7FE8922D1EE0A0004CAD58 /* EndViewController_JP_Normal.swift in Sources */,
+				EB7FE88E2D1EE0A0004CAD58 /* CorrectAnswerViewController.swift in Sources */,
+				EB7FE8992D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift in Sources */,
+				EB7FE8A52D1EE0A0004CAD58 /* SettingsViewController.swift in Sources */,
+				EB7FE88F2D1EE0A0004CAD58 /* CSVFileManager.swift in Sources */,
+				EB7FE8962D1EE0A0004CAD58 /* firstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCA20382C150E84006FB59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBCA20422C150E84006FB59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBCA203E2C150E84006FB59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBCA20252C150E82006FB59A /* WordQuiz */;
+			targetProxy = EBCA203D2C150E84006FB59A /* PBXContainerItemProxy */;
+		};
+		EBCA20482C150E84006FB59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBCA20252C150E82006FB59A /* WordQuiz */;
+			targetProxy = EBCA20472C150E84006FB59A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB7FE7A72D1EE0A0004CAD58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7FE7A62D1EE0A0004CAD58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EB7FE7A92D1EE0A0004CAD58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB7FE7A82D1EE0A0004CAD58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBCA204E2C150E84006FB59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBCA204F2C150E84006FB59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBCA20512C150E84006FB59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C2FFM98KJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordQuiz/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Takeru-Ono.Word-Quiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBCA20522C150E84006FB59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTKN767YP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WordQuiz/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KoreanWordQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBCA20542C150E84006FB59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Takeru-Ono.Word-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word\U0011Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Word\U0011Quiz";
+			};
+			name = Debug;
+		};
+		EBCA20552C150E84006FB59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Takeru-Ono.Word-QuizTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word\U0011Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Word\U0011Quiz";
+			};
+			name = Release;
+		};
+		EBCA20572C150E84006FB59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9C2FFM98KJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Takeru-Ono.Word-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Word\U0011Quiz";
+			};
+			name = Debug;
+		};
+		EBCA20582C150E84006FB59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTKN767YP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Takeru-Ono.Word-QuizUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Word\U0011Quiz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBCA20212C150E82006FB59A /* Build configuration list for PBXProject "WordQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCA204E2C150E84006FB59A /* Debug */,
+				EBCA204F2C150E84006FB59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCA20512C150E84006FB59A /* Debug */,
+				EBCA20522C150E84006FB59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCA20542C150E84006FB59A /* Debug */,
+				EBCA20552C150E84006FB59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBCA20572C150E84006FB59A /* Debug */,
+				EBCA20582C150E84006FB59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBCA201E2C150E82006FB59A /* Project object */;
+}
