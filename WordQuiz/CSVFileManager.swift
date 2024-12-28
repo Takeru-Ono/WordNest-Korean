@@ -16,14 +16,33 @@ class CSVFileManager {
         do {
             // ディレクトリ内のファイル一覧を取得
             let fileNames = try FileManager.default.contentsOfDirectory(atPath: directory)
-            // "csv" 拡張子のファイル名だけを抽出
+            
+            // "csv" 拡張子のファイル名だけを抽出し、アルファベット順に並べ替え
             csvFileNames = fileNames.filter { $0.hasSuffix(".csv") }
-                .map { $0.replacingOccurrences(of: ".csv", with: "") } // 拡張子を除去
+                .sorted { lhs, rhs in
+                    let lhsNumber = extractNumber(from: lhs)
+                    let rhsNumber = extractNumber(from: rhs)
+                    // 数字順で比較
+                    if lhsNumber != rhsNumber {
+                        return lhsNumber < rhsNumber
+                    }
+                    
+                    // 数字が同じ場合はアルファベット順で比較
+                    return lhs < rhs
+                }
+                .map { $0.replacingOccurrences(of: ".csv", with: "") }
+            // 拡張子を除去
         } catch {
-            print("Error fetching file names: \(error)")
+            
         }
         
         return csvFileNames
+    }
+    
+    private static func extractNumber(from fileName: String) -> Int {
+        // 数値部分を抽出
+        let numbers = fileName.compactMap { $0.isNumber ? Int(String($0)) : nil }
+        return numbers.reduce(0) { $0 * 10 + $1 } // 数字を結合して整数にする
     }
     
     static func loadVerbCategories() -> [String] {

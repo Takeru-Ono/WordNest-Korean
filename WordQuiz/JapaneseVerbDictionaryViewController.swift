@@ -23,7 +23,9 @@ class JapaneseVerbDictionaryViewController: UIViewController, UITableViewDelegat
     }
     
     func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         
         // 検索バー
         searchBar = UISearchBar()
@@ -290,7 +292,7 @@ class JapaneseVerbCell: UITableViewCell {
         
         meaningAudioButton = UIButton(type: .system)
         meaningAudioButton.setImage(UIImage(systemName: "speaker.wave.2.fill"), for: .normal)
-        meaningAudioButton.tintColor = .systemGreen
+        meaningAudioButton.tintColor = .systemBlue
         meaningAudioButton.translatesAutoresizingMaskIntoConstraints = false
         meaningAudioButton.addTarget(self, action: #selector(playMeaningAudio), for: .touchUpInside)
         meaningAudioButton.isHidden = true // 初期状態は非表示

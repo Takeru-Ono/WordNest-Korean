@@ -9,7 +9,9 @@ import UIKit
 class DictionaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         setupUI()
     }
     

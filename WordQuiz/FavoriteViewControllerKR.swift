@@ -36,7 +36,9 @@ class FavoriteViewControllerKR: UIViewController, UITableViewDataSource, UITable
     
     func setupUI() {
         
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         
         // 検索バー
         searchBar = UISearchBar()
@@ -119,7 +121,7 @@ class FavoriteViewControllerKR: UIViewController, UITableViewDataSource, UITable
         do {
             return try JSONDecoder().decode([FavoriteQuestion].self, from: data)
         } catch {
-            print("Error loading favorite questions: \(error)")
+//            print("Error loading favorite questions: \(error)")
             return []
         }
     }
@@ -131,12 +133,17 @@ class FavoriteViewControllerKR: UIViewController, UITableViewDataSource, UITable
             let data = try JSONEncoder().encode(questions)
             UserDefaults.standard.set(data, forKey: key)
         } catch {
-            print("Error saving favorite questions: \(error)")
+//            print("Error saving favorite questions: \(error)")
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        // 削除予定の単語をリストから除外
+        favoriteQuestions = favoriteQuestions.enumerated().filter { index, _ in
+            !toBeRemovedQuestions.contains(index)
+        }.map { $0.element }
         saveFavoriteQuestions(favoriteQuestions, for: mode) // 正しい引数を渡す
     }
     
@@ -153,7 +160,7 @@ class FavoriteViewControllerKR: UIViewController, UITableViewDataSource, UITable
         let question = filteredQuestions[indexPath.row]
         let isExpanded = expandedIndexPaths.contains(indexPath)
         let isRemoved = toBeRemovedQuestions.contains(indexPath.row)
-        print("Question at index \(indexPath.row): \(question.text), \(question.correctAnswer)")
+//        print("Question at index \(indexPath.row): \(question.text), \(question.correctAnswer)")
 
       
         cell.configure(
@@ -243,9 +250,9 @@ class FavoriteViewControllerKR: UIViewController, UITableViewDataSource, UITable
     private func debugFavoriteWords() {
         let key = mode == "jp_kr" ? "favoriteWords_jp_kr" : "favoriteWords_kr_jp"
         if let favoriteWords = UserDefaults.standard.array(forKey: key) as? [[String: String]] {
-            print("Loaded favorite words for key '\(key)': \(favoriteWords)")
+//            print("Loaded favorite words for key '\(key)': \(favoriteWords)")
         } else {
-            print("No favorite words found for key '\(key)'.")
+//            print("No favorite words found for key '\(key)'.")
         }
     }
     

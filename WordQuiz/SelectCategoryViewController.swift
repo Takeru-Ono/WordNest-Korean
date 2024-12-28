@@ -22,6 +22,9 @@ class SelectCategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // カテゴリのプリント
+//        print("Fetched categories: \(categories)")
+        
         setupScrollView()
         setupCategoryButtons()
     }
@@ -130,10 +133,10 @@ class SelectCategoryViewController: UIViewController {
             
             // 日付取得
             if let finishDate = getCompletionDate(for: category, mode: selectedQuizMode ?? "") {
-                print("Finish Date found: \(finishDate)")
+//                print("Finish Date found: \(finishDate)")
                 line3 = finishDate
             } else {
-                print("No Finish Date found")
+//                print("No Finish Date found")
                 line3 = "未完了"
             }
             
@@ -201,7 +204,7 @@ class SelectCategoryViewController: UIViewController {
     func getCompletionDate(for category: String, mode: String) -> String? {
         
         let completionDateKey = "\(category)_\(mode)_completionDate"
-        print("Retrieving completion date with key: \(completionDateKey)")
+//        print("Retrieving completion date with key: \(completionDateKey)")
         if let date = UserDefaults.standard.object(forKey: completionDateKey) as? Date {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy/MM/dd" // 表示形式
@@ -226,7 +229,7 @@ class SelectCategoryViewController: UIViewController {
 
         // ラベルが存在することを安全に確認する
         guard let titleLabel = view.subviews.first(where: { $0 is UILabel }) else {
-            print("Error: UILabel not found.")
+//            print("Error: UILabel not found.")
             return
         }
 
@@ -255,16 +258,16 @@ class SelectCategoryViewController: UIViewController {
     
     @objc func categoryButtonTapped(_ sender: UIButton) {
         // デバッグログ
-        print("Button \(sender.tag) tapped in SelectCategoryViewController")
+//        print("Button \(sender.tag) tapped in SelectCategoryViewController")
 
         // タグを基にカテゴリを取得
         guard sender.tag > 0, sender.tag <= categories.count else {
-            print("Error: Invalid button tag or out of range")
+//            print("Error: Invalid button tag or out of range")
             return
         }
 
         let selectedCategory = categories[sender.tag - 1]
-        print("Selected category: \(selectedCategory)")
+//        print("Selected category: \(selectedCategory)")
 
         // ストーリーボードを取得
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -283,7 +286,7 @@ class SelectCategoryViewController: UIViewController {
                 self.navigationController?.pushViewController(quizVC, animated: true)
             }
         } else {
-            print("Error: Unsupported quiz mode: \(selectedQuizMode ?? "nil")")
+//            print("Error: Unsupported quiz mode: \(selectedQuizMode ?? "nil")")
         }
     }
 

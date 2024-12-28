@@ -11,12 +11,14 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         setupUI()
     }
 
     func setupUI() {
-        view.backgroundColor = .white
-
+        
         // タイトルラベル
         let titleLabel = UILabel()
         titleLabel.text = "About"
@@ -41,7 +43,8 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
         let buttons = [
             ("お問い合わせ", #selector(openContactForm)),
             ("プライバシーポリシー", #selector(openPrivacyPolicy)),
-            ("利用規約", #selector(openTermsOfService)) // 新しいボタンを追加
+            ("利用規約", #selector(openTermsOfService)),
+            ("ライセンス情報", #selector(openLicensePage)) // 新しいボタンを追加
         ]
 
         var previousElement: UIView? = versionLabel
@@ -82,13 +85,45 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
 
     @objc func openContactForm() {
-        // メールアプリを開く
         if MFMailComposeViewController.canSendMail() {
             let mailComposeVC = MFMailComposeViewController()
             mailComposeVC.mailComposeDelegate = self
-            mailComposeVC.setToRecipients(["support@example.com"])
+
+            // 宛先
+            mailComposeVC.setToRecipients(["snowflake86hello@gmail.com"])
+
+            // 件名
             mailComposeVC.setSubject("お問い合わせ")
-            mailComposeVC.setMessageBody("お問い合わせ内容をここにご記入ください。", isHTML: false)
+
+            // 本文に必要な情報を追加
+            let deviceModel = UIDevice.current.model          // デバイスモデル（例: iPhone）
+            let systemVersion = UIDevice.current.systemVersion // iOSのバージョン
+            let systemName = UIDevice.current.systemName       // OSの名前（例: iOS）
+            
+            let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "不明"
+            let buildVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "不明"
+
+            // メール本文のテンプレート
+            let messageBody = """
+            お問い合わせ内容をここにご記入ください。
+
+            ---
+            【アプリ情報】
+            バージョン: \(appVersion)
+            ビルド番号: \(buildVersion)
+
+            【デバイス情報】
+            機種: \(deviceModel)
+            OS: \(systemName) \(systemVersion)
+
+            【その他】
+            特記事項があれば記載してください。
+            ---
+            """
+
+            mailComposeVC.setMessageBody(messageBody, isHTML: false)
+
+            // メールコンポーザーを表示
             present(mailComposeVC, animated: true, completion: nil)
         } else {
             let alert = UIAlertController(
@@ -102,15 +137,20 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
 
     @objc func openPrivacyPolicy() {
-        // プライバシーポリシーを開く
-        if let url = URL(string: "https://your-privacy-policy-link.com") {
+        if let url = URL(string: "http://word-nest-app.com/about/privacy-policy/") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 
     @objc func openTermsOfService() {
-        // 利用規約を開く
-        if let url = URL(string: "https://your-terms-of-service-link.com") {
+        if let url = URL(string: "http://word-nest-app.com/about/terms-of-service/") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
+
+    @objc func openLicensePage() {
+        // ライセンス情報を表示
+        if let url = URL(string: "http://word-nest-app.com/about/license/") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }

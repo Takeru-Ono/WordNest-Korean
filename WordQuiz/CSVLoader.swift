@@ -48,7 +48,6 @@ class CSVLoader {
         var allQuestions: [QuestionProtocol] = []
 
         for category in categories {
-            print("Loading category: \(category)")
             allQuestions += loadCSV(from: category, forLanguage: language)
         }
 
@@ -60,7 +59,6 @@ class CSVLoader {
         var questions: [QuestionProtocol] = []
         
         guard let path = Bundle.main.path(forResource: csvFile, ofType: "csv") else {
-            print("CSV file not found")
             return questions
         }
         
@@ -73,9 +71,8 @@ class CSVLoader {
             let dataRows = Array(rows.dropFirst())
             
             for (index, row) in dataRows.enumerated() {
-                print("Reading row \(index + 1): \(row)") // デバッグ用ログ
-                guard row.count >= 3 else { // 少なくとも3列（テキスト、正解、画像ファイル名）が必要
-                    print("Invalid row (not enough columns): \(row)")
+                
+                guard row.count >= 3 else {
                     continue
                 }
                 
@@ -104,7 +101,6 @@ class CSVLoader {
                 let exampleSentenceMeaningEnglish = row.count > 29 ? String(row[29]) : nil
                 
                 
-                print("Example Sentence: \(exampleSentence)")
                 
                 var choices: [(String, String, String)] = []
                 
@@ -122,7 +118,7 @@ class CSVLoader {
                             incorrectChoices.append((String(row[i+1]), String(row[i]), String(row[i+2])))
                         }
                     } else {
-                        print("Invalid row (missing choice data): \(row)")
+                        
                         continue
                     }
                 }
@@ -162,7 +158,6 @@ class CSVLoader {
                 }
             }
         } catch {
-            print("Error reading CSV file: \(error)")
         }
         
         return questions

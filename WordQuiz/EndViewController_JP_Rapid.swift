@@ -37,8 +37,8 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
 
         // デバッグ用
-        print("EndViewController_Rapid loaded with category: \(category)")
-        print("EndViewController_Rapid loaded with quiz mode: \(selectedQuizMode)")
+//        print("EndViewController_Rapid loaded with category: \(category)")
+//        print("EndViewController_Rapid loaded with quiz mode: \(selectedQuizMode)")
 
         setupUI()
         // 苦手リストをロード
@@ -189,14 +189,14 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
         let userKey = "\(mode)_\(category)_GlobalIconHidden"
         UserDefaults.standard.set(isHidden, forKey: userKey)
         UserDefaults.standard.synchronize()
-        print("Saved global icon hidden state for key '\(userKey)': \(isHidden)")
+//        print("Saved global icon hidden state for key '\(userKey)': \(isHidden)")
     }
 
     // カテゴリーごとのアイコン表示状態を取得
     func getGlobalIconHiddenState(for mode: String, category: String) -> Bool {
         let userKey = "\(mode)_\(category)_GlobalIconHidden"
         let value = UserDefaults.standard.bool(forKey: userKey)
-        print("Retrieved global icon hidden state for key '\(userKey)': \(value)")
+//        print("Retrieved global icon hidden state for key '\(userKey)': \(value)")
         return value
     }
 
@@ -247,9 +247,9 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
             let data = try JSONEncoder().encode(questions)
             UserDefaults.standard.set(data, forKey: key)
             UserDefaults.standard.synchronize()
-            print("Saved favorite questions for key '\(key)': \(questions)")
+//            print("Saved favorite questions for key '\(key)': \(questions)")
         } catch {
-            print("Failed to save favorite questions: \(error)")
+//            print("Failed to save favorite questions: \(error)")
         }
     }
     
@@ -259,15 +259,15 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
         let key = "favoriteQuestions_\(adjustedMode)"
        
         guard let data = UserDefaults.standard.data(forKey: key) else {
-            print("No favorite questions found for key '\(key)'")
+//            print("No favorite questions found for key '\(key)'")
             return []
         }
         do {
             let questions = try JSONDecoder().decode([Question].self, from: data)
-            print("Loaded favorite questions for key '\(key)': \(questions)")
+//            print("Loaded favorite questions for key '\(key)': \(questions)")
             return questions
         } catch {
-            print("Failed to load favorite questions: \(error)")
+//            print("Failed to load favorite questions: \(error)")
             return []
         }
     }
@@ -278,15 +278,15 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
             
             if let index = favoriteQuestions.firstIndex(where: { $0.text == convertedQuestion.text }) {
                 favoriteQuestions.remove(at: index)
-                print("Removed from favorite: \(convertedQuestion.text)")
+//                print("Removed from favorite: \(convertedQuestion.text)")
             } else {
                 favoriteQuestions.append(convertedQuestion)
-                print("Added to favorite: \(convertedQuestion.text)")
+//                print("Added to favorite: \(convertedQuestion.text)")
             }
             
             saveFavoriteQuestions(favoriteQuestions, for: mode)
         } else {
-            print("Failed to convert QuestionProtocol to EndViewController_Normal.Question")
+//            print("Failed to convert QuestionProtocol to EndViewController_Normal.Question")
         }
     }
     
@@ -403,13 +403,13 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
         UserDefaults.standard.synchronize() // 同期を確実にする
         
         // デバッグ: 保存されたキーとデータを確認するログ
-        print("Saving next review date for key '\(nextReviewDateKey)': \(dateString)")
+//        print("Saving next review date for key '\(nextReviewDateKey)': \(dateString)")
     }
 
     func getCompletionCount(for category: String, mode: String) -> Int {
         let completionCountKey = "\(category)_\(selectedQuizMode)_completionCount"
         let count = UserDefaults.standard.integer(forKey: completionCountKey)
-        print("Completion count key: \(completionCountKey), Retrieved count: \(count)")
+//        print("Completion count key: \(completionCountKey), Retrieved count: \(count)")
         return count
     }
 }
@@ -486,6 +486,7 @@ class RapidModeQuestionTableViewCell_JP_Rapid: UITableViewCell {
         
         exampleAudioButton.setImage(UIImage(systemName: "speaker.wave.2.fill"), for: .normal)
         exampleAudioButton.translatesAutoresizingMaskIntoConstraints = false
+        exampleAudioButton.tintColor = .systemGreen
         exampleAudioButton.addTarget(self, action: #selector(playExampleAudio), for: .touchUpInside)
         contentView.addSubview(exampleAudioButton)
 
@@ -592,7 +593,7 @@ class RapidModeQuestionTableViewCell_JP_Rapid: UITableViewCell {
     
     @objc private func playExampleAudio() {
         guard let example = exampleSentenceLabel.text, !example.isEmpty else {
-            print("No example sentence to play.")
+//            print("No example sentence to play.")
             return
         }
         playAudio(for: example, language: "ko-KR") // 韓国語の例文を設定

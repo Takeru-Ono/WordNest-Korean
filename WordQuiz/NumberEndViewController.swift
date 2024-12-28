@@ -230,21 +230,21 @@ class NumberQuestionTableViewCell: UITableViewCell {
         } else {
             playAudioButton.accessibilityHint = nil // モード不明時のデフォルト
         }
-        print("Selected Quiz Mode in Cell: \(selectedQuizMode ?? "None")")
-        print("Accessibility Hint in Cell: \(playAudioButton.accessibilityHint ?? "None")")
+//        print("Selected Quiz Mode in Cell: \(selectedQuizMode ?? "None")")
+//        print("Accessibility Hint in Cell: \(playAudioButton.accessibilityHint ?? "None")")
     }
 
     @objc func playAudio(_ sender: UIButton) {
         // ボタンから直接データを取得
         guard let textToSpeak = sender.accessibilityHint, !textToSpeak.isEmpty else {
-            print("Error: No text to speak.")
+//            print("Error: No text to speak.")
             return
         }
 
         // 言語を韓国語に固定
         let language = "ko-KR"
 
-        print("Text to Speak: '\(textToSpeak)', Language: '\(language)'")
+//        print("Text to Speak: '\(textToSpeak)', Language: '\(language)'")
 
         // 読み上げ処理
         let utterance = AVSpeechUtterance(string: textToSpeak)

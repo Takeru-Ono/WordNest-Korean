@@ -29,7 +29,9 @@ class FavoriteViewControllerJP: UIViewController, UITableViewDataSource, UITable
     
     private func setupUI() {
         
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         
         // 検索バー
         searchBar = UISearchBar()
@@ -111,7 +113,7 @@ class FavoriteViewControllerJP: UIViewController, UITableViewDataSource, UITable
         do {
             return try JSONDecoder().decode([FavoriteQuestion].self, from: data)
         } catch {
-            print("Error loading favorite questions: \(error)")
+//            print("Error loading favorite questions: \(error)")
             return []
         }
     }
@@ -123,12 +125,17 @@ class FavoriteViewControllerJP: UIViewController, UITableViewDataSource, UITable
             let data = try JSONEncoder().encode(questions)
             UserDefaults.standard.set(data, forKey: key)
         } catch {
-            print("Error saving favorite questions: \(error)")
+//            print("Error saving favorite questions: \(error)")
         }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        // 削除予定の単語をリストから除外
+        favoriteQuestions = favoriteQuestions.enumerated().filter { index, _ in
+            !toBeRemovedQuestions.contains(index)
+        }.map { $0.element }
         saveFavoriteQuestions(favoriteQuestions, for: mode) // 正しい引数を渡す
     }
     
@@ -146,7 +153,7 @@ class FavoriteViewControllerJP: UIViewController, UITableViewDataSource, UITable
         let isExpanded = expandedIndexPaths.contains(indexPath)
         let isRemoved = toBeRemovedQuestions.contains(indexPath.row)
 
-        print("Question at index \(indexPath.row): \(question.text), \(question.correctAnswer)")
+//        print("Question at index \(indexPath.row): \(question.text), \(question.correctAnswer)")
 
       
         cell.configure(
@@ -235,9 +242,9 @@ class FavoriteViewControllerJP: UIViewController, UITableViewDataSource, UITable
     private func debugFavoriteWords() {
         let key = mode == "jp_kr" ? "favoriteWords_jp_kr" : "favoriteWords_kr_jp"
         if let favoriteWords = UserDefaults.standard.array(forKey: key) as? [[String: String]] {
-            print("Loaded favorite words for key '\(key)': \(favoriteWords)")
+//            print("Loaded favorite words for key '\(key)': \(favoriteWords)")
         } else {
-            print("No favorite words found for key '\(key)'.")
+//            print("No favorite words found for key '\(key)'.")
         }
     }
     
@@ -282,7 +289,7 @@ class FavoriteTableViewCellJP: UITableViewCell {
         
         meaningAudioButton = UIButton(type: .system)
         meaningAudioButton.setImage(UIImage(systemName: "speaker.wave.2.fill"), for: .normal)
-        meaningAudioButton.tintColor = .systemGreen
+        meaningAudioButton.tintColor = .systemBlue
         meaningAudioButton.translatesAutoresizingMaskIntoConstraints = false
         meaningAudioButton.addTarget(self, action: #selector(playMeaningAudio), for: .touchUpInside)
         meaningAudioButton.isHidden = true // 初期状態は非表示
@@ -360,8 +367,8 @@ class FavoriteTableViewCellJP: UITableViewCell {
             exampleAudioButton.heightAnchor.constraint(equalToConstant: 30)
         ])
         
-        print("Word Label Frame: \(wordLabel.frame)")
-        print("Meaning Label Frame: \(meaningLabel.frame)")
+//        print("Word Label Frame: \(wordLabel.frame)")
+//        print("Meaning Label Frame: \(meaningLabel.frame)")
     }
     
     func configure(

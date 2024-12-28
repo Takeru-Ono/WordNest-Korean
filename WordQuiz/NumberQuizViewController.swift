@@ -87,16 +87,20 @@ class NumberQuizViewController: UIViewController {
     func setupUI() {
         view.backgroundColor = .white
         
-        // コンテナビューの作成
+        // 質問コンテナビューの設定
         questionContainerView.translatesAutoresizingMaskIntoConstraints = false
-        questionContainerView.backgroundColor = .white // 背景色を白に変更
-        questionContainerView.layer.cornerRadius = 10 // 角を丸める
-        questionContainerView.layer.borderColor = UIColor.black.cgColor // 枠線を黒に
-        questionContainerView.layer.borderWidth = 1 // 枠線を細くする
-        questionContainerView.layer.shadowColor = UIColor.black.cgColor // 影の色を黒に
-        questionContainerView.layer.shadowOpacity = 0.2 // 影の透明度（0.0~1.0）
-        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2) // 影の位置
-        questionContainerView.layer.shadowRadius = 4 // 影のぼかし半径
+        questionContainerView.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.systemGray6 : UIColor.white
+        } // ダークモード: 薄いグレー、ライトモード: 白
+        questionContainerView.layer.cornerRadius = 10
+        questionContainerView.layer.borderColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        }.cgColor // ダークモード: 白い枠線、ライトモード: 黒い枠線
+        questionContainerView.layer.borderWidth = 1
+        questionContainerView.layer.shadowColor = UIColor.black.cgColor
+        questionContainerView.layer.shadowOpacity = 0.2
+        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        questionContainerView.layer.shadowRadius = 4
         view.addSubview(questionContainerView)
         
         // 質問ラベル
@@ -135,16 +139,12 @@ class NumberQuizViewController: UIViewController {
             button.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .medium)
             button.translatesAutoresizingMaskIntoConstraints = false
             button.addTarget(self, action: #selector(answerButtonTapped(_:)), for: .touchUpInside)
-            // デザインの適用
-            let selectedDesignType = UserDefaults.standard.string(forKey: "SelectedButtonDesign") ?? "design1"
-            ButtonDesignUtility.applyDesign(to: button, designType: selectedDesignType)
+
             ButtonDesignUtility.addButtonAnimation(button, target: self, pressedAction: #selector(buttonPressed(_:)), releasedAction: #selector(buttonReleased(_:)))
             answerButtons.append(button)
             view.addSubview(button)
         }
-        // 時計風カウントダウンのセットアップ
-        let circleRadius: CGFloat = 40 // 半径
-
+ 
         // 背景の円
         countdownCircleBackgroundLayer.strokeColor = UIColor.lightGray.cgColor
         countdownCircleBackgroundLayer.fillColor = UIColor.clear.cgColor
@@ -254,11 +254,10 @@ class NumberQuizViewController: UIViewController {
             questionLabel.trailingAnchor.constraint(equalTo: questionContainerView.trailingAnchor, constant: -10)
         ])
 
-        // 音声再生ボタンを質問ラベルの右側に配置
+        // 音声再生ボタンを質問ラベルの真下に配置
         NSLayoutConstraint.activate([
-            playAudioButton.centerYAnchor.constraint(equalTo: questionLabel.centerYAnchor), // 質問ラベルと同じ高さ
-            playAudioButton.leadingAnchor.constraint(equalTo: questionLabel.trailingAnchor, constant: 10), // 質問ラベルの右側に10pt余白
-            playAudioButton.trailingAnchor.constraint(lessThanOrEqualTo: questionContainerView.trailingAnchor, constant: -10), // コンテナの右端に余裕を持たせる
+            playAudioButton.topAnchor.constraint(equalTo: questionLabel.bottomAnchor, constant: 10), // 質問ラベルの真下に10ptの余白
+            playAudioButton.centerXAnchor.constraint(equalTo: questionLabel.centerXAnchor), // 質問ラベルと水平中央を揃える
             playAudioButton.widthAnchor.constraint(equalToConstant: 40), // ボタンの幅
             playAudioButton.heightAnchor.constraint(equalToConstant: 40) // ボタンの高さ
         ])
@@ -394,7 +393,7 @@ class NumberQuizViewController: UIViewController {
             if let quizMode = selectedQuizMode {
                 endVC.selectedQuizMode = quizMode
             } else {
-                print("Error: selectedQuizMode is nil.")
+//                print("Error: selectedQuizMode is nil.")
                 endVC.selectedQuizMode = "unknown_mode" // デフォルトのモードを設定
             }
             
@@ -458,7 +457,7 @@ class NumberQuizViewController: UIViewController {
             correctAnswer: correctAnswer
         )
         quizResults.append(result)
-        print("Recorded unselected answer for question: \(currentQuestionText)")
+//        print("Recorded unselected answer for question: \(currentQuestionText)")
     }
     
     // 各クイズ生成メソッド

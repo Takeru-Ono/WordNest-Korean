@@ -210,26 +210,26 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
             // モードとカテゴリーのGlobalアイコン状態を確認
             if getGlobalIconHiddenState(for: mode, category: category) {
                 // Globalアイコンが非表示設定されている場合
-                print("Global icon hidden for mode \(mode) and category \(category). Removing icon.")
+//                print("Global icon hidden for mode \(mode) and category \(category). Removing icon.")
                 removeReviewIcon(from: button, for: category)
                 continue
             }
 
             // 従来のロジックで次の復習日を確認
             if let nextReviewDate = getNextReviewDate(for: category, mode: mode) {
-                print("Category: \(category)")
-                print("Next Review Date for category \(category): \(dateFormatter.string(from: nextReviewDate))")
-                print("Current Date: \(dateFormatter.string(from: Date()))")
+//                print("Category: \(category)")
+//                print("Next Review Date for category \(category): \(dateFormatter.string(from: nextReviewDate))")
+//                print("Current Date: \(dateFormatter.string(from: Date()))")
                 
                 if Date() >= nextReviewDate {
-                    print("Icon will be displayed for category \(category).")
+//                    print("Icon will be displayed for category \(category).")
                     addReviewIcon(to: button, for: category)
                 } else {
-                    print("Icon will NOT be displayed for category \(category).")
+//                    print("Icon will NOT be displayed for category \(category).")
                     removeReviewIcon(from: button, for: category)
                 }
             } else {
-                print("No Next Review Date set for category \(category).")
+//                print("No Next Review Date set for category \(category).")
             }
         }
     }
@@ -238,7 +238,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
     func getGlobalIconHiddenState(for mode: String, category: String) -> Bool {
         let userKey = "\(mode)_\(category)_GlobalIconHidden"
         let value = UserDefaults.standard.bool(forKey: userKey)
-        print("Retrieved global icon hidden state for key '\(userKey)': \(value)")
+//        print("Retrieved global icon hidden state for key '\(userKey)': \(value)")
         return value
     }
     
@@ -248,7 +248,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
         let isHidden = UserDefaults.standard.bool(forKey: hiddenStateKey)
         
         // デバッグ用ログ
-        print("Retrieved icon hidden state for key '\(hiddenStateKey)': \(isHidden)")
+//        print("Retrieved icon hidden state for key '\(hiddenStateKey)': \(isHidden)")
         return isHidden
     }
     
@@ -256,7 +256,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
     func getCompletionDate(for category: String, mode: String) -> String? {
         
         let completionDateKey = "\(category)_\(mode)_completionDate"
-        print("Retrieving completion date with key: \(completionDateKey)")
+//        print("Retrieving completion date with key: \(completionDateKey)")
         if let date = UserDefaults.standard.object(forKey: completionDateKey) as? Date {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy/MM/dd" // 表示形式
@@ -318,7 +318,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
     // アイコンの表示/非表示状態をUserDefaultsに保存する関数
     private func updateIconDisplayedState(for mode: String?, category: String, isDisplayed: Bool) {
         guard let mode = mode else {
-            print("Error: selectedQuizMode is nil")
+//            print("Error: selectedQuizMode is nil")
             return
         }
 
@@ -329,7 +329,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
 
         // デバッグ用のログ
         let state = isDisplayed ? "true" : "false"
-        print("Saved icon displayed state for key: '\(key)' with value: \(state)")
+//        print("Saved icon displayed state for key: '\(key)' with value: \(state)")
     }
 
     
@@ -350,16 +350,16 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
             dateFormatter.dateFormat = "yyyy/MM/dd" // 保存したフォーマットに合わせる
 
             // デバッグ: 取得した文字列を表示
-            print("Retrieved Date String for key '\(nextReviewDateKey)': \(dateString)")
+//            print("Retrieved Date String for key '\(nextReviewDateKey)': \(dateString)")
             
             // 文字列をDate型に変換
             if let date = dateFormatter.date(from: dateString) {
                 return date
             } else {
-                print("Failed to convert date string to Date for key '\(nextReviewDateKey)'.")
+//                print("Failed to convert date string to Date for key '\(nextReviewDateKey)'.")
             }
         } else {
-            print("No Next Review Date found in UserDefaults for key '\(nextReviewDateKey)'.")
+//            print("No Next Review Date found in UserDefaults for key '\(nextReviewDateKey)'.")
         }
         
         return nil
@@ -379,7 +379,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
 
         // ラベルが存在することを安全に確認する
         guard let titleLabel = view.subviews.first(where: { $0 is UILabel }) else {
-            print("Error: UILabel not found.")
+//            print("Error: UILabel not found.")
             return
         }
 
@@ -411,7 +411,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
         let selectedCategory = categories[sender.tag - 1] // タグからカテゴリー名を取得
         category = selectedCategory // category に選択されたカテゴリー名を設定
 
-        print("Category set to: \(category)") // デバッグ用プリント
+//        print("Category set to: \(category)") // デバッグ用プリント
 
         // 次の画面へ遷移
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

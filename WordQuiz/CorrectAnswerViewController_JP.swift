@@ -96,16 +96,20 @@ class CorrectAnswerViewController_JP: UIViewController {
 
     // UIのセットアップ
     func setupUI() {
-        // コンテナビューの作成
+        // 質問コンテナビューの設定
         questionContainerView.translatesAutoresizingMaskIntoConstraints = false
-        questionContainerView.backgroundColor = .white // 背景色を白に変更
-        questionContainerView.layer.cornerRadius = 10 // 角を丸める
-        questionContainerView.layer.borderColor = UIColor.black.cgColor // 枠線を黒に
-        questionContainerView.layer.borderWidth = 1 // 枠線を細くする
-        questionContainerView.layer.shadowColor = UIColor.black.cgColor // 影の色を黒に
-        questionContainerView.layer.shadowOpacity = 0.2 // 影の透明度（0.0~1.0）
-        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2) // 影の位置
-        questionContainerView.layer.shadowRadius = 4 // 影のぼかし半径
+        questionContainerView.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.systemGray6 : UIColor.white
+        } // ダークモード: 薄いグレー、ライトモード: 白
+        questionContainerView.layer.cornerRadius = 10
+        questionContainerView.layer.borderColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        }.cgColor // ダークモード: 白い枠線、ライトモード: 黒い枠線
+        questionContainerView.layer.borderWidth = 1
+        questionContainerView.layer.shadowColor = UIColor.black.cgColor
+        questionContainerView.layer.shadowOpacity = 0.2
+        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        questionContainerView.layer.shadowRadius = 4
         view.addSubview(questionContainerView)
 
         // 正解ラベル
@@ -154,7 +158,7 @@ class CorrectAnswerViewController_JP: UIViewController {
         sentenceAudioButton = UIButton(type: .system)
         sentenceAudioButton.translatesAutoresizingMaskIntoConstraints = false
         sentenceAudioButton.setImage(UIImage(systemName: "speaker.wave.2.fill"), for: .normal)
-        sentenceAudioButton.tintColor = .systemBlue
+        sentenceAudioButton.tintColor = .systemGreen
         sentenceAudioButton.addTarget(self, action: #selector(playAudioButtonTapped(_:)), for: .touchUpInside)
         
         
@@ -250,7 +254,6 @@ class CorrectAnswerViewController_JP: UIViewController {
         let margin = view.layoutMarginsGuide
         
         let horizontalSpacing: CGFloat = 20
-        let verticalSpacing: CGFloat = 20
         
         NSLayoutConstraint.activate([
             // コンテナの位置とサイズ

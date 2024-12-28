@@ -45,10 +45,12 @@ class EndViewController_Normal: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         
         // デバッグ用
-        print("EndViewController_Normal loaded with mode: \(selectedQuizMode) and category: \(category)")
+//        print("EndViewController_Normal loaded with mode: \(selectedQuizMode) and category: \(category)")
         
         // UI設定
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         setupUI()
         
         // 苦手リストをロード
@@ -137,9 +139,9 @@ class EndViewController_Normal: UIViewController, UITableViewDelegate, UITableVi
             let data = try JSONEncoder().encode(questions)
             UserDefaults.standard.set(data, forKey: key)
             UserDefaults.standard.synchronize()
-            print("Saved favorite questions for key '\(key)': \(questions)")
+//            print("Saved favorite questions for key '\(key)': \(questions)")
         } catch {
-            print("Failed to save favorite questions: \(error)")
+//            print("Failed to save favorite questions: \(error)")
         }
     }
     
@@ -149,15 +151,15 @@ class EndViewController_Normal: UIViewController, UITableViewDelegate, UITableVi
         let key = "favoriteQuestions_\(adjustedMode)"
        
         guard let data = UserDefaults.standard.data(forKey: key) else {
-            print("No favorite questions found for key '\(key)'")
+//            print("No favorite questions found for key '\(key)'")
             return []
         }
         do {
             let questions = try JSONDecoder().decode([Question].self, from: data)
-            print("Loaded favorite questions for key '\(key)': \(questions)")
+//            print("Loaded favorite questions for key '\(key)': \(questions)")
             return questions
         } catch {
-            print("Failed to load favorite questions: \(error)")
+//            print("Failed to load favorite questions: \(error)")
             return []
         }
     }
@@ -168,15 +170,15 @@ class EndViewController_Normal: UIViewController, UITableViewDelegate, UITableVi
             
             if let index = favoriteQuestions.firstIndex(where: { $0.text == convertedQuestion.text }) {
                 favoriteQuestions.remove(at: index)
-                print("Removed from favorite: \(convertedQuestion.text)")
+//                print("Removed from favorite: \(convertedQuestion.text)")
             } else {
                 favoriteQuestions.append(convertedQuestion)
-                print("Added to favorite: \(convertedQuestion.text)")
+//                print("Added to favorite: \(convertedQuestion.text)")
             }
             
             saveFavoriteQuestions(favoriteQuestions, for: mode)
         } else {
-            print("Failed to convert QuestionProtocol to EndViewController_Normal.Question")
+//            print("Failed to convert QuestionProtocol to EndViewController_Normal.Question")
         }
     }
 
@@ -330,6 +332,7 @@ class SimpleModeQuestionTableViewCell_Normal: UITableViewCell {
         exampleAudioButton.setImage(UIImage(systemName: "speaker.wave.2.fill"), for: .normal)
         exampleAudioButton.addTarget(self, action: #selector(playExampleAudio), for: .touchUpInside)
         exampleAudioButton.translatesAutoresizingMaskIntoConstraints = false
+        exampleAudioButton.tintColor = .systemGreen
         contentView.addSubview(exampleAudioButton)
 
         // 苦手ボタン
@@ -417,7 +420,7 @@ class SimpleModeQuestionTableViewCell_Normal: UITableViewCell {
     
     @objc private func playExampleAudio() {
         guard let example = exampleSentenceLabel.text, !example.isEmpty else {
-            print("No example sentence to play.")
+//            print("No example sentence to play.")
             return
         }
         playAudio(for: example, language: "ko-KR") // 韓国語の例文を設定

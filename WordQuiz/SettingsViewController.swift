@@ -21,8 +21,8 @@ class SettingsViewController: UIViewController {
     private let numberQuizSlider = UISlider()
     
     // 設定値
-    private var countdownDuration: TimeInterval = 2.0 // RapidModeのデフォルト値
-    private var numberQuizDuration: TimeInterval = 5.0 // NumberQuizのデフォルト値
+    private var countdownDuration: TimeInterval = 4.0 // RapidModeのデフォルト値
+    private var numberQuizDuration: TimeInterval = 4.0 // NumberQuizのデフォルト値
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class SettingsViewController: UIViewController {
         view.addSubview(countdownLabel)
         
         // RapidModeのスライダー
-        countdownSlider.minimumValue = 1.0
+        countdownSlider.minimumValue = 2.0
         countdownSlider.maximumValue = 10.0
         countdownSlider.translatesAutoresizingMaskIntoConstraints = false
         countdownSlider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
@@ -51,7 +51,7 @@ class SettingsViewController: UIViewController {
         view.addSubview(numberQuizLabel)
         
         // NumberQuizのスライダー
-        numberQuizSlider.minimumValue = 1.0
+        numberQuizSlider.minimumValue = 2.0
         numberQuizSlider.maximumValue = 10.0
         numberQuizSlider.translatesAutoresizingMaskIntoConstraints = false
         numberQuizSlider.addTarget(self, action: #selector(numberQuizSliderValueChanged(_:)), for: .valueChanged)

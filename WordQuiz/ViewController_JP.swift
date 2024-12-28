@@ -45,16 +45,20 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
     // UIをプログラムで構築するメソッド
     func setupUI() {
         
-        // コンテナビューの作成
+        // 質問コンテナビューの設定
         questionContainerView.translatesAutoresizingMaskIntoConstraints = false
-        questionContainerView.backgroundColor = .white // 背景色を白に変更
-        questionContainerView.layer.cornerRadius = 10 // 角を丸める
-        questionContainerView.layer.borderColor = UIColor.black.cgColor // 枠線を黒に
-        questionContainerView.layer.borderWidth = 1 // 枠線を細くする
-        questionContainerView.layer.shadowColor = UIColor.black.cgColor // 影の色を黒に
-        questionContainerView.layer.shadowOpacity = 0.2 // 影の透明度（0.0~1.0）
-        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2) // 影の位置
-        questionContainerView.layer.shadowRadius = 4 // 影のぼかし半径
+        questionContainerView.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.systemGray6 : UIColor.white
+        } // ダークモード: 薄いグレー、ライトモード: 白
+        questionContainerView.layer.cornerRadius = 10
+        questionContainerView.layer.borderColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        }.cgColor // ダークモード: 白い枠線、ライトモード: 黒い枠線
+        questionContainerView.layer.borderWidth = 1
+        questionContainerView.layer.shadowColor = UIColor.black.cgColor
+        questionContainerView.layer.shadowOpacity = 0.2
+        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        questionContainerView.layer.shadowRadius = 4
         view.addSubview(questionContainerView)
         
         // 1. 質問ラベルを追加（上部全体）
@@ -78,7 +82,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
             button.translatesAutoresizingMaskIntoConstraints = false
             button.addTarget(self, action: #selector(answerButtonTapped(_:)), for: .touchUpInside)
             
-            // デザインの適用
+
             ButtonDesignUtility.addButtonAnimation(button, target: self, pressedAction: #selector(buttonPressed(_:)), releasedAction: #selector(buttonReleased(_:)))
             answerButtons.append(button)
             view.addSubview(button)
@@ -135,21 +139,25 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
     }
     
     private func styleButton(_ button: UIButton) {
-        button.backgroundColor = .systemGray4 // ボタンの背景色
-        button.layer.cornerRadius = 10 // 角を丸くする
-        button.layer.borderWidth = 1 // 枠線の太さ
-        button.layer.borderColor = UIColor.black.cgColor // 枠線の色
-        button.layer.shadowColor = UIColor.black.cgColor // 影の色
-        button.layer.shadowOpacity = 0.2 // 影の透明度
-        button.layer.shadowOffset = CGSize(width: 2, height: 2) // 影の位置
-        button.layer.shadowRadius = 4 // 影のぼかし半径
-        button.tintColor = .black // テキストやアイコンの色
-        
-        // ボタンタイトルの文字数に応じてサイズを調整
+        button.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.systemGray5 : UIColor.systemGray4
+        } // ダークモード: 暗めのグレー、ライトモード: 明るめのグレー
+        button.layer.cornerRadius = 10
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        }.cgColor // ダークモード: 白い枠線、ライトモード: 黒い枠線
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.2
+        button.layer.shadowOffset = CGSize(width: 2, height: 2)
+        button.layer.shadowRadius = 4
+        button.tintColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        } // ダークモード: 白文字、ライトモード: 黒文字
         button.titleLabel?.adjustsFontSizeToFitWidth = true
-        button.titleLabel?.minimumScaleFactor = 0.5 // 最小50%まで縮小
+        button.titleLabel?.minimumScaleFactor = 0.5
         button.titleLabel?.numberOfLines = 1
-        button.titleLabel?.lineBreakMode = .byTruncatingTail // 収まりきらない場合は省略
+        button.titleLabel?.lineBreakMode = .byTruncatingTail
     }
 
     
@@ -157,7 +165,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
 
     // 質問をロードするメソッド
     func loadQuestions() {
-        print("Loading CSV for category: \(category)")
+//        print("Loading CSV for category: \(category)")
         questions = CSVLoader.loadCSV(from: category, forLanguage: language)
         currentQuestionIndex = 0
         correctAnswersCount = 0
@@ -184,7 +192,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
             
             // 正解のボタンには tag = 1、間違いには tag = 0 を設定
             button.tag = (answer.0 == question.correctAnswer) ? 1 : 0
-            print("Button \(index + 1): \(answer.0) - Tag: \(button.tag)") // デバッグ: 各ボタンのタイトルとタグを出力
+//            print("Button \(index + 1): \(answer.0) - Tag: \(button.tag)") // デバッグ: 各ボタンのタイトルとタグを出力
             
 
         }
@@ -232,15 +240,15 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
 
     // 選択肢ボタンがタップされたときの処理
     @objc func answerButtonTapped(_ sender: UIButton) {
-        print("Button tapped: \(sender.title(for: .normal) ?? "") - Tag: \(sender.tag)")
+//        print("Button tapped: \(sender.title(for: .normal) ?? "") - Tag: \(sender.tag)")
         
         // タグが 1 なら正解
         if sender.tag == 1 {
-            print("正解！")
+//            print("正解！")
             sender.backgroundColor = .systemGreen // 正解の場合は緑色
             showCorrectAnswer()
         } else {
-            print("不正解！")
+//            print("不正解！")
             sender.backgroundColor = .systemRed // 不正解の場合は赤色
         }
     }
@@ -259,7 +267,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
             correctAnswerVC.modalPresentationStyle = .overCurrentContext
             present(correctAnswerVC, animated: true, completion: nil)
         } else {
-            print("Failed to instantiate CorrectAnswerViewController_JP")
+//            print("Failed to instantiate CorrectAnswerViewController_JP")
         }
     }
     
@@ -274,11 +282,11 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
     func moveToNextQuestion() {
         // ボタンの色をリセット
         resetButtonColors()
-        print("moveToNextQuestion called, current index: \(currentQuestionIndex)")
+//        print("moveToNextQuestion called, current index: \(currentQuestionIndex)")
         currentQuestionIndex += 1
 
         if currentQuestionIndex >= totalQuestions {
-            print("Quiz Ended")
+//            print("Quiz Ended")
             showEndScreen()
         } else {
             showQuestion()
@@ -301,7 +309,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
             if let quizMode = selectedQuizMode {
                 endVC.selectedQuizMode = quizMode
             } else {
-                print("Error: selectedQuizMode is nil.")
+//                print("Error: selectedQuizMode is nil.")
                 endVC.selectedQuizMode = "unknown_mode" // デフォルトのモードを設定
             }
             endVC.questions = questions
@@ -329,7 +337,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
     
     func saveQuizCompletionDate(for category: String) {
         guard let selectedQuizMode = selectedQuizMode else {
-            print("Error: selectedQuizMode is nil. Cannot save completion date.")
+//            print("Error: selectedQuizMode is nil. Cannot save completion date.")
             return
         }
 
@@ -344,7 +352,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
         // 完了回数と日付を保存
         UserDefaults.standard.set(currentCompletionCount, forKey: completionCountKey)
         UserDefaults.standard.set(currentDate, forKey: completionDateKey)
-        print("Saving completion date with key: \(completionDateKey)")
+//        print("Saving completion date with key: \(completionDateKey)")
     }
 
     

@@ -16,7 +16,11 @@ class SelectNumberCategoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
+        
+        
         setupUI()
     }
     
@@ -105,7 +109,7 @@ class SelectNumberCategoryViewController: UIViewController {
             quizVC.selectedQuizMode = "\(selectedQuizMode ?? "")_\(category)"
             self.navigationController?.pushViewController(quizVC, animated: true)
         } else {
-            print("NumberQuizViewController could not be instantiated")
+//            print("NumberQuizViewController could not be instantiated")
         }
     }
     

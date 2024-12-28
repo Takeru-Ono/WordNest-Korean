@@ -233,6 +233,7 @@
 		EB7FE8A92D1EE0A0004CAD58 /* WordDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FE7B72D1EE0A0004CAD58 /* WordDictionaryViewController.swift */; };
 		EBDA95AD2D1EEE6300F10754 /* FavoriteViewControllerJP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */; };
 		EBDA95AE2D1EEE6300F10754 /* FavoriteViewControllerKR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */; };
+		EBDA97AD2D1FAC0100F10754 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -483,6 +484,7 @@
 		EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word\U0011QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerJP.swift; sourceTree = "<group>"; };
 		EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerKR.swift; sourceTree = "<group>"; };
+		EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -740,6 +742,7 @@
 				EB7FE7AD2D1EE0A0004CAD58 /* RapidMode_JP_ViewController.swift */,
 				EB7FE7AE2D1EE0A0004CAD58 /* RapidMode_ViewController.swift */,
 				EB7FE7AF2D1EE0A0004CAD58 /* SceneDelegate.swift */,
+				EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */,
 				EB7FE7B02D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift */,
 				EB7FE7B12D1EE0A0004CAD58 /* SelectCategoryViewController.swift */,
 				EB7FE7B22D1EE0A0004CAD58 /* SelectNumberCategoryViewController.swift */,
@@ -1118,6 +1121,7 @@
 				EBDA95AE2D1EEE6300F10754 /* FavoriteViewControllerKR.swift in Sources */,
 				EB7FE8A22D1EE0A0004CAD58 /* SelectCategory_RapidMode_VeiwController.swift in Sources */,
 				EB7FE8902D1EE0A0004CAD58 /* CSVLoader.swift in Sources */,
+				EBDA97AD2D1FAC0100F10754 /* SplashViewController.swift in Sources */,
 				EB7FE8A62D1EE0A0004CAD58 /* VerbDictionaryViewController.swift in Sources */,
 				EB7FE8952D1EE0A0004CAD58 /* EndViewController_Rapid.swift in Sources */,
 				EB7FE8A82D1EE0A0004CAD58 /* ViewController.swift in Sources */,
@@ -1304,7 +1308,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C2FFM98KJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WordQuiz/Info.plist";
+				INFOPLIST_FILE = WordQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1332,7 +1336,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RTKN767YP6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "WordQuiz/Info.plist";
+				INFOPLIST_FILE = WordQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

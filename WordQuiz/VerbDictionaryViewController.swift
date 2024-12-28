@@ -22,7 +22,9 @@ class VerbDictionaryViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func setupUI() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.black : UIColor.white
+        }
         
         // 検索バー
         searchBar = UISearchBar()

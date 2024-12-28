@@ -24,6 +24,8 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 戻るボタンを非表示にする
+        self.navigationItem.hidesBackButton = true
         setupQuizSectionFlags() // 国旗アイコンを設定
         setupQuizButtons() // クイズボタンをセットアップ
         setupBottomButtons()
@@ -135,9 +137,9 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
             // アイコンを最前面に表示
             button.bringSubviewToFront(iconImageView)
 
-            print("Added icon for button with frame: \(button.frame)")
+//            print("Added icon for button with frame: \(button.frame)")
         } else {
-            print("Removed icon for button with frame: \(button.frame)")
+//            print("Removed icon for button with frame: \(button.frame)")
         }
 
         // アイコン表示状態を保存
@@ -160,17 +162,17 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
             let modeKey = "\(mode)_IconDisplayed"
             let modeIconDisplayed = UserDefaults.standard.bool(forKey: modeKey)
 
-            print("Checking mode '\(mode)': Icon displayed = \(modeIconDisplayed)")
+//            print("Checking mode '\(mode)': Icon displayed = \(modeIconDisplayed)")
 
             if modeIconDisplayed {
-                print("Calling addOrUpdateReviewIcon for mode: \(mode)")
+//                print("Calling addOrUpdateReviewIcon for mode: \(mode)")
                 // アイコンを表示
                 addOrUpdateReviewIcon(to: button, for: "Mode", isDisplayed: true)
 
             } else {
                 // アイコンを非表示
                 addOrUpdateReviewIcon(to: button, for: "Mode", isDisplayed: false)
-                print("No icon needed for mode: \(mode)")
+//                print("No icon needed for mode: \(mode)")
             }
         }
     }
@@ -307,7 +309,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
 
         // デバッグログ
         let state = modeIconDisplayed ? "true" : "false"
-        print("Mode icon display state for '\(mode)': \(state)")
+//        print("Mode icon display state for '\(mode)': \(state)")
     }
 
 
@@ -345,14 +347,14 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
         
         button.bringSubviewToFront(iconImageView) // アイコンを最前面に表示
         // デバッグログ
-        print("Added icon to button: \(button)")
-        print("Icon Frame: \(iconImageView.frame)")
-        print("Button Frame: \(button.frame)")
-        print("Icon alpha: \(iconImageView.alpha), isHidden: \(iconImageView.isHidden)")
+//        print("Added icon to button: \(button)")
+//        print("Icon Frame: \(iconImageView.frame)")
+//        print("Button Frame: \(button.frame)")
+//        print("Icon alpha: \(iconImageView.alpha), isHidden: \(iconImageView.isHidden)")
 
         // アイコン表示状態を保存し、FirstViewのアイコン表示状態も更新
         updateIconDisplayedState(for: category, isDisplayed: true)
-        print("Added icon to button: \(button)")
+//        print("Added icon to button: \(button)")
     }
 
     // アイコンをボタンから削除する関数
@@ -377,18 +379,14 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
         
         // デバッグ用のログ
         let state = isDisplayed ? "true" : "false"
-        print("Saved icon displayed state for category: '\(category)' with value: \(state)")
+//        print("Saved icon displayed state for category: '\(category)' with value: \(state)")
     }
 
     // FirstViewのアイコン表示状態を更新する関数
     private func updateFirstViewIconDisplayedState() {
         // アイコン表示状態を持つすべてのカテゴリーを取得（必要に応じて設定）
-        let categories = [
-            "question_1_Korean_noun",
-            "question_1_Korean_verb",
-            "question_2_Korean_noun"
-            // 必要なカテゴリー名をここに追加
-        ]
+        let resourcePath = Bundle.main.resourcePath ?? ""
+        let categories = CSVFileManager.fetchCSVFileNames(from: resourcePath)
         
         // 1つでもアイコンが表示されていればFirstViewIconDisplayedをtrueにする
         let isAnyIconDisplayed = categories.contains { category in
@@ -400,7 +398,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
         
         // デバッグ用のログ
         let state = isAnyIconDisplayed ? "true" : "false"
-        print("FirstViewIconDisplayed is now set to \(state)")
+//        print("FirstViewIconDisplayed is now set to \(state)")
     }
 
 
@@ -506,37 +504,37 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
     // クイズの選択処理
     @objc func startKoreanToJapaneseQuiz() {
         selectedQuizMode = "kr_jp_normal"
-        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
+//        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
         navigateToCategorySelection()
     }
 
     @objc func startKoreanToJapaneseRapidQuiz() {
         selectedQuizMode = "kr_jp_rapid"
-        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
+//        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
         navigateToCategorySelection()
     }
 
     @objc func startJapaneseToKoreanQuiz() {
         selectedQuizMode = "jp_kr_normal"
-        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
+//        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
         navigateToCategorySelection()
     }
 
     @objc func startJapaneseToKoreanRapidQuiz() {
         selectedQuizMode = "jp_kr_rapid"
-        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
+//        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
         navigateToCategorySelection()
     }
 
     @objc func startKoreanToJapaneseNumberQuiz() {
         selectedQuizMode = "kr_jp_number"
-        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
+//        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
         navigateToCategorySelection()
     }
 
     @objc func startJapaneseToKoreanNumberQuiz() {
         selectedQuizMode = "jp_kr_number"
-        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
+//        print("Selected mode: \(String(describing: selectedQuizMode))")  // デバッグ用ログ
         navigateToCategorySelection()
     }
 

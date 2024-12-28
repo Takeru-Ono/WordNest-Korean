@@ -40,7 +40,7 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
         setupUI() // UIをプログラムで構築
         loadQuestions()
         showQuestion()
-        print("selectedQuizMode: \(String(describing: selectedQuizMode))")
+//        print("selectedQuizMode: \(String(describing: selectedQuizMode))")
     }
     
     override func viewDidLayoutSubviews() {
@@ -67,16 +67,20 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     
     // UIをプログラムで構築するメソッド
     func setupUI() {
-        // コンテナビューの作成
+        // 質問コンテナビューの設定
         questionContainerView.translatesAutoresizingMaskIntoConstraints = false
-        questionContainerView.backgroundColor = .white // 背景色を白に変更
-        questionContainerView.layer.cornerRadius = 10 // 角を丸める
-        questionContainerView.layer.borderColor = UIColor.black.cgColor // 枠線を黒に
-        questionContainerView.layer.borderWidth = 1 // 枠線を細くする
-        questionContainerView.layer.shadowColor = UIColor.black.cgColor // 影の色を黒に
-        questionContainerView.layer.shadowOpacity = 0.2 // 影の透明度（0.0~1.0）
-        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2) // 影の位置
-        questionContainerView.layer.shadowRadius = 4 // 影のぼかし半径
+        questionContainerView.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.systemGray6 : UIColor.white
+        } // ダークモード: 薄いグレー、ライトモード: 白
+        questionContainerView.layer.cornerRadius = 10
+        questionContainerView.layer.borderColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        }.cgColor // ダークモード: 白い枠線、ライトモード: 黒い枠線
+        questionContainerView.layer.borderWidth = 1
+        questionContainerView.layer.shadowColor = UIColor.black.cgColor
+        questionContainerView.layer.shadowOpacity = 0.2
+        questionContainerView.layer.shadowOffset = CGSize(width: 2, height: 2)
+        questionContainerView.layer.shadowRadius = 4
         view.addSubview(questionContainerView)
         
         // 1. 質問ラベルを追加（上部全体）
@@ -97,7 +101,8 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
         playAudioButton.tintColor = .systemBlue
         playAudioButton.translatesAutoresizingMaskIntoConstraints = false
         playAudioButton.addTarget(self, action: #selector(playAudioButtonTapped(_:)), for: .touchUpInside)
-        view.addSubview(playAudioButton)
+        questionContainerView.addSubview(playAudioButton) // コンテナに追加
+
         
         // 3. 選択肢のボタンを4つ追加（画面中央から下に分割して配置）
         for _ in 0..<4 {
@@ -168,20 +173,16 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
         ])
 
 
-        // 質問ラベルの制約
         NSLayoutConstraint.activate([
-            questionLabel.topAnchor.constraint(equalTo: questionContainerView.topAnchor),
-            questionLabel.leadingAnchor.constraint(equalTo: questionContainerView.leadingAnchor),
-            questionLabel.trailingAnchor.constraint(equalTo: questionContainerView.trailingAnchor),
-            questionLabel.bottomAnchor.constraint(equalTo: questionContainerView.bottomAnchor),
-            questionLabel.trailingAnchor.constraint(equalTo: playAudioButton.leadingAnchor, constant: -10)
+            questionLabel.leadingAnchor.constraint(equalTo: questionContainerView.leadingAnchor, constant: 10), // 左端から10pt余白
+            questionLabel.centerYAnchor.constraint(equalTo: questionContainerView.centerYAnchor), // 垂直方向の中央に配置
+            questionLabel.trailingAnchor.constraint(equalTo: playAudioButton.leadingAnchor, constant: -10) // ボタンの左側に10pt余白
         ])
 
         // 音声再生ボタンを質問ラベルの右側に配置
         NSLayoutConstraint.activate([
             playAudioButton.centerYAnchor.constraint(equalTo: questionLabel.centerYAnchor), // 質問ラベルと同じ高さ
-            playAudioButton.leadingAnchor.constraint(equalTo: questionLabel.trailingAnchor, constant: 10), // 質問ラベルの右側に10pt余白
-            playAudioButton.trailingAnchor.constraint(lessThanOrEqualTo: questionContainerView.trailingAnchor, constant: -10), // コンテナの右端に余裕を持たせる
+            playAudioButton.trailingAnchor.constraint(equalTo: questionContainerView.trailingAnchor, constant: -10), // コンテナの右端に余裕を持たせる
             playAudioButton.widthAnchor.constraint(equalToConstant: 40), // ボタンの幅
             playAudioButton.heightAnchor.constraint(equalToConstant: 40) // ボタンの高さ
         ])
@@ -209,26 +210,30 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     }
     
     private func styleButton(_ button: UIButton) {
-        button.backgroundColor = .systemGray4 // ボタンの背景色
-        button.layer.cornerRadius = 10 // 角を丸くする
-        button.layer.borderWidth = 1 // 枠線の太さ
-        button.layer.borderColor = UIColor.black.cgColor // 枠線の色
-        button.layer.shadowColor = UIColor.black.cgColor // 影の色
-        button.layer.shadowOpacity = 0.2 // 影の透明度
-        button.layer.shadowOffset = CGSize(width: 2, height: 2) // 影の位置
-        button.layer.shadowRadius = 4 // 影のぼかし半径
-        button.tintColor = .black // テキストやアイコンの色
-        
-        // ボタンタイトルの文字数に応じてサイズを調整
+        button.backgroundColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.systemGray5 : UIColor.systemGray4
+        } // ダークモード: 暗めのグレー、ライトモード: 明るめのグレー
+        button.layer.cornerRadius = 10
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        }.cgColor // ダークモード: 白い枠線、ライトモード: 黒い枠線
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.2
+        button.layer.shadowOffset = CGSize(width: 2, height: 2)
+        button.layer.shadowRadius = 4
+        button.tintColor = UIColor { traitCollection in
+            return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+        } // ダークモード: 白文字、ライトモード: 黒文字
         button.titleLabel?.adjustsFontSizeToFitWidth = true
-        button.titleLabel?.minimumScaleFactor = 0.5 // 最小50%まで縮小
+        button.titleLabel?.minimumScaleFactor = 0.5
         button.titleLabel?.numberOfLines = 1
-        button.titleLabel?.lineBreakMode = .byTruncatingTail // 収まりきらない場合は省略
+        button.titleLabel?.lineBreakMode = .byTruncatingTail
     }
 
     // 質問をCSVからロードするメソッド
     func loadQuestions() {
-        print("Loading CSV for category: \(category)")
+//        print("Loading CSV for category: \(category)")
         questions = CSVLoader.loadCSV(from: category, forLanguage: language) // QuestionProtocol型に統一
         questions.shuffle() // まず全体をシャッフル
 
@@ -242,10 +247,10 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
         currentQuestionIndex = 0
         correctAnswersCount = 0
         isQuizEnded = false // クイズ終了フラグをリセット
-        print("Selected \(selectedQuestions.count) questions")
+//        print("Selected \(selectedQuestions.count) questions")
 
         if selectedQuestions.isEmpty {
-            print("No questions loaded")
+//            print("No questions loaded")
         }
     }
 
@@ -270,7 +275,7 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
             
             // 正解のボタンには tag = 1、間違いには tag = 0 を設定
             button.tag = (answer.0 == question.correctAnswer) ? 1 : 0
-            print("Button \(index + 1): \(answer.0) - Tag: \(button.tag)") // デバッグ: 各ボタンのタイトルとタグを出力
+//            print("Button \(index + 1): \(answer.0) - Tag: \(button.tag)") // デバッグ: 各ボタンのタイトルとタグを出力
             
 
         }
