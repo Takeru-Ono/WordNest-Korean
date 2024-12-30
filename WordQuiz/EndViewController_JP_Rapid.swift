@@ -162,7 +162,7 @@ class EndViewController_JP_Rapid: UIViewController, UITableViewDelegate, UITable
 
         // チェックボックス説明ラベル
         let hideIconLabel = UILabel()
-        hideIconLabel.text = "チェックを入れると、復習アイコンがつかなくなります。"
+        hideIconLabel.text = "チェックを入れると、復習マークがつかなくなります。"
         hideIconLabel.font = UIFont.systemFont(ofSize: 14)
         hideIconLabel.textAlignment = .center
         hideIconLabel.numberOfLines = 0

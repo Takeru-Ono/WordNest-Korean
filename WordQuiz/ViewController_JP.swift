@@ -285,7 +285,7 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
 //        print("moveToNextQuestion called, current index: \(currentQuestionIndex)")
         currentQuestionIndex += 1
 
-        if currentQuestionIndex >= totalQuestions {
+        if currentQuestionIndex >= selectedQuestions.count {
 //            print("Quiz Ended")
             showEndScreen()
         } else {

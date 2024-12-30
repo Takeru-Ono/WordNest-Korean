@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB72A5A52D22A2DD00C3D0F9 /* Tutorial in Resources */ = {isa = PBXBuildFile; fileRef = EB72A5A42D22A2DD00C3D0F9 /* Tutorial */; };
 		EB7FE7C92D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */; };
 		EB7FE7CA2D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */; };
 		EB7FE7CB2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */; };
@@ -254,6 +255,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB72A5A42D22A2DD00C3D0F9 /* Tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tutorial; sourceTree = "<group>"; };
 		EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_1_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
 		EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_1_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
 		EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_2_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
@@ -713,6 +715,7 @@
 		EB7FE7B82D1EE0A0004CAD58 /* WordQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				EB72A5A42D22A2DD00C3D0F9 /* Tutorial */,
 				EB7FE7932D1EE0A0004CAD58 /* WordQuiz_Questions */,
 				EB7FE7942D1EE0A0004CAD58 /* AboutViewController.swift */,
 				EB7FE7952D1EE0A0004CAD58 /* AppDelegate.swift */,
@@ -1029,6 +1032,7 @@
 				EB7FE84C2D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE7DD2D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE8522D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv in Resources */,
+				EB72A5A52D22A2DD00C3D0F9 /* Tutorial in Resources */,
 				EB7FE8532D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE8772D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE80B2D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv in Resources */,

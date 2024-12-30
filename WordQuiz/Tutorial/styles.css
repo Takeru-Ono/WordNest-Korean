@@ -1,0 +1,446 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #67a0f6; /* 薄い背景色 */
+  color: #333; /* テキストの色を設定 */
+}
+
+.app-icon {
+  width: 100px; /* アイコンのサイズ */
+  height: 100px;
+  margin: 0 auto 20px; /* 上下左右の余白を調整 */
+  display: block;
+  border-radius: 20%; /* 必要なら角を丸く */
+  background-color: #e0e7ff; /* アイコンに似た柔らかい背景色 */
+  padding: 10px; /* アイコンの内側スペース */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 軽い影 */
+}
+
+/* スライド1のヘッダー部分 */
+.slide-header {
+  text-align: center;
+  margin-bottom: 20px; /* 下部の余白 */
+}
+
+.swiper {
+  width: 100%; /* 横幅をデバイス全体に合わせる */
+  height: 100vh; /* ビューポート全体の高さを占める */
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 中央に配置 */
+  align-items: center; /* 水平方向も中央揃え */
+  text-align: center;
+  padding: 20px;
+  height: 100%; /* スライドの高さを親要素に合わせる */
+  box-sizing: border-box;
+  background-color: #94b4ff;
+}
+
+/* 白背景のキャンバス */
+.image-background {
+  position: relative;
+  width: 100%; /* スライド全体の幅 */
+  height: 100%; /* スライド全体の高さ */
+  display: flex;
+  flex-direction: column; /* 縦に並べる */
+  justify-content: center; /* 中央揃え */
+  align-items: center; /* 中央揃え */
+}
+
+/* 背景画像のスタイル */
+.centered-image {
+  max-width: 95%; /* 横幅の最大値を80%に設定 */
+  max-height: 95%; /* 縦幅の最大値を80%に設定 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 画像の影を追加 */
+  border-radius: 10px; /* 角を丸くする（必要に応じて） */
+  position: absolute; /* 背景画像として表示 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* 背景として配置 */
+}
+
+
+/* ハイライトボックス */
+#highlight-box {
+  position: absolute;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  z-index: 10; /* 画像の上に配置 */
+  opacity: 0; /* 初期状態は非表示 */
+}
+
+/* スライド内の説明ラベル */
+#instruction {
+  position: absolute;
+  top: 50%; /* 適切な位置に調整 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* 背景を暗くして文字を目立たせる */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* 前面に表示 */
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Nextボタン */
+#prev-button {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 35%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2; /* 画像の上に配置 */
+}
+
+#next-button {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 55%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 2; /* 画像の上に配置 */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* 基本レイアウト */
+#tutorial-container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.tutorial-image {
+  max-width: 90%;
+  max-height: 70%;
+  object-fit: contain;
+  display: none; /* 初期状態で非表示 */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.tutorial-image.visible {
+  display: block; /* 表示 */
+  opacity: 1;
+}
+
+.hidden {
+  /* display: none; 完全に非表示 */
+  opacity: 0;
+}
+
+.visible {
+  display: block; /* 表示 */
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.instruction-box {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+#highlight-box3 {
+  position: absolute;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  z-index: 10; /* 前面に表示 */
+  opacity: 0; /* 初期状態は非表示 */
+}
+
+#instruction3 {
+  position: absolute;
+  display: none;
+  top: 53%; /* 適切な位置に調整 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* 背景を暗くして文字を目立たせる */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* 前面に表示 */
+}
+
+
+
+#prev-button3 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 35%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+#next-button3 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 55%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#next-button3:hover {
+  background-color: #0056b3;
+}
+
+
+#highlight-box4 {
+  position: absolute;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  z-index: 10; /* 前面に表示 */
+  opacity: 0; /* 初期状態は非表示 */
+}
+
+
+/* 基本レイアウト */
+#tutorial-container-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#instruction4 {
+  position: absolute;
+  display: none;
+  top: 53%; /* 適切な位置に調整 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* 背景を暗くして文字を目立たせる */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* 前面に表示 */
+}
+
+#prev-button4 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 35%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+#next-button4 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 55%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#next-button4:hover {
+  background-color: #0056b3;
+}
+
+/* スライド５ */
+
+
+#highlight-box5 {
+  position: absolute;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  z-index: 10; /* 前面に表示 */
+  opacity: 0; /* 初期状態は非表示 */
+}
+
+
+/* 基本レイアウト */
+#tutorial-container-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#instruction5 {
+  position: absolute;
+  display: none;
+  top: 53%; /* 適切な位置に調整 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* 背景を暗くして文字を目立たせる */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* 前面に表示 */
+}
+
+#prev-button5 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 35%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+#next-button5 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 55%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#next-button5:hover {
+  background-color: #0056b3;
+}
+
+/* スライド6 */
+
+
+#highlight-box6 {
+  position: absolute;
+  border: 3px solid #ff0000;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.5s ease;
+  z-index: 10; /* 前面に表示 */
+  opacity: 0; /* 初期状態は非表示 */
+}
+
+
+/* 基本レイアウト */
+#tutorial-container-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#instruction6 {
+  position: absolute;
+  display: none;
+  top: 53%; /* 適切な位置に調整 */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* 背景を暗くして文字を目立たせる */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* 前面に表示 */
+}
+
+#prev-button6 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 35%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+#next-button6 {
+  position: absolute;
+  top: 57%; /* 適切な位置に調整 */
+  left: 55%;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#next-button6:hover {
+  background-color: #0056b3;
+}
+

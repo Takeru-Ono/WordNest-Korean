@@ -276,8 +276,9 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
         // ボタンの色をリセット
         resetButtonColors()
         currentQuestionIndex += 1
+        
 
-        if currentQuestionIndex >= totalQuestions {
+        if currentQuestionIndex >= selectedQuestions.count {
             showEndScreen()
         } else {
             showQuestion()

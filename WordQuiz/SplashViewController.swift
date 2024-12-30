@@ -15,7 +15,7 @@ class SplashViewController: UIViewController {
         }
         
         // ロゴ画像ビューを追加
-        let logoImageView = UIImageView(image: UIImage(named: "exclamation")) // "splash_logo" を実際の画像名に置き換える
+        let logoImageView = UIImageView(image: UIImage(named: "splash")) // "splash_logo" を実際の画像名に置き換える
         logoImageView.contentMode = .scaleAspectFit
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(logoImageView)

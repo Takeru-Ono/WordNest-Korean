@@ -7,14 +7,18 @@
 import UIKit
 import AppTrackingTransparency  //追加
 import AdSupport  //追加
+import SafariServices
 
-class FirstViewController: UIViewController, SettingsViewControllerDelegate {
+
+class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFSafariViewControllerDelegate {
     func didSelectDesign(forCategory category: String) {
     }
     
 
     var selectedQuizMode: String? // クイズ形式を保存するためのプロパティ
     var bottomButtons: [UIButton] = [] // 下部ボタン（辞書、設定、About）
+
+
 
 
     // ボタン配列
@@ -34,6 +38,16 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
             self.updateFirstViewIcons(buttons: self.buttons)
         }
         
+        let openTutorialButton = UIButton(type: .system)
+        openTutorialButton.setTitle("チュートリアルを開く", for: .normal)
+        openTutorialButton.addTarget(self, action: #selector(openTutorial), for: .touchUpInside)
+        openTutorialButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(openTutorialButton)
+
+        NSLayoutConstraint.activate([
+            openTutorialButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            openTutorialButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
 
 
     }
@@ -47,6 +61,21 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
             iconsInitialized = true
         }
     }
+    
+    @objc func openTutorial() {
+        guard let url = URL(string: "https://takeru-ono.github.io/my-tutorial-page/") else {
+            print("Invalid URL")
+            return
+        }
+        let safariVC = SFSafariViewController(url: url)
+        safariVC.delegate = self
+        present(safariVC, animated: true, completion: nil)
+    }
+
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        print("SafariViewControllerを閉じました")
+    }
+    
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -81,6 +110,8 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate {
 
 
     }
+    
+
     
     ///Alert表示
     private func showRequestTrackingAuthorizationAlert() {

@@ -352,6 +352,12 @@ class RapidMode_JP_ViewController: UIViewController, EndViewControllerDelegate {
 
         // クイズ終了後は次の問題に進まない
         if isQuizEnded { return }
+        
+        // 現在の質問がすべて終了している場合、終了画面を表示
+        if currentQuestionIndex >= selectedQuestions.count {
+            showEndScreen()
+            return
+        }
 
         // 未選択状態を確認
         if currentQuestionIndex < selectedQuestions.count {
@@ -371,7 +377,7 @@ class RapidMode_JP_ViewController: UIViewController, EndViewControllerDelegate {
 
         currentQuestionIndex += 1
 
-        if currentQuestionIndex >= totalQuestions {
+        if currentQuestionIndex >= selectedQuestions.count {
             showEndScreen()
         } else {
             showQuestion()
