@@ -192,7 +192,9 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
         if questions.isEmpty {
 //            print("Failed to load questions from CSV or the file is empty")
             // 必要に応じて質問がない場合の処理
+            selectedQuestions = []
         } else {
+            selectedQuestions = Array(questions.prefix(10))
             currentQuestionIndex = 0
             correctAnswersCount = 0
         }
@@ -200,7 +202,7 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
 
     // 質問を表示するメソッド
     func showQuestion() {
-        guard currentQuestionIndex < totalQuestions else {
+        guard currentQuestionIndex < selectedQuestions.count else {
             showEndScreen()
             return
         }

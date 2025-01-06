@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB72A5A52D22A2DD00C3D0F9 /* Tutorial in Resources */ = {isa = PBXBuildFile; fileRef = EB72A5A42D22A2DD00C3D0F9 /* Tutorial */; };
 		EB7FE7C92D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */; };
 		EB7FE7CA2D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */; };
 		EB7FE7CB2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */; };
@@ -243,14 +242,14 @@
 			containerPortal = EBCA201E2C150E82006FB59A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBCA20252C150E82006FB59A;
-			remoteInfo = "Word\U0011Quiz";
+			remoteInfo = "WordQuiz";
 		};
 		EBCA20472C150E84006FB59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBCA201E2C150E82006FB59A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBCA20252C150E82006FB59A;
-			remoteInfo = "Word\U0011Quiz";
+			remoteInfo = "WordQuiz";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -462,7 +461,6 @@
 		EB7FE7A02D1EE0A0004CAD58 /* EndViewController_Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController_Normal.swift; sourceTree = "<group>"; };
 		EB7FE7A12D1EE0A0004CAD58 /* EndViewController_Rapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndViewController_Rapid.swift; sourceTree = "<group>"; };
 		EB7FE7A22D1EE0A0004CAD58 /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
-		EB7FE7A32D1EE0A0004CAD58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB7FE7A42D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseVerbDictionaryViewController.swift; sourceTree = "<group>"; };
 		EB7FE7A52D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseWordDictionaryViewController.swift; sourceTree = "<group>"; };
 		EB7FE7A62D1EE0A0004CAD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -481,9 +479,10 @@
 		EB7FE7B52D1EE0A0004CAD58 /* ViewController_JP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController_JP.swift; sourceTree = "<group>"; };
 		EB7FE7B62D1EE0A0004CAD58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB7FE7B72D1EE0A0004CAD58 /* WordDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDictionaryViewController.swift; sourceTree = "<group>"; };
-		EBCA20262C150E82006FB59A /* WordQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word\U0011Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word\U0011QuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word\U0011QuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB96A9662D2BC227007B644A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCA20262C150E82006FB59A /* WordQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordQuiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WordQuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WordQuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerJP.swift; sourceTree = "<group>"; };
 		EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerKR.swift; sourceTree = "<group>"; };
 		EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -732,9 +731,9 @@
 				EB7FE7A02D1EE0A0004CAD58 /* EndViewController_Normal.swift */,
 				EB7FE7A12D1EE0A0004CAD58 /* EndViewController_Rapid.swift */,
 				EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */,
+				EB96A9662D2BC227007B644A /* Info.plist */,
 				EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */,
 				EB7FE7A22D1EE0A0004CAD58 /* firstViewController.swift */,
-				EB7FE7A32D1EE0A0004CAD58 /* Info.plist */,
 				EB7FE7A42D1EE0A0004CAD58 /* JapaneseVerbDictionaryViewController.swift */,
 				EB7FE7A52D1EE0A0004CAD58 /* JapaneseWordDictionaryViewController.swift */,
 				EB7FE7A72D1EE0A0004CAD58 /* LaunchScreen.storyboard */,
@@ -791,8 +790,8 @@
 			);
 			dependencies = (
 			);
-			name = "Word\U0011Quiz";
-			productName = "Word\U0011Quiz";
+			name = "WordQuiz";
+			productName = "WordQuiz";
 			productReference = EBCA20262C150E82006FB59A /* WordQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -809,8 +808,8 @@
 			dependencies = (
 				EBCA203E2C150E84006FB59A /* PBXTargetDependency */,
 			);
-			name = "Word\U0011QuizTests";
-			productName = "Word\U0011QuizTests";
+			name = "WordQuizTests";
+			productName = "WordQuizTests";
 			productReference = EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -827,8 +826,8 @@
 			dependencies = (
 				EBCA20482C150E84006FB59A /* PBXTargetDependency */,
 			);
-			name = "Word\U0011QuizUITests";
-			productName = "Word\U0011QuizUITests";
+			name = "WordQuizUITests";
+			productName = "WordQuizUITests";
 			productReference = EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -1032,7 +1031,6 @@
 				EB7FE84C2D1EE0A0004CAD58 /* question_88_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE7DD2D1EE0A0004CAD58 /* question_11_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE8522D1EE0A0004CAD58 /* question_94_KoreanWordDictionary_noun_Basic.csv in Resources */,
-				EB72A5A52D22A2DD00C3D0F9 /* Tutorial in Resources */,
 				EB7FE8532D1EE0A0004CAD58 /* question_95_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE8772D1EE0A0004CAD58 /* question_131_KoreanWordDictionary_noun_Basic.csv in Resources */,
 				EB7FE80B2D1EE0A0004CAD58 /* question_34_KoreanWordDictionary_noun_Basic.csv in Resources */,
@@ -1308,11 +1306,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C2FFM98KJ;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = WordQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WordNest Korean(韓国語単語習得アプリ)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "このアプリは、広告体験を最適化するためにトラッキング情報を使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1323,8 +1325,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Takeru-Ono.Word-Quiz";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeruono.wordquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1336,11 +1339,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C2FFM98KJ;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = WordQuiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "WordNest Korean(韓国語単語習得アプリ)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "このアプリは、広告体験を最適化するためにトラッキング情報を使用します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1351,8 +1358,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = KoreanWordQuiz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeruono.wordquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1374,7 +1382,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word\U0011Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Word\U0011Quiz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordQuiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordQuiz";
 			};
 			name = Debug;
 		};
@@ -1393,7 +1401,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word\U0011Quiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Word\U0011Quiz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordQuiz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WordQuiz";
 			};
 			name = Release;
 		};
@@ -1411,7 +1419,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Word\U0011Quiz";
+				TEST_TARGET_NAME = "WordQuiz";
 			};
 			name = Debug;
 		};
@@ -1430,7 +1438,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Word\U0011Quiz";
+				TEST_TARGET_NAME = "WordQuiz";
 			};
 			name = Release;
 		};

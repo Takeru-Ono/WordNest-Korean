@@ -167,13 +167,20 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
     func loadQuestions() {
 //        print("Loading CSV for category: \(category)")
         questions = CSVLoader.loadCSV(from: category, forLanguage: language)
-        currentQuestionIndex = 0
-        correctAnswersCount = 0
+        // 質問が空の場合の安全対策
+        if questions.isEmpty {
+            selectedQuestions = [] // 空の質問セット
+        } else {
+            // 質問数が10問未満でも動作するよう調整
+            selectedQuestions = Array(questions.prefix(10)) // 最大10問選択
+            currentQuestionIndex = 0
+            correctAnswersCount = 0
+        }
     }
 
     // 質問を表示するメソッド
     func showQuestion() {
-        guard currentQuestionIndex < totalQuestions else {
+        guard currentQuestionIndex < selectedQuestions.count else {
             showEndScreen()
             return
         }

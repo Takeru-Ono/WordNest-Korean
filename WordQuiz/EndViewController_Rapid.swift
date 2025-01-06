@@ -150,13 +150,19 @@ class EndViewController_Rapid: UIViewController, UITableViewDelegate, UITableVie
         ])
 
         // 評価ボタン
-        // ボタンの制約を評価ラベルの下に配置する
+        // 画面幅を取得
+        let screenWidth = UIScreen.main.bounds.width
+        let buttonWidth = screenWidth / 4 - 20 // 各ボタンの幅 (左右マージンを差し引く)
+
         for i in 0..<buttons.count {
+            let button = buttons[i]
+            view.addSubview(button)
+
             NSLayoutConstraint.activate([
-                buttons[i].topAnchor.constraint(equalTo: evaluationLabel.bottomAnchor, constant: 10), // 評価ラベルの下に配置
-                buttons[i].leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat(20 + i * 90)),
-                buttons[i].widthAnchor.constraint(equalToConstant: 80),
-                buttons[i].heightAnchor.constraint(equalToConstant: 50)
+                button.topAnchor.constraint(equalTo: evaluationLabel.bottomAnchor, constant: 10), // 評価ラベルの下に配置
+                button.widthAnchor.constraint(equalToConstant: buttonWidth), // ボタンの幅を画面の4分の1に設定
+                button.heightAnchor.constraint(equalToConstant: 50), // ボタンの高さ
+                button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: CGFloat(20 + CGFloat(i) * (buttonWidth + 10))) // 左マージン + ボタンの間隔
             ])
         }
 
