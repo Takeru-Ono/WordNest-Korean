@@ -111,11 +111,13 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
         var verbCount = 0
         var otherCount = 0
 
-        // レイアウト設定
+        // ボタンのレイアウト設定
+        // ボタンの設定
         let buttonSize: CGFloat = 80 // ボタンのサイズ
-        let spacing: CGFloat = 10   // ボタン間のスペース
-        let sideMargin: CGFloat = 20 // 両サイドのマージン
-        let columns = Int((view.frame.width - (sideMargin * 2) + spacing) / (buttonSize + spacing)) // 列の数
+        let spacing: CGFloat = 10 // ボタン間のスペース
+        let columns = 4 // 列の数（固定）
+        let screenWidth = view.frame.width
+        let sideMargin: CGFloat = (screenWidth - (CGFloat(columns) * buttonSize + CGFloat(columns - 1) * spacing)) / 2 // 両端の余白を均等に
 
         var x: CGFloat = sideMargin
         var y: CGFloat = 70 // タイトルラベルの下から配置開始

@@ -267,18 +267,28 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
 
     /// 下部ボタンの制約を設定
     func setupBottomButtonConstraints() {
-        let spacing: CGFloat = 15
+        guard !bottomButtons.isEmpty else { return }
+
+        let spacing: CGFloat = 15 // ボタン間のスペース
+        let buttonWidth: CGFloat = 100
+        let buttonHeight: CGFloat = 50
+
         for (index, button) in bottomButtons.enumerated() {
             NSLayoutConstraint.activate([
                 button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
-                button.widthAnchor.constraint(equalToConstant: 100),
-                button.heightAnchor.constraint(equalToConstant: 50)
+                button.widthAnchor.constraint(equalToConstant: buttonWidth),
+                button.heightAnchor.constraint(equalToConstant: buttonHeight)
             ])
-            
+
             if index == 0 {
+                // 最初のボタンを左寄せ
                 button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30).isActive = true
+            } else if index == bottomButtons.count - 1 {
+                // 最後のボタンを右寄せ
+                button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30).isActive = true
             } else {
-                button.leadingAnchor.constraint(equalTo: bottomButtons[index - 1].trailingAnchor, constant: spacing).isActive = true
+                // 中央のボタンを正確に中央に配置
+                button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
             }
         }
     }
