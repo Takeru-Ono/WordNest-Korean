@@ -7,10 +7,34 @@
 import UIKit
 import AVFoundation
 
+struct SavedQuizResult: Codable {
+    let mode: String          // クイズモード
+    let category: String      // カテゴリ
+    let completionDate: Date  // クイズを完了した日付
+    let completionCount: Int  // そのクイズが何回目か
+    let results: [QuizResultData] // 個別のクイズ結果
+
+}
+
+struct QuizResultData: Codable {
+    let question: String
+    let selectedAnswer: String
+    let correctAnswer: String
+    let isCorrect: Bool
+    let timeTaken: TimeInterval // 回答時間
+    let incorrectAttempts: Int? // 間違いの回数（Normalモードのみ、Rapidではnil）
+}
+
 class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     
 
     var quizResults: [QuizResult] = []
+    var savedResults: [QuizResultData] = [] // 保存用クイズ結果
+    var remainingTime: TimeInterval = 0.0 // 残り時間
+    
+    var rapidModeTimer: Timer? // タイマー
+    var startTime: Date? // タイマー開始時刻
+    var timeTaken: TimeInterval = 0.0 // 回答時間を記録
 
     var questionLabel: UILabel!
     var playAudioButton: UIButton!
@@ -27,7 +51,7 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     var correctAnswersCount = 0
     let totalQuestions = 10
     var countdownTimer: Timer?
-    var countdownDuration: TimeInterval = 2 // タイマーのデフォルト時間（秒）
+    var countdownDuration: TimeInterval = 5 // タイマーのデフォルト時間（秒）
     var isQuizEnded = false
     var selectedQuizMode: String?
     
@@ -280,6 +304,8 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
 
         }
         startCountdown()
+        // タイマー開始
+        startRapidModeTimer()
         speakQuestionText(question.text)
     }
     
@@ -325,13 +351,19 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     @objc func answerButtonTapped(_ sender: UIButton) {
         // クイズ終了後は操作を無効化する
         guard !isQuizEnded else { return }
+        guard let startTime = startTime else { return }
         
         countdownTimer?.invalidate()
+        rapidModeTimer?.invalidate()
+        
+        let timeTaken = Date().timeIntervalSince(startTime)
+        
         let isCorrect = sender.tag == 1
         
         if isCorrect {
             correctAnswersCount += 1
         }
+
         
         // 結果を保存
         if currentQuestionIndex < selectedQuestions.count {
@@ -343,6 +375,19 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
                 isCorrect: isCorrect
             )
         }
+        //統計用
+        if currentQuestionIndex < selectedQuestions.count {
+            let currentQuestion = selectedQuestions[currentQuestionIndex]
+            
+            saveQuizResult(
+                question: currentQuestion.text,
+                selectedAnswer: sender.title(for: .normal) ?? "",
+                correctAnswer: currentQuestion.correctAnswer,
+                isCorrect: isCorrect,
+                timeTaken: timeTaken // 回答時間を計測している場合はここに渡す
+            )
+        }
+
 
         moveToNextQuestion()
     }
@@ -356,12 +401,15 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
 
 
     func moveToNextQuestion() {
+        rapidModeTimer?.invalidate()
         // ボタンの色をリセット
         resetButtonColors()
+        guard let startTime = startTime else { return }
 
         // クイズ終了後は次の問題に進まない
         if isQuizEnded { return }
-        
+        let timeTaken = Date().timeIntervalSince(startTime)
+         
         // 現在の質問がすべて終了している場合、終了画面を表示
         if currentQuestionIndex >= selectedQuestions.count {
             showEndScreen()
@@ -383,6 +431,17 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
                 )
             }
         }
+        //統計用
+        if currentQuestionIndex < selectedQuestions.count {
+             let currentQuestion = selectedQuestions[currentQuestionIndex]
+             saveQuizResult(
+                 question: currentQuestion.text,
+                 selectedAnswer: "未選択",
+                 correctAnswer: currentQuestion.correctAnswer,
+                 isCorrect: false,
+                 timeTaken: timeTaken
+             )
+         }
 
         currentQuestionIndex += 1
 
@@ -407,6 +466,7 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     // クイズ終了時に呼び出される
     func showEndScreen() {
         isQuizEnded = true // クイズ終了フラグを設定
+        saveResultsToJSON()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let endVC = storyboard.instantiateViewController(withIdentifier: "EndViewController_Rapid") as? EndViewController_Rapid {
             
@@ -415,7 +475,7 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
             if let quizMode = selectedQuizMode {
                 endVC.selectedQuizMode = quizMode
             } else {
-                print("Error: selectedQuizMode is nil.")
+//                print("Error: selectedQuizMode is nil.")
                 endVC.selectedQuizMode = "unknown_mode" // デフォルトのモードを設定
             }
             endVC.quizResults = quizResults
@@ -481,7 +541,7 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     
     func saveQuizCompletionDate(for category: String) {
         guard let selectedQuizMode = selectedQuizMode else {
-            print("Error: selectedQuizMode is nil. Cannot save completion date.")
+//            print("Error: selectedQuizMode is nil. Cannot save completion date.")
             return
         }
 
@@ -496,7 +556,91 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
         // 完了回数と日付を保存
         UserDefaults.standard.set(currentCompletionCount, forKey: completionCountKey)
         UserDefaults.standard.set(currentDate, forKey: completionDateKey)
-        print("Saving completion date with key: \(completionDateKey)")
+//        print("Saving completion date with key: \(completionDateKey)")
+        
+        
+    }
+    
+    
+    func saveQuizResult(question: String, selectedAnswer: String, correctAnswer: String, isCorrect: Bool, timeTaken: TimeInterval) {
+        let result = QuizResultData(
+            question: question,
+            selectedAnswer: selectedAnswer,
+            correctAnswer: correctAnswer,
+            isCorrect: isCorrect,
+            timeTaken: timeTaken,
+            incorrectAttempts: nil
+        )
+        savedResults.append(result)
+    }
+    
+    func saveQuizCompletionDetails(for category: String) -> (completionDate: Date, completionCount: Int) {
+        let currentDate = Date()
+        let completionCountKey = "\(category)_completionCount"
+        let completionDateKey = "\(category)_completionDate"
+
+        // 現在の回数を取得して1加算
+        var currentCompletionCount = UserDefaults.standard.integer(forKey: completionCountKey)
+        currentCompletionCount += 1
+
+        // 完了回数と日付を保存
+        UserDefaults.standard.set(currentCompletionCount, forKey: completionCountKey)
+        UserDefaults.standard.set(currentDate, forKey: completionDateKey)
+
+        return (completionDate: currentDate, completionCount: currentCompletionCount)
+    }
+    
+    func saveResultsToJSON() {
+        // 日付と回数を取得
+        let completionDetails = saveQuizCompletionDetails(for: category)
+
+        // 保存するデータを構築
+        let savedQuizResult = SavedQuizResult(
+            mode: selectedQuizMode ?? "unknown_mode", // クイズモード
+            category: category,                      // カテゴリ
+            completionDate: completionDetails.completionDate, // 完了日付
+            completionCount: completionDetails.completionCount, // 実行回数
+            results: savedResults                   // クイズ結果
+        )
+        
+        let fileURL = getResultsFileURL()
+
+        do {
+            let jsonData = try JSONEncoder().encode(savedQuizResult)
+            try jsonData.write(to: fileURL)
+//            print("Quiz results saved to: \(fileURL)")
+        } catch {
+//            print("Error saving quiz results: \(error)")
+        }
+    }
+    
+    func loadResultsFromJSON() -> SavedQuizResult? {
+        let fileURL = getResultsFileURL()
+
+        do {
+            let jsonData = try Data(contentsOf: fileURL)
+            return try JSONDecoder().decode(SavedQuizResult.self, from: jsonData)
+        } catch {
+//            print("Error loading quiz results: \(error)")
+            return nil
+        }
+    }
+    
+    func getResultsFileURL() -> URL {
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return documentsURL.appendingPathComponent("quiz_results_Rapid_kr_jp.json")
+    }
+    
+    func startRapidModeTimer() {
+        rapidModeTimer?.invalidate() // 既存のタイマーを無効化
+        startTime = Date() // 現在時刻を記録
+
+        // タイマーを一定間隔で更新
+        rapidModeTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
+            guard let self = self, let startTime = self.startTime else { return }
+            self.timeTaken = Date().timeIntervalSince(startTime) // 経過時間を計算
+        }
     }
 
 }

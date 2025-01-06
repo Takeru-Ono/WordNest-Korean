@@ -17,12 +17,20 @@ extension UIImage {
     }
 }
 
+
 // QuizViewControllerDelegateプロトコルを作成
 protocol QuizViewControllerDelegate: AnyObject {
     func quizCompleted(for category: String)
 }
 
 class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, EndViewControllerDelegate {
+    
+    var normalModeTimer: Timer? // タイマー
+    var startTime: Date? // タイマー開始時刻
+    var timeTaken: TimeInterval = 0.0 // 回答時間を記録
+    
+    var incorrectAttempts = 0 // 間違いの回数
+    var savedResults: [QuizResultData] = [] // 保存用クイズ結果
 
     var questionLabel: UILabel!
     var playAudioButton: UIButton!
@@ -223,6 +231,10 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
             button.tag = (answer.0 == question.correctAnswer) ? 1 : 0
             print("Button \(index + 1): \(answer.0) - Tag: \(button.tag)") // デバッグ: 各ボタンのタイトルとタグを出力
         }
+        
+        // タイマー開始
+        startNormalModeTimer()
+        incorrectAttempts = 0 // 間違い回数をリセット
         speakQuestionText(question.text)
     }
 
@@ -235,15 +247,30 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
     // 選択肢ボタンがタップされたときの処理
     @objc func answerButtonTapped(_ sender: UIButton) {
 //        print("Button tapped: \(sender.title(for: .normal) ?? "") - Tag: \(sender.tag)")
-        
+        guard let startTime = startTime else { return }
+
         // タグが 1 なら正解
         if sender.tag == 1 {
+            // タイマーを停止
+            normalModeTimer?.invalidate()
 //            print("正解！")
             sender.backgroundColor = .systemGreen // 正解の場合は緑色
+            let timeTaken = Date().timeIntervalSince(startTime)
+
+            // 結果を記録
+            saveQuizResult(
+                question: selectedQuestions[currentQuestionIndex].text,
+                selectedAnswer: sender.title(for: .normal) ?? "",
+                correctAnswer: selectedQuestions[currentQuestionIndex].correctAnswer,
+                isCorrect: true,
+                timeTaken: timeTaken,
+                incorrectAttempts: incorrectAttempts
+            )
             showCorrectAnswer()
         } else {
 //            print("不正解！")
             sender.backgroundColor = .systemRed // 不正解の場合は赤色
+            incorrectAttempts += 1
         }
     }
 
@@ -275,6 +302,7 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
     }
 
     func moveToNextQuestion() {
+        normalModeTimer?.invalidate()
         // ボタンの色をリセット
         resetButtonColors()
         currentQuestionIndex += 1
@@ -307,6 +335,7 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
     }
 
     func showEndScreen() {
+        saveResultsToJSON()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let endVC = storyboard.instantiateViewController(withIdentifier: "EndViewController_Normal") as? EndViewController_Normal {
             endVC.correctAnswersCount = correctAnswersCount
@@ -368,6 +397,75 @@ class ViewController: UIViewController, CorrectAnswerViewControllerDelegate, End
     @objc func buttonReleased(_ sender: UIButton) {
         UIView.animate(withDuration: 0.1) {
             sender.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func saveQuizResult(question: String, selectedAnswer: String, correctAnswer: String, isCorrect: Bool, timeTaken: TimeInterval, incorrectAttempts: Int) {
+        let result = QuizResultData(
+            question: question,
+            selectedAnswer: selectedAnswer,
+            correctAnswer: correctAnswer,
+            isCorrect: isCorrect,
+            timeTaken: timeTaken,
+            incorrectAttempts: incorrectAttempts
+        )
+        savedResults.append(result)
+    }
+    
+    func saveQuizCompletionDetails(for category: String) -> (completionDate: Date, completionCount: Int) {
+        let currentDate = Date()
+        let completionCountKey = "\(category)_completionCount"
+        let completionDateKey = "\(category)_completionDate"
+
+        // 現在の回数を取得して1加算
+        var currentCompletionCount = UserDefaults.standard.integer(forKey: completionCountKey)
+        currentCompletionCount += 1
+
+        // 完了回数と日付を保存
+        UserDefaults.standard.set(currentCompletionCount, forKey: completionCountKey)
+        UserDefaults.standard.set(currentDate, forKey: completionDateKey)
+
+        return (completionDate: currentDate, completionCount: currentCompletionCount)
+    }
+    
+    func saveResultsToJSON() {
+        // 日付と回数を取得
+        let completionDetails = saveQuizCompletionDetails(for: category)
+
+        // 保存するデータを構築
+        let savedQuizResult = SavedQuizResult(
+            mode: selectedQuizMode ?? "unknown_mode", // クイズモード
+            category: category,                      // カテゴリ
+            completionDate: completionDetails.completionDate, // 完了日付
+            completionCount: completionDetails.completionCount, // 実行回数
+            results: savedResults                   // クイズ結果
+        )
+        
+        let fileURL = getResultsFileURL()
+
+        do {
+            let jsonData = try JSONEncoder().encode(savedQuizResult)
+            try jsonData.write(to: fileURL)
+//            print("Quiz results saved to: \(fileURL)")
+        } catch {
+//            print("Error saving quiz results: \(error)")
+        }
+    }
+    
+    func getResultsFileURL() -> URL {
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return documentsURL.appendingPathComponent("quiz_results_Normal_kr_jp.json")
+    }
+    
+    func startNormalModeTimer() {
+        normalModeTimer?.invalidate() // 既存のタイマーを無効化
+        startTime = Date() // 現在時刻を記録
+
+        // タイマーを一定間隔で更新
+        normalModeTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] timer in
+            guard let self = self, let startTime = self.startTime else { return }
+            self.timeTaken = Date().timeIntervalSince(startTime) // 経過時間を計算
         }
     }
 }
