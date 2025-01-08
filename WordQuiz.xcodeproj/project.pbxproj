@@ -242,14 +242,14 @@
 			containerPortal = EBCA201E2C150E82006FB59A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBCA20252C150E82006FB59A;
-			remoteInfo = "WordQuiz";
+			remoteInfo = WordQuiz;
 		};
 		EBCA20472C150E84006FB59A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBCA201E2C150E82006FB59A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBCA20252C150E82006FB59A;
-			remoteInfo = "WordQuiz";
+			remoteInfo = WordQuiz;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -480,9 +480,9 @@
 		EB7FE7B62D1EE0A0004CAD58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB7FE7B72D1EE0A0004CAD58 /* WordDictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDictionaryViewController.swift; sourceTree = "<group>"; };
 		EB96A9662D2BC227007B644A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBCA20262C150E82006FB59A /* WordQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordQuiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WordQuizTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WordQuizUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA20262C150E82006FB59A /* WordQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerJP.swift; sourceTree = "<group>"; };
 		EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerKR.swift; sourceTree = "<group>"; };
 		EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -768,9 +768,9 @@
 		EBCA20272C150E82006FB59A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBCA20262C150E82006FB59A /* WordQuiz.app */,
-				EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */,
-				EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */,
+				EBCA20262C150E82006FB59A /* WordQuiz.app */,
+				EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */,
+				EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -778,9 +778,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EBCA20252C150E82006FB59A /* WordQuiz */ = {
+		EBCA20252C150E82006FB59A /* WordQuiz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */;
+			buildConfigurationList = EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */;
 			buildPhases = (
 				EBCA20222C150E82006FB59A /* Sources */,
 				EBCA20232C150E82006FB59A /* Frameworks */,
@@ -790,14 +790,14 @@
 			);
 			dependencies = (
 			);
-			name = "WordQuiz";
-			productName = "WordQuiz";
-			productReference = EBCA20262C150E82006FB59A /* WordQuiz.app */;
+			name = WordQuiz;
+			productName = WordQuiz;
+			productReference = EBCA20262C150E82006FB59A /* WordQuiz.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EBCA203B2C150E84006FB59A /* WordQuizTests */ = {
+		EBCA203B2C150E84006FB59A /* WordQuizTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */;
+			buildConfigurationList = EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */;
 			buildPhases = (
 				EBCA20382C150E84006FB59A /* Sources */,
 				EBCA20392C150E84006FB59A /* Frameworks */,
@@ -808,14 +808,14 @@
 			dependencies = (
 				EBCA203E2C150E84006FB59A /* PBXTargetDependency */,
 			);
-			name = "WordQuizTests";
-			productName = "WordQuizTests";
-			productReference = EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */;
+			name = WordQuizTests;
+			productName = WordQuizTests;
+			productReference = EBCA203C2C150E84006FB59A /* WordQuizTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EBCA20452C150E84006FB59A /* WordQuizUITests */ = {
+		EBCA20452C150E84006FB59A /* WordQuizUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */;
+			buildConfigurationList = EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */;
 			buildPhases = (
 				EBCA20422C150E84006FB59A /* Sources */,
 				EBCA20432C150E84006FB59A /* Frameworks */,
@@ -826,9 +826,9 @@
 			dependencies = (
 				EBCA20482C150E84006FB59A /* PBXTargetDependency */,
 			);
-			name = "WordQuizUITests";
-			productName = "WordQuizUITests";
-			productReference = EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */;
+			name = WordQuizUITests;
+			productName = WordQuizUITests;
+			productReference = EBCA20462C150E84006FB59A /* WordQuizUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -872,9 +872,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBCA20252C150E82006FB59A /* WordQuiz */,
-				EBCA203B2C150E84006FB59A /* WordQuizTests */,
-				EBCA20452C150E84006FB59A /* WordQuizUITests */,
+				EBCA20252C150E82006FB59A /* WordQuiz */,
+				EBCA203B2C150E84006FB59A /* WordQuizTests */,
+				EBCA20452C150E84006FB59A /* WordQuizUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1157,12 +1157,12 @@
 /* Begin PBXTargetDependency section */
 		EBCA203E2C150E84006FB59A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBCA20252C150E82006FB59A /* WordQuiz */;
+			target = EBCA20252C150E82006FB59A /* WordQuiz */;
 			targetProxy = EBCA203D2C150E84006FB59A /* PBXContainerItemProxy */;
 		};
 		EBCA20482C150E84006FB59A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EBCA20252C150E82006FB59A /* WordQuiz */;
+			target = EBCA20252C150E82006FB59A /* WordQuiz */;
 			targetProxy = EBCA20472C150E84006FB59A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1324,13 +1324,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takeruono.wordquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1357,13 +1360,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takeruono.wordquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1419,7 +1425,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "WordQuiz";
+				TEST_TARGET_NAME = WordQuiz;
 			};
 			name = Debug;
 		};
@@ -1438,7 +1444,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "WordQuiz";
+				TEST_TARGET_NAME = WordQuiz;
 			};
 			name = Release;
 		};
@@ -1454,7 +1460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */ = {
+		EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBCA20512C150E84006FB59A /* Debug */,
@@ -1463,7 +1469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */ = {
+		EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBCA20542C150E84006FB59A /* Debug */,
@@ -1472,7 +1478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */ = {
+		EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EBCA20572C150E84006FB59A /* Debug */,

@@ -60,7 +60,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>アプリのパフォーマンス向上と関連性の高い広告提供のためにデータを利用します。</string>
 </dict>
 </plist>

@@ -84,28 +84,28 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         }
         
         //ATT対応
-        if #available(iOS 14, *) {
-            switch ATTrackingManager.trackingAuthorizationStatus {
-            case .authorized:
-                print("Allow Tracking")
-                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
-            case .denied:
-                print("拒否")
-            case .restricted:
-                print("制限")
-            case .notDetermined:
-                showRequestTrackingAuthorizationAlert()
-            @unknown default:
-                fatalError()
-            }
-        } else {// iOS14未満
-            if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
-                print("Allow Tracking")
-                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
-            } else {
-                print("制限")
-            }
-        }
+//        if #available(iOS 14, *) {
+//            switch ATTrackingManager.trackingAuthorizationStatus {
+//            case .authorized:
+//                print("Allow Tracking")
+//                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
+//            case .denied:
+//                print("拒否")
+//            case .restricted:
+//                print("制限")
+//            case .notDetermined:
+//                showRequestTrackingAuthorizationAlert()
+//            @unknown default:
+//                fatalError()
+//            }
+//        } else {// iOS14未満
+//            if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
+//                print("Allow Tracking")
+//                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
+//            } else {
+//                print("制限")
+//            }
+//        }
         
 
 

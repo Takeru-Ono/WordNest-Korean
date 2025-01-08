@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         
         // 一定時間後にFirstViewControllerに切り替え
-        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let firstVC = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
             self.window?.rootViewController = firstVC

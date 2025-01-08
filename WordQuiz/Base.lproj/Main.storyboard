@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nVU-hb-OjA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lwh-my-xUE">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
         <!--Correct Answer View Controller-->
         <scene sceneID="Iaw-F6-RHC">
             <objects>
-                <viewController storyboardIdentifier="CorrectAnswerViewController" id="gIT-b2-0Av" customClass="CorrectAnswerViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CorrectAnswerViewController" id="gIT-b2-0Av" customClass="CorrectAnswerViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JT7-GN-r9B">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,17 +43,14 @@
         <!--First View Controller-->
         <scene sceneID="CVn-NA-2pK">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="VHA-W0-flA" customClass="FirstViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="VHA-W0-flA" customClass="FirstViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GdH-lB-cbR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="n1V-gJ-pXT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="MAY-n5-43p"/>
-                    <connections>
-                        <segue destination="n79-ez-Gnp" kind="show" id="azf-vH-QZo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWe-dd-TL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,9 +59,9 @@
         <!--Select Category View Controller-->
         <scene sceneID="UNr-pq-mt3">
             <objects>
-                <viewController storyboardIdentifier="SelectCategoryViewController" id="n79-ez-Gnp" customClass="SelectCategoryViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectCategoryViewController" id="n79-ez-Gnp" customClass="SelectCategoryViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lOq-3J-Oya">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="RCe-Rn-9mi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,17 +83,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="VHA-W0-flA" kind="relationship" relationship="rootViewController" id="P22-hU-b35"/>
+                        <segue destination="nVU-hb-OjA" kind="relationship" relationship="rootViewController" id="gFe-06-v3N"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E78-gy-cZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795" y="-713"/>
+            <point key="canvasLocation" x="196" y="-713"/>
         </scene>
         <!--End View Controller Rapid-->
         <scene sceneID="VlN-5M-teT">
             <objects>
-                <viewController storyboardIdentifier="EndViewController_Rapid" id="eVL-Vu-ZD5" customClass="EndViewController_Rapid" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EndViewController_Rapid" id="eVL-Vu-ZD5" customClass="EndViewController_Rapid" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HTf-BL-G3Y">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +108,7 @@
         <!--End View ControllerJP Rapid-->
         <scene sceneID="VFD-vC-wpo">
             <objects>
-                <viewController storyboardIdentifier="EndViewController_JP_Rapid" id="aNZ-sX-5Xq" customClass="EndViewController_JP_Rapid" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EndViewController_JP_Rapid" id="aNZ-sX-5Xq" customClass="EndViewController_JP_Rapid" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EEK-pw-Ol1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +123,7 @@
         <!--Select Category Rapid Mode View Controller-->
         <scene sceneID="eb3-GU-4aA">
             <objects>
-                <viewController storyboardIdentifier="SelectCategory_RapidMode_ViewController" id="it8-p2-sC4" customClass="SelectCategory_RapidMode_ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectCategory_RapidMode_ViewController" id="it8-p2-sC4" customClass="SelectCategory_RapidMode_ViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eJT-hV-Rkq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +139,7 @@
         <!--Rapid ModeJP View Controller-->
         <scene sceneID="n9J-af-D7B">
             <objects>
-                <viewController storyboardIdentifier="RapidMode_JP_ViewController" id="qxz-Im-9Hl" customClass="RapidMode_JP_ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RapidMode_JP_ViewController" id="qxz-Im-9Hl" customClass="RapidMode_JP_ViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b9o-m7-YvM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +154,7 @@
         <!--View ControllerJP-->
         <scene sceneID="ZSD-Oc-weX">
             <objects>
-                <viewController storyboardIdentifier="ViewController_JP" id="P14-bu-v5g" customClass="ViewController_JP" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController_JP" id="P14-bu-v5g" customClass="ViewController_JP" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wpn-fw-bMk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,7 +169,7 @@
         <!--Correct Answer View ControllerJP-->
         <scene sceneID="Nml-9S-20M">
             <objects>
-                <viewController storyboardIdentifier="CorrectAnswerViewController_JP" id="j6G-LS-UYq" customClass="CorrectAnswerViewController_JP" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CorrectAnswerViewController_JP" id="j6G-LS-UYq" customClass="CorrectAnswerViewController_JP" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUC-t2-ham">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,7 +184,7 @@
         <!--End View ControllerJP Normal-->
         <scene sceneID="jYI-sz-Md9">
             <objects>
-                <viewController storyboardIdentifier="EndViewController_JP_Normal" id="Ipc-o0-rTU" customClass="EndViewController_JP_Normal" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EndViewController_JP_Normal" id="Ipc-o0-rTU" customClass="EndViewController_JP_Normal" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q2u-Fc-Uk1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +199,7 @@
         <!--End View Controller Normal-->
         <scene sceneID="NWb-zl-Qbl">
             <objects>
-                <viewController storyboardIdentifier="EndViewController_Normal" id="pmn-hu-k8O" customClass="EndViewController_Normal" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EndViewController_Normal" id="pmn-hu-k8O" customClass="EndViewController_Normal" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQ3-kt-jzm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,7 +214,7 @@
         <!--Rapid Mode View Controller-->
         <scene sceneID="O1w-wG-ME7">
             <objects>
-                <viewController storyboardIdentifier="RapidMode_ViewController" id="Wmd-hF-vRG" customClass="RapidMode_ViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RapidMode_ViewController" id="Wmd-hF-vRG" customClass="RapidMode_ViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cQq-ew-X9i">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,25 +229,23 @@
         <!--Splash View Controller-->
         <scene sceneID="afG-ET-Uqk">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" id="nVU-hb-OjA" customClass="SplashViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" id="nVU-hb-OjA" customClass="SplashViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYu-4c-Waq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="SRe-P6-eAx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <segue destination="VHA-W0-flA" kind="presentation" id="L0O-8B-2qT"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="pCL-mR-Ibj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bmn-uA-RMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812.97709923664115" y="53.521126760563384"/>
+            <point key="canvasLocation" x="1036" y="-689"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="W61-FZ-IHa">
             <objects>
-                <viewController storyboardIdentifier="SettingsViewController" id="VNw-sc-bQH" customClass="SettingsViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsViewController" id="VNw-sc-bQH" customClass="SettingsViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBB-7X-1kS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,7 +261,7 @@
         <!--Select Number Category View Controller-->
         <scene sceneID="LCU-ef-L6K">
             <objects>
-                <viewController storyboardIdentifier="SelectNumberCategoryViewController" id="fh7-tw-0t6" customClass="SelectNumberCategoryViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectNumberCategoryViewController" id="fh7-tw-0t6" customClass="SelectNumberCategoryViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XvS-bI-Bdm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,7 +276,7 @@
         <!--Number Quiz View Controller-->
         <scene sceneID="208-x7-CZZ">
             <objects>
-                <viewController storyboardIdentifier="NumberQuizViewController" id="mtP-U0-m2Q" customClass="NumberQuizViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NumberQuizViewController" id="mtP-U0-m2Q" customClass="NumberQuizViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fDI-YT-nqK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +291,7 @@
         <!--Number End View Controller-->
         <scene sceneID="yTt-QT-XD4">
             <objects>
-                <viewController storyboardIdentifier="NumberEndViewController" id="Z0C-9M-UVD" customClass="NumberEndViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NumberEndViewController" id="Z0C-9M-UVD" customClass="NumberEndViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oca-Fx-2Pj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -311,7 +306,7 @@
         <!--Confirmation View Controller-->
         <scene sceneID="zCH-eN-MfF">
             <objects>
-                <viewController storyboardIdentifier="ConfirmationViewController" id="oii-pO-uwe" customClass="ConfirmationViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmationViewController" id="oii-pO-uwe" customClass="ConfirmationViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2b-hM-tQi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -359,7 +354,7 @@
         <!--Favorite View ControllerJP-->
         <scene sceneID="z9o-ys-PJX">
             <objects>
-                <viewController storyboardIdentifier="FavoriteViewControllerJP" id="qxZ-xv-VAW" customClass="FavoriteViewControllerJP" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoriteViewControllerJP" id="qxZ-xv-VAW" customClass="FavoriteViewControllerJP" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XNd-WV-NGK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -374,7 +369,7 @@
         <!--Favorite View ControllerKR-->
         <scene sceneID="mHf-Ca-WQP">
             <objects>
-                <viewController storyboardIdentifier="FavoriteViewControllerKR" id="fmF-Rg-dJa" customClass="FavoriteViewControllerKR" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoriteViewControllerKR" id="fmF-Rg-dJa" customClass="FavoriteViewControllerKR" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z9Q-Pt-VbK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,7 +384,7 @@
         <!--About View Controller-->
         <scene sceneID="caZ-lH-2bh">
             <objects>
-                <viewController storyboardIdentifier="AboutViewController" id="W03-IM-yBj" customClass="AboutViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutViewController" id="W03-IM-yBj" customClass="AboutViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ucT-qy-kJL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,7 +399,7 @@
         <!--Dictionary View Controller-->
         <scene sceneID="tZn-IL-pEm">
             <objects>
-                <viewController storyboardIdentifier="DictionaryViewController" id="ssv-Pd-iyE" customClass="DictionaryViewController" customModule="Word_Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DictionaryViewController" id="ssv-Pd-iyE" customClass="DictionaryViewController" customModule="WordQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fcr-Il-xeL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -417,9 +412,6 @@
             <point key="canvasLocation" x="2703" y="54"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="L0O-8B-2qT"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
