@@ -70,7 +70,7 @@ class CSVLoader {
             // 1行目をスキップするために、配列の先頭を削除
             let dataRows = Array(rows.dropFirst())
             
-            for (index, row) in dataRows.enumerated() {
+            for (_, row) in dataRows.enumerated() {
                 
                 guard row.count >= 3 else {
                     continue

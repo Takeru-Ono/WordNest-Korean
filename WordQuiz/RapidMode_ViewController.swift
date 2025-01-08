@@ -312,14 +312,25 @@ class RapidMode_ViewController: UIViewController, EndViewControllerDelegate {
     // ボタンに回答を設定するメソッド
     func configureButton(_ button: UIButton, with answer: (String, String, String)) {
         button.setTitle(answer.0, for: .normal)
-        if let image = UIImage(named: answer.2) {
-            let resizedImage = image.resized(to: CGSize(width: 40, height: 40))
-            button.setImage(resizedImage, for: .normal)
-            button.imageView?.contentMode = .scaleAspectFit
-            button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
-            button.contentHorizontalAlignment = .left
+        if #available(iOS 15.0, *) {
+            var configuration = UIButton.Configuration.filled()
+            configuration.title = answer.0
+            configuration.image = UIImage(named: answer.2)?.resized(to: CGSize(width: 40, height: 40))
+            configuration.imagePlacement = .leading // 画像をタイトルの左に配置
+            configuration.imagePadding = 10 // タイトルと画像の間の余白
+            button.configuration = configuration
         } else {
-            button.setImage(nil, for: .normal)
+            // iOS 15未満の場合のフォールバック
+            button.setTitle(answer.0, for: .normal)
+            if let image = UIImage(named: answer.2) {
+                let resizedImage = image.resized(to: CGSize(width: 40, height: 40))
+                button.setImage(resizedImage, for: .normal)
+                button.imageView?.contentMode = .scaleAspectFit
+                button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+                button.contentHorizontalAlignment = .left
+            } else {
+                button.setImage(nil, for: .normal)
+            }
         }
     }
 

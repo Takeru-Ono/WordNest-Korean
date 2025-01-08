@@ -249,7 +249,7 @@ class FavoriteViewControllerKR: UIViewController, UITableViewDataSource, UITable
     }
     private func debugFavoriteWords() {
         let key = mode == "jp_kr" ? "favoriteWords_jp_kr" : "favoriteWords_kr_jp"
-        if let favoriteWords = UserDefaults.standard.array(forKey: key) as? [[String: String]] {
+        if UserDefaults.standard.array(forKey: key) is [[String: String]] {
 //            print("Loaded favorite words for key '\(key)': \(favoriteWords)")
         } else {
 //            print("No favorite words found for key '\(key)'.")

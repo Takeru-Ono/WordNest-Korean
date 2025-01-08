@@ -269,7 +269,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
     func setupBottomButtonConstraints() {
         guard !bottomButtons.isEmpty else { return }
 
-        let spacing: CGFloat = 15 // ボタン間のスペース
+        let _: CGFloat = 15 // ボタン間のスペース
         let buttonWidth: CGFloat = 100
         let buttonHeight: CGFloat = 50
 
@@ -349,7 +349,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         UserDefaults.standard.synchronize()
 
         // デバッグログ
-        let state = modeIconDisplayed ? "true" : "false"
+        _ = modeIconDisplayed ? "true" : "false"
 //        print("Mode icon display state for '\(mode)': \(state)")
     }
 
@@ -419,7 +419,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         updateFirstViewIconDisplayedState()
         
         // デバッグ用のログ
-        let state = isDisplayed ? "true" : "false"
+        _ = isDisplayed ? "true" : "false"
 //        print("Saved icon displayed state for category: '\(category)' with value: \(state)")
     }
 
@@ -438,7 +438,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         UserDefaults.standard.set(isAnyIconDisplayed, forKey: "FirstViewIconDisplayed")
         
         // デバッグ用のログ
-        let state = isAnyIconDisplayed ? "true" : "false"
+        _ = isAnyIconDisplayed ? "true" : "false"
 //        print("FirstViewIconDisplayed is now set to \(state)")
     }
 

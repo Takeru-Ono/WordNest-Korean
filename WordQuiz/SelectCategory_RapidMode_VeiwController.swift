@@ -330,7 +330,7 @@ class SelectCategory_RapidMode_ViewController: UIViewController {
         UserDefaults.standard.synchronize()
 
         // デバッグ用のログ
-        let state = isDisplayed ? "true" : "false"
+        _ = isDisplayed ? "true" : "false"
 //        print("Saved icon displayed state for key: '\(key)' with value: \(state)")
     }
 

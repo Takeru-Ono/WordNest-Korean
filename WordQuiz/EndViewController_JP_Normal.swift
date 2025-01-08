@@ -241,11 +241,25 @@ class EndViewController_JP_Normal: UIViewController, UITableViewDelegate, UITabl
 
     @objc func restartQuiz() {
         self.view.window?.rootViewController?.dismiss(animated: true) {
-            if let navigationController = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
-                for viewController in navigationController.viewControllers {
-                    if viewController is SelectCategoryViewController {
-                        navigationController.popToViewController(viewController, animated: true)
-                        return
+            if #available(iOS 15.0, *) {
+                // iOS 15.0以上の場合
+                if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                   let navigationController = windowScene.windows.first?.rootViewController as? UINavigationController {
+                    for viewController in navigationController.viewControllers {
+                        if viewController is SelectCategoryViewController {
+                            navigationController.popToViewController(viewController, animated: true)
+                            return
+                        }
+                    }
+                }
+            } else {
+                // iOS 15.0未満の場合
+                if let navigationController = UIApplication.shared.windows.first?.rootViewController as? UINavigationController {
+                    for viewController in navigationController.viewControllers {
+                        if viewController is SelectCategoryViewController {
+                            navigationController.popToViewController(viewController, animated: true)
+                            return
+                        }
                     }
                 }
             }
@@ -254,10 +268,20 @@ class EndViewController_JP_Normal: UIViewController, UITableViewDelegate, UITabl
     
     @objc func returnToHome() {
         self.view.window?.rootViewController?.dismiss(animated: true) {
-            if let firstVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") {
-                let navigationController = UINavigationController(rootViewController: firstVC)
-                UIApplication.shared.windows.first?.rootViewController = navigationController
-                UIApplication.shared.windows.first?.makeKeyAndVisible()
+            if #available(iOS 15.0, *) {
+                if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                   let window = windowScene.windows.first {
+                    let firstVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController")
+                    let navigationController = UINavigationController(rootViewController: firstVC!)
+                    window.rootViewController = navigationController
+                    window.makeKeyAndVisible()
+                }
+            } else {
+                if let firstVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") {
+                    let navigationController = UINavigationController(rootViewController: firstVC)
+                    UIApplication.shared.windows.first?.rootViewController = navigationController
+                    UIApplication.shared.windows.first?.makeKeyAndVisible()
+                }
             }
         }
     }
