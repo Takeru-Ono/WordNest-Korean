@@ -85,8 +85,7 @@ class NumberQuizViewController: UIViewController {
     }
     
     func setupUI() {
-        view.backgroundColor = .white
-        
+
         // 質問コンテナビューの設定
         questionContainerView.translatesAutoresizingMaskIntoConstraints = false
         questionContainerView.backgroundColor = UIColor { traitCollection in
@@ -135,10 +134,17 @@ class NumberQuizViewController: UIViewController {
             let button = UIButton(type: .system)
             styleButton(button)
             button.layer.borderColor = UIColor.black.cgColor // ボタンに枠を設定
-            button.titleLabel?.numberOfLines = 1
+            button.titleLabel?.numberOfLines = 1 // 1行に制限
+            button.titleLabel?.adjustsFontSizeToFitWidth = true // フォントサイズを自動調整
+            button.titleLabel?.minimumScaleFactor = 0.5 // フォントの最小縮小スケール（50%まで小さくなる）
+            button.titleLabel?.lineBreakMode = .byClipping // 省略記号 (...) を表示しない
             button.titleLabel?.font = UIFont.systemFont(ofSize: 25, weight: .medium)
             button.translatesAutoresizingMaskIntoConstraints = false
             button.addTarget(self, action: #selector(answerButtonTapped(_:)), for: .touchUpInside)
+            // ボタンの文字色をダークモードに応じて設定
+            button.setTitleColor(UIColor { traitCollection in
+                return traitCollection.userInterfaceStyle == .dark ? UIColor.white : UIColor.black
+            }, for: .normal)
 
             ButtonDesignUtility.addButtonAnimation(button, target: self, pressedAction: #selector(buttonPressed(_:)), releasedAction: #selector(buttonReleased(_:)))
             answerButtons.append(button)
@@ -357,6 +363,13 @@ class NumberQuizViewController: UIViewController {
         if isCorrect {
             correctAnswersCount += 1
         }
+        // ボタンタイトルが日本語かどうかを判定
+        if let questionText = questionLabel.text, !isJapaneseText(questionText) {
+            // 日本語以外の場合に音声を再生
+            if let buttonTitle = sender.title(for: .normal) {
+                playSpeech(for: buttonTitle, language: "ko-KR")
+            }
+        }
 
         // 結果を保存
         let currentQuestionText = questionLabel.text ?? ""
@@ -371,6 +384,21 @@ class NumberQuizViewController: UIViewController {
         
         generateQuestion()
         enableAnswerButtons()
+    }
+    
+    // 韓国語の音声再生を行うメソッド
+    func playSpeech(for text: String, language: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: language) // 言語コードを指定（韓国語は "ko-KR"）
+        utterance.rate = 0.5 // 再生速度を調整
+        speechSynthesizer.speak(utterance)
+    }
+
+    // 日本語かどうかを判定する関数
+    func isJapaneseText(_ text: String) -> Bool {
+        let japaneseCharacterSet = CharacterSet(charactersIn: "\u{3040}"..."\u{30FF}") // ひらがなとカタカナ
+            .union(CharacterSet(charactersIn: "\u{4E00}"..."\u{9FFF}")) // 漢字
+        return text.unicodeScalars.allSatisfy { japaneseCharacterSet.contains($0) }
     }
 
     @objc func playAudio() {

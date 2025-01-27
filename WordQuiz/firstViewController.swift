@@ -30,6 +30,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         super.viewDidLoad()
         // 戻るボタンを非表示にする
         self.navigationItem.hidesBackButton = true
+        setupAppHeader()
         setupQuizSectionFlags() // 国旗アイコンを設定
         setupQuizButtons() // クイズボタンをセットアップ
         setupBottomButtons()
@@ -207,6 +208,40 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
             }
         }
     }
+    func setupAppHeader() {
+        // アイコンのUIImageViewを作成
+        let appIconImageView = UIImageView(image: UIImage(named: "AppIcon")) // "appIcon"はAssets.xcassetsに登録されている画像名
+        appIconImageView.translatesAutoresizingMaskIntoConstraints = false
+        appIconImageView.contentMode = .scaleAspectFit // 画像のアスペクト比を維持
+        appIconImageView.widthAnchor.constraint(equalToConstant: 40).isActive = true // アイコンの幅
+        appIconImageView.heightAnchor.constraint(equalToConstant: 40).isActive = true // アイコンの高さ
+        // 画像の四隅に丸みを設定
+        appIconImageView.layer.cornerRadius = 10 // 角丸の半径 (適宜調整)
+        appIconImageView.clipsToBounds = true // 画像が角丸の範囲内にクリップされるように設定
+        
+        // アプリ名のUILabelを作成
+        let appNameLabel = UILabel()
+        appNameLabel.text = "GlotNest Korean" // アプリ名
+        appNameLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold) // 太字フォント
+        appNameLabel.textAlignment = .center
+        appNameLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        // アイコンとラベルを含むUIStackViewを作成
+        let appHeaderStackView = UIStackView(arrangedSubviews: [appIconImageView, appNameLabel])
+        appHeaderStackView.axis = .horizontal // 横並びに配置
+        appHeaderStackView.alignment = .center // 縦方向のセンタリング
+        appHeaderStackView.spacing = 10 // アイコンとラベルの間のスペース
+        appHeaderStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        // スタックビューをビューに追加
+        view.addSubview(appHeaderStackView)
+        
+        // レイアウト制約を設定
+        NSLayoutConstraint.activate([
+            appHeaderStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0), // 上の余白を20ポイント
+            appHeaderStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor) // 水平方向に中央揃え
+        ])
+    }
     
     
     /// 日本語→韓国語、韓国語→日本語を表す国旗を設定
@@ -228,11 +263,11 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         // レイアウト制約
         NSLayoutConstraint.activate([
             // 日本語→韓国語ラベル
-            japanToKoreaLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            japanToKoreaLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
             japanToKoreaLabel.centerXAnchor.constraint(equalTo: view.leadingAnchor, constant: UIScreen.main.bounds.width * 0.265), // 左側中央寄り
 
             // 韓国語→日本語ラベル
-            koreaToJapanLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            koreaToJapanLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 60),
             koreaToJapanLabel.centerXAnchor.constraint(equalTo: view.trailingAnchor, constant: -UIScreen.main.bounds.width * 0.265) // 右側中央寄り
         ])
         view.sendSubviewToBack(japanToKoreaLabel)

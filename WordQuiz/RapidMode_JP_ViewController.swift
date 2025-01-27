@@ -327,6 +327,13 @@ class RapidMode_JP_ViewController: UIViewController, EndViewControllerDelegate {
         guard !isQuizEnded else { return }
         guard let startTime = startTime else { return }
         
+        // ボタンのタイトル（選択肢の韓国語）を取得
+        if let buttonTitle = sender.title(for: .normal) {
+            // 選択肢の韓国語を音声再生
+            playSpeech(for: buttonTitle, language: "ko-KR")
+        }
+
+        
         countdownTimer?.invalidate()
         rapidModeTimer?.invalidate()
         let isCorrect = sender.tag == 1
@@ -362,6 +369,14 @@ class RapidMode_JP_ViewController: UIViewController, EndViewControllerDelegate {
         }
 
         moveToNextQuestion()
+    }
+    
+    // 韓国語の音声再生を行うメソッド
+    func playSpeech(for text: String, language: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: language) // 言語コードを指定（韓国語は "ko-KR"）
+//        utterance.rate = 0.5  再生速度を調整
+        speechSynthesizer.speak(utterance)
     }
     
     func resetButtonColors() {

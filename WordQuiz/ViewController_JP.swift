@@ -258,6 +258,12 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
     @objc func answerButtonTapped(_ sender: UIButton) {
 //        print("Button tapped: \(sender.title(for: .normal) ?? "") - Tag: \(sender.tag)")
         guard let startTime = startTime else { return }
+        
+        // ボタンのタイトル（選択肢の韓国語）を取得
+        if let buttonTitle = sender.title(for: .normal) {
+            // 選択肢の韓国語を音声再生
+            playSpeech(for: buttonTitle, language: "ko-KR")
+        }
 
         
         // タグが 1 なら正解
@@ -284,6 +290,14 @@ class ViewController_JP: UIViewController, EndViewControllerDelegate, CorrectAns
             sender.backgroundColor = .systemRed // 不正解の場合は赤色
             incorrectAttempts += 1
         }
+    }
+    
+    // 韓国語の音声再生を行うメソッド
+    func playSpeech(for text: String, language: String) {
+        let utterance = AVSpeechUtterance(string: text)
+        utterance.voice = AVSpeechSynthesisVoice(language: language) // 言語コードを指定（韓国語は "ko-KR"）
+//        utterance.rate = 0.5 // 再生速度を調整
+        speechSynthesizer.speak(utterance)
     }
 
     func showCorrectAnswer() {

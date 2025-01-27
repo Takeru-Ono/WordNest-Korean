@@ -137,20 +137,20 @@ class AboutViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
 
     @objc func openPrivacyPolicy() {
-        if let url = URL(string: "http://word-nest-app.com/about/privacy-policy/") {
+        if let url = URL(string: "http://glotnest.com/about/privacy-policy/") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 
     @objc func openTermsOfService() {
-        if let url = URL(string: "http://word-nest-app.com/about/terms-of-service/") {
+        if let url = URL(string: "http://glotnest.com/about/terms-of-service/") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 
     @objc func openLicensePage() {
         // ライセンス情報を表示
-        if let url = URL(string: "http://word-nest-app.com/about/license/") {
+        if let url = URL(string: "http://glotnest.com/about/license-info/") {
             UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }

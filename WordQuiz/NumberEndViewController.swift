@@ -34,8 +34,6 @@ class NumberEndViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func setupUI() {
-        view.backgroundColor = .white
-
         // 結果ラベル
         resultLabel = UILabel()
         resultLabel.text = " \(correctAnswersCount) 問正解しました！"
