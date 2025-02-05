@@ -50,7 +50,7 @@ class NumberQuizViewController: UIViewController {
     var questions: [QuestionProtocol] = []
     var speechSynthesizer = AVSpeechSynthesizer()
     var countdownTimer: Timer?
-    var countdownDuration: TimeInterval = 2.0
+    var countdownDuration: TimeInterval = 5.0
     
     let countdownCircleLayer = CAShapeLayer() // 時計風の円形レイヤー
     let countdownCircleBackgroundLayer = CAShapeLayer() // 背景円

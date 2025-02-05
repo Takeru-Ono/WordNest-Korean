@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045B2E3E2C081825289759D7 /* Pods_WordQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B104E4C88FB83D304474AB /* Pods_WordQuiz.framework */; };
+		B75D1405B00945277F8840AD /* Pods_WordQuizUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507A62501141C1EB0DC3BEB3 /* Pods_WordQuizUITests.framework */; };
 		EB7FE7C92D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */; };
 		EB7FE7CA2D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */; };
 		EB7FE7CB2D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv in Resources */ = {isa = PBXBuildFile; fileRef = EB7FE6D62D1EE0A0004CAD58 /* question_2_KoreanWordDictionary_noun_Basic.csv */; };
@@ -234,6 +236,7 @@
 		EBDA95AD2D1EEE6300F10754 /* FavoriteViewControllerJP.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */; };
 		EBDA95AE2D1EEE6300F10754 /* FavoriteViewControllerKR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */; };
 		EBDA97AD2D1FAC0100F10754 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */; };
+		F35D64AA4150483493DEB912 /* Pods_WordQuizTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BB1D474C54ACB91FCE6708 /* Pods_WordQuizTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -254,6 +257,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B81D5429DAC3258CC89B313 /* Pods-WordQuizTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordQuizTests.release.xcconfig"; path = "Target Support Files/Pods-WordQuizTests/Pods-WordQuizTests.release.xcconfig"; sourceTree = "<group>"; };
+		4355EBE794CBE612E6510FBD /* Pods-WordQuizUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordQuizUITests.release.xcconfig"; path = "Target Support Files/Pods-WordQuizUITests/Pods-WordQuizUITests.release.xcconfig"; sourceTree = "<group>"; };
+		507A62501141C1EB0DC3BEB3 /* Pods_WordQuizUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordQuizUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83BB1D474C54ACB91FCE6708 /* Pods_WordQuizTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordQuizTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B104E4C88FB83D304474AB /* Pods_WordQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90725578C7FC2FA6FA2DA00F /* Pods-WordQuizUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordQuizUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordQuizUITests/Pods-WordQuizUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0CE57B0869C1C28A9ED617 /* Pods-WordQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordQuiz.debug.xcconfig"; path = "Target Support Files/Pods-WordQuiz/Pods-WordQuiz.debug.xcconfig"; sourceTree = "<group>"; };
+		DE10BCF8B89BD1BC0283781C /* Pods-WordQuizTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordQuizTests.debug.xcconfig"; path = "Target Support Files/Pods-WordQuizTests/Pods-WordQuizTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB72A5A42D22A2DD00C3D0F9 /* Tutorial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tutorial; sourceTree = "<group>"; };
 		EB7FE6D42D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_noun_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_1_KoreanWordDictionary_noun_Basic.csv; sourceTree = "<group>"; };
 		EB7FE6D52D1EE0A0004CAD58 /* question_1_KoreanWordDictionary_verb_Basic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = question_1_KoreanWordDictionary_verb_Basic.csv; sourceTree = "<group>"; };
@@ -486,6 +497,7 @@
 		EBDA95AB2D1EEE6300F10754 /* FavoriteViewControllerJP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerJP.swift; sourceTree = "<group>"; };
 		EBDA95AC2D1EEE6300F10754 /* FavoriteViewControllerKR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerKR.swift; sourceTree = "<group>"; };
 		EBDA97AC2D1FAC0100F10754 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FAE9ED0D18BF591D57A8CC26 /* Pods-WordQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordQuiz.release.xcconfig"; path = "Target Support Files/Pods-WordQuiz/Pods-WordQuiz.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,6 +505,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045B2E3E2C081825289759D7 /* Pods_WordQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +513,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35D64AA4150483493DEB912 /* Pods_WordQuizTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,12 +521,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75D1405B00945277F8840AD /* Pods_WordQuizUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094FDA5240EECBEC52C7D1BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85B104E4C88FB83D304474AB /* Pods_WordQuiz.framework */,
+				83BB1D474C54ACB91FCE6708 /* Pods_WordQuizTests.framework */,
+				507A62501141C1EB0DC3BEB3 /* Pods_WordQuizUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0DE95DEA8ABE030A9A183F5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC0CE57B0869C1C28A9ED617 /* Pods-WordQuiz.debug.xcconfig */,
+				FAE9ED0D18BF591D57A8CC26 /* Pods-WordQuiz.release.xcconfig */,
+				DE10BCF8B89BD1BC0283781C /* Pods-WordQuizTests.debug.xcconfig */,
+				1B81D5429DAC3258CC89B313 /* Pods-WordQuizTests.release.xcconfig */,
+				90725578C7FC2FA6FA2DA00F /* Pods-WordQuizUITests.debug.xcconfig */,
+				4355EBE794CBE612E6510FBD /* Pods-WordQuizUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB7FE7932D1EE0A0004CAD58 /* WordQuiz_Questions */ = {
 			isa = PBXGroup;
 			children = (
@@ -762,6 +800,8 @@
 			children = (
 				EB7FE7B82D1EE0A0004CAD58 /* WordQuiz */,
 				EBCA20272C150E82006FB59A /* Products */,
+				0DE95DEA8ABE030A9A183F5A /* Pods */,
+				094FDA5240EECBEC52C7D1BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -782,9 +822,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBCA20502C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuiz" */;
 			buildPhases = (
+				CC3CFE863A8F8D6DAA8CEDBD /* [CP] Check Pods Manifest.lock */,
 				EBCA20222C150E82006FB59A /* Sources */,
 				EBCA20232C150E82006FB59A /* Frameworks */,
 				EBCA20242C150E82006FB59A /* Resources */,
+				5FCA47C60F5D73489A8DF222 /* [CP] Copy Pods Resources */,
+				B96CE5F17C1CABA68E90D0F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -799,6 +842,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBCA20532C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizTests" */;
 			buildPhases = (
+				5124A35E983E996B3ABF2CA7 /* [CP] Check Pods Manifest.lock */,
 				EBCA20382C150E84006FB59A /* Sources */,
 				EBCA20392C150E84006FB59A /* Frameworks */,
 				EBCA203A2C150E84006FB59A /* Resources */,
@@ -817,6 +861,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBCA20562C150E84006FB59A /* Build configuration list for PBXNativeTarget "WordQuizUITests" */;
 			buildPhases = (
+				E0FE23F25DD345B06A973438 /* [CP] Check Pods Manifest.lock */,
 				EBCA20422C150E84006FB59A /* Sources */,
 				EBCA20432C150E84006FB59A /* Frameworks */,
 				EBCA20442C150E84006FB59A /* Resources */,
@@ -1097,6 +1142,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5124A35E983E996B3ABF2CA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordQuizTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FCA47C60F5D73489A8DF222 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordQuiz/Pods-WordQuiz-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordQuiz/Pods-WordQuiz-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordQuiz/Pods-WordQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B96CE5F17C1CABA68E90D0F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordQuiz/Pods-WordQuiz-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WordQuiz/Pods-WordQuiz-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WordQuiz/Pods-WordQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3CFE863A8F8D6DAA8CEDBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordQuiz-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FE23F25DD345B06A973438 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WordQuizUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EBCA20222C150E82006FB59A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1237,10 +1385,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1291,7 +1439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1303,12 +1451,13 @@
 		};
 		EBCA20512C150E84006FB59A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0CE57B0869C1C28A9ED617 /* Pods-WordQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C2FFM98KJ;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = WordQuiz/Info.plist;
@@ -1320,11 +1469,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takeruono.wordquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1339,12 +1490,13 @@
 		};
 		EBCA20522C150E84006FB59A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE9ED0D18BF591D57A8CC26 /* Pods-WordQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C2FFM98KJ;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = WordQuiz/Info.plist;
@@ -1356,11 +1508,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.takeruono.wordquiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1375,6 +1528,7 @@
 		};
 		EBCA20542C150E84006FB59A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE10BCF8B89BD1BC0283781C /* Pods-WordQuizTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1394,6 +1548,7 @@
 		};
 		EBCA20552C150E84006FB59A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B81D5429DAC3258CC89B313 /* Pods-WordQuizTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1413,6 +1568,7 @@
 		};
 		EBCA20572C150E84006FB59A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90725578C7FC2FA6FA2DA00F /* Pods-WordQuizUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1431,6 +1587,7 @@
 		};
 		EBCA20582C150E84006FB59A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4355EBE794CBE612E6510FBD /* Pods-WordQuizUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";

@@ -8,6 +8,7 @@ import UIKit
 import AppTrackingTransparency  //追加
 import AdSupport  //追加
 import SafariServices
+import GoogleMobileAds
 
 
 class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFSafariViewControllerDelegate {
@@ -17,6 +18,7 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
 
     var selectedQuizMode: String? // クイズ形式を保存するためのプロパティ
     var bottomButtons: [UIButton] = [] // 下部ボタン（辞書、設定、About）
+    var bannerView: GADBannerView!
 
 
 
@@ -33,24 +35,41 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         setupAppHeader()
         setupQuizSectionFlags() // 国旗アイコンを設定
         setupQuizButtons() // クイズボタンをセットアップ
+        setupBannerAd()
         setupBottomButtons()
+        setupTutorialButton()
         // 初期設定
         DispatchQueue.main.async {
             self.updateFirstViewIcons(buttons: self.buttons)
         }
-        
-        let openTutorialButton = UIButton(type: .system)
-        openTutorialButton.setTitle("チュートリアルを開く", for: .normal)
-        openTutorialButton.addTarget(self, action: #selector(openTutorial), for: .touchUpInside)
-        openTutorialButton.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(openTutorialButton)
+    }
+    
+    func getBannerAdUnitID() -> String {
+        #if DEBUG
+        // ★テスト用バナー広告ID（開発中はこちらを使う）
+        return "ca-app-pub-3940256099942544/2934735716"
+        #else
+        // ★本番用バナー広告ID（リリース時はこちらに変更）
+        return "ca-app-pub-6841743469487239/8709995030"
+        #endif
+    }
+    
+    func setupBannerAd() {
+        // 1) バナー広告のインスタンス生成
+        bannerView = GADBannerView(adSize: GADAdSizeBanner)
+        bannerView.adUnitID = getBannerAdUnitID() // テスト or 本番IDを自動切替
+        bannerView.rootViewController = self
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
 
+        // 2) 画面に追加して最下部に配置
+        view.addSubview(bannerView)
         NSLayoutConstraint.activate([
-            openTutorialButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            openTutorialButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            bannerView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
 
-
+        // 3) 広告をロード
+        bannerView.load(GADRequest())
     }
     
     private var iconsInitialized = false
@@ -61,6 +80,24 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
             updateFirstViewIcons(buttons: buttons)
             iconsInitialized = true
         }
+    }
+    
+    func setupTutorialButton() {
+        let tutorialButton = UIButton(type: .system)
+        tutorialButton.setTitle("チュートリアルを開く", for: .normal)
+        tutorialButton.setTitleColor(.systemBlue, for: .normal) // 🔹 青字にする
+        tutorialButton.backgroundColor = .clear // 🔹 背景なし
+        tutorialButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold) // フォントを大きめに
+        tutorialButton.translatesAutoresizingMaskIntoConstraints = false
+        tutorialButton.addTarget(self, action: #selector(openTutorial), for: .touchUpInside)
+
+        view.addSubview(tutorialButton)
+
+        // 🔽 チュートリアルボタンの配置: 数字ボタンの下
+        NSLayoutConstraint.activate([
+            tutorialButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tutorialButton.topAnchor.constraint(equalTo: buttons.last!.bottomAnchor, constant: 20)
+        ])
     }
     
     @objc func openTutorial() {
@@ -83,33 +120,29 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
         DispatchQueue.main.async {
             self.updateFirstViewIcons(buttons: self.buttons)
         }
-        
         //ATT対応
-//        if #available(iOS 14, *) {
-//            switch ATTrackingManager.trackingAuthorizationStatus {
-//            case .authorized:
-//                print("Allow Tracking")
-//                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
-//            case .denied:
-//                print("拒否")
-//            case .restricted:
-//                print("制限")
-//            case .notDetermined:
-//                showRequestTrackingAuthorizationAlert()
-//            @unknown default:
-//                fatalError()
-//            }
-//        } else {// iOS14未満
-//            if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
-//                print("Allow Tracking")
-//                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
-//            } else {
-//                print("制限")
-//            }
-//        }
-        
-
-
+        if #available(iOS 14, *) {
+            switch ATTrackingManager.trackingAuthorizationStatus {
+            case .authorized:
+                print("Allow Tracking")
+                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
+            case .denied:
+                print("拒否")
+            case .restricted:
+                print("制限")
+            case .notDetermined:
+                showRequestTrackingAuthorizationAlert()
+            @unknown default:
+                fatalError()
+            }
+        } else {// iOS14未満
+            if ASIdentifierManager.shared().isAdvertisingTrackingEnabled {
+                print("Allow Tracking")
+                print("IDFA: \(ASIdentifierManager.shared().advertisingIdentifier)")
+            } else {
+                print("制限")
+            }
+        }
     }
     
 
@@ -310,7 +343,8 @@ class FirstViewController: UIViewController, SettingsViewControllerDelegate, SFS
 
         for (index, button) in bottomButtons.enumerated() {
             NSLayoutConstraint.activate([
-                button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+                // ❶ バナーの「上」に配置する → bannerView.topAnchor
+                button.bottomAnchor.constraint(equalTo: bannerView.topAnchor, constant: -10),
                 button.widthAnchor.constraint(equalToConstant: buttonWidth),
                 button.heightAnchor.constraint(equalToConstant: buttonHeight)
             ])

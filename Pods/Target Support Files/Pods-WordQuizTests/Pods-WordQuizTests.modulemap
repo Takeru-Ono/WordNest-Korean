@@ -1,0 +1,6 @@
+framework module Pods_WordQuizTests {
+  umbrella header "Pods-WordQuizTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

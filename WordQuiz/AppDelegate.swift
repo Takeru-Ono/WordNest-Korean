@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let firstVC = storyboard.instantiateViewController(withIdentifier: "FirstViewController")
             self.window?.rootViewController = firstVC
         }
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         return true
     }
